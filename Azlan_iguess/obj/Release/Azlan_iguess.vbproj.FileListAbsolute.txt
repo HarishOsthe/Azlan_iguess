@@ -1,0 +1,9 @@
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Release\Azlan_iguess.exe.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Release\Azlan_iguess.vbprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Release\Azlan_iguess.evaluation.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Release\Azlan_iguess.lets.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Release\Azlan_iguess.PrintAll.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Release\Azlan_iguess.Report.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Release\Azlan_iguess.Form1.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Release\Azlan_iguess.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Release\Azlan_iguess.vbproj.GenerateResource.Cache

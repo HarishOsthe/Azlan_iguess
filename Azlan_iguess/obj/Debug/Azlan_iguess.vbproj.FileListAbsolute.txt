@@ -1,0 +1,42 @@
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.exe.config
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.Form1.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.Resources.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.vbproj.GenerateResource.Cache
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.exe
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.pdb
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.evaluation.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.Report.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.PrintAll.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.exe.manifest
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.application
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.exe.manifest
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.application
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.lets.resources
+C:\Users\User\Documents\Visual Studio 2015\Projects\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.about.resources
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.exe.config
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.exe
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.xml
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.pdb
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.exe.manifest
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.application
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.exe
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.pdb
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.xml
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.about.resources
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.evaluation.resources
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.lets.resources
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.PrintAll.resources
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.Report.resources
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.Form1.resources
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.Resources.resources
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.vbproj.GenerateResource.Cache
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.exe.manifest
+C:\Users\User\Desktop\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.application
