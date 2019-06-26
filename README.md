@@ -6,7 +6,7 @@ This application is specially designed for ***Jain College RR nagar*** based on 
 ## TABLE OF CONTENTS
 - [How to install iguess](#INSTALLING iguess)
 
-# INSTALLING iguess
+## **INSTALLING iguess**
 **iguess is successfully executed and tested in** ***Windows 10 X64*** **systems.**
 To install `iguess` use the latest setup **iguess[Updated].msi** file and follow the below steps
 1) Make sure to uninstall any previous versions of **iguess**.
