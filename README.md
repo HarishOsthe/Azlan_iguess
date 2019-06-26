@@ -11,7 +11,9 @@ To install `iguess` use the latest setup `**iguess[Updated].msi**` file and foll
 3) Click **Next**.
 <br><img src="/img_Install/1.jpg"></br>
 4) Click **Next** to install in default location or Change the location as per your requirement.
+<br><img src="/img_Install/2.jpg"></br>
 5) Wait! for the installation to **Complete** then click **Close**.
+<br><img src="/img_Install/3.jpg"></br>
 
 # Check the Google Drive Link for trailer
 <a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV">Demo Video</a>
