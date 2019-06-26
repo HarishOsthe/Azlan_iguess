@@ -1,5 +1,5 @@
 # AzlanWorks iguess
-<img src="/Azlan_iguess/Resources/welcome.jpg"></img> 
+<a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV"><img src="/Azlan_iguess/Resources/welcome.jpg"></img></a><br>
 Azlan's iguess is a windows application developed using **VB.Net in Visual studio 2015** and **MS Access 2013** as backend for storing data.
 
 This application is specially designed for ***Jain College RR nagar*** based on their requirements. The main function of **iguess** application is to store & evaluate **faculties feedbacks given by the students** at the end of each semester.
@@ -95,7 +95,9 @@ If you want to delete a faculties reports and data, just follow the below steps.
 1) Select `Department Name` from the drop-down menu.
 2) Select the `faculty Name` you want to delete.
 3) Click **Remove Faculty**. Thats it!, for more details see the video guide.
-**For Video guide** <a href="https://drive.google.com/open?id=1ggyAU3xSSE-6hc-3hPKW-879BSCY8c-K">Click This Link</a>
+**For Video guide** <a href="https://drive.google.com/open?id=1ggyAU3xSSE-6hc-3hPKW-879BSCY8c-K">Click This Link</a><br>
 
-# Check the Google Drive Link for trailer
-<a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV">Demo Video</a>
+**If you like my SIMPLE WORK!, don't forget to star this repo**
+
+If you guys face any problems please don't forget to raise issue, or just mail me at **Harishosthe@gmail.com**
+
