@@ -22,17 +22,16 @@ To install `iguess` use the latest setup **iguess[Updated].msi** file and follow
 
 
 ## **Enrolling Faculty**
-**For enrolling a faculty requires 3 data `Department Name`, `Faculty Name`, `Faculty Code` by default `iguess` comes with the following `Department Name` builtin
-    * ***English***
-    * ***Language***
-    * ***Mathematics***
-    * ***Physics***
-    * ***Commerce***
-    * ***Electronics***
-    * ***Chemistry***
-    * ***Biology***
-    * ***Computer Science***
-**
+**For enrolling a faculty requires 3 data `Department Name`, `Faculty Name`, `Faculty Code` by default `iguess` comes with the following `Department Name` builtin**
+- ***English***
+- ***Language***
+- ***Mathematics***
+- ***Physics***
+- ***Commerce***
+- ***Electronics***
+- ***Chemistry***
+- ***Biology***
+- ***Computer Science***
 
 # Check the Google Drive Link for trailer
 <a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV">Demo Video</a>
