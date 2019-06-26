@@ -33,13 +33,7 @@ To install `iguess` use the latest setup **iguess[Updated].msi** file and follow
 - ***Biology***
 - ***Computer Science***
 
-<br><img src="/img_fact/xx.gif"></br>
-
-<video width="320" height="240" controls>
-  <source src="ipl.mp4" type="video/mp4">
-  <source src="ipl.ogg" type="video/ogg">
-Your browser does not support the video tag.
-</video> 
+<br><img src="/img_fact/YU-min.gif"></br>
 
 # Check the Google Drive Link for trailer
 <a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV">Demo Video</a>
