@@ -5,9 +5,9 @@ This application is specially designed for ***Jain College RR nagar*** based on 
 
 # INSTALLING iguess
 **iguess is successfully executed and tested in** ***Windows 10 X64*** **systems.**
-To install `iguess` use the latest setup `**iguess[Updated].msi**` file and follow the below steps
-1) Make sure to uninstall any previous versions of `**iguess**.
-2) Double Click/tap on the `**iguess[Updated].msi**` file.
+To install `iguess` use the latest setup **iguess[Updated].msi** file and follow the below steps
+1) Make sure to uninstall any previous versions of **iguess**.
+2) Double Click/tap on the  <a href="https://drive.google.com/open?id=1thkxr0x78PnCjXHW9yMgy8Fuf903bMFr">iguess[Updated].msi</a>  file.
 3) Click **Next**.
 <br><img src="/img_Install/1.jpg"></br>
 4) Click **Next** to install in default location or Change the location as per your requirement.
