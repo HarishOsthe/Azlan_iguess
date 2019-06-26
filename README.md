@@ -35,10 +35,11 @@ To install `iguess` use the latest setup **iguess[Updated].msi** file and follow
 
 <br><img src="/img_fact/xx.gif"></br>
 
-<video width="400" controls>
+<video width="320" height="240" controls>
   <source src="ipl.mp4" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+  <source src="ipl.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video> 
 
 # Check the Google Drive Link for trailer
 <a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV">Demo Video</a>
