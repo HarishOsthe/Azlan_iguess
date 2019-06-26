@@ -4,9 +4,9 @@ Azlan's iguess is a windows application developed using **VB.Net in Visual studi
 This application is specially designed for ***Jain College RR nagar*** based on their requirements. The main function of **iguess** application is to store & evaluate **faculties feedbacks given by the students** at the end of each semester.
 
 ## TABLE OF CONTENTS
-- [How to install iguess](#INSTALLING iguess)
+- [How to install iguess](#installation)
 
-## **INSTALLING iguess**
+## **installation**
 **iguess is successfully executed and tested in** ***Windows 10 X64*** **systems.**
 To install `iguess` use the latest setup **iguess[Updated].msi** file and follow the below steps
 1) Make sure to uninstall any previous versions of **iguess**.
