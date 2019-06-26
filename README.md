@@ -33,5 +33,7 @@ To install `iguess` use the latest setup **iguess[Updated].msi** file and follow
 - ***Biology***
 - ***Computer Science***
 
+<br><img src="/img_fact/Inked1_Ll.jpg"></br>
+
 # Check the Google Drive Link for trailer
 <a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV">Demo Video</a>
