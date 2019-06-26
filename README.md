@@ -9,7 +9,7 @@ To install `iguess` use the latest setup `**iguess[Updated].msi**` file and foll
 1) Make sure to uninstall any previous versions of `**iguess**.
 2) Double Click/tap on the `**iguess[Updated].msi**` file.
 3) Click **Next**.
-<img src="/img_Install/1.jpg" height="42" width="42"> </img>
+<br><img src="/img_Install/1.jpg" height="250" width="250"></br>
 4) Click **Next** to install in default location or Change the location as per your requirement.
 5) Wait! for the installation to **Complete** then click **Close**.
 
