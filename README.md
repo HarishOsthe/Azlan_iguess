@@ -1,5 +1,5 @@
 # AzlanWorks iguess
-<a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV"><img src="/Azlan_iguess/Resources/welcome.jpg"><img src="/Azlan_iguess/Resources/ASW2.png"></img><br></img></a><br>
+<a href="https://drive.google.com/open?id=1pEvrY4hNTpHkFYNwvvW5KfqbUX-YltaV"><img src="/Azlan_iguess/Resources/welcome.jpg"><img src="/Azlan_iguess/Resources/ASW2.png" width=300 height=450></img><br></img></a><br>
 
 
 Azlan's iguess is a windows application developed using **VB.Net in Visual studio 2015** and **MS Access 2013** as backend for storing data.
