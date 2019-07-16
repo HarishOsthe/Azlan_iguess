@@ -38,7 +38,7 @@ For enrolling a faculty requires 3 data `Department Name`, `Faculty Name`, `Facu
 - ***Electronics***
 - ***Chemistry***
 - ***Biology***
-- ***Computer Science***<br>
+- ***Computer Science***<br></br>
 **Steps to enroll faculty**
 1) Click **New Faculty**
 2) Select `Department Name` from the drop-down menu.
@@ -57,7 +57,7 @@ Before entering feedbacks make sure you have filled all the following fields:
 - `Total Strength`
 - `Month/Year`
 - `Subject Name`
-- `Section` this is optional<br>
+- `Section` this is optional<br></br>
 **Steps to enter the feedback**
 1) Make sure the above fields are filled.
 2) Enter the feedbacks of a students by clicking based on the rank.
