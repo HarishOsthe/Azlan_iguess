@@ -25,8 +25,8 @@ To install `iguess` use the latest setup <a href="https://drive.google.com/open?
 2) Double Click/tap on the **iguess[Updated].msi** file.
 3) Click **Next**.
 4) Click **Next** to install in default location or Change the location as per your requirement.
-5) Wait! for the installation to **Complete** and Thats it..!, click **Close**.<br>
-**For Video guide** <a href="https://drive.google.com/open?id=1Wsfzchb-jPMnH4BlIoWVbZ8ZVzPDjqjw">Click This Link</a>
+5) Wait! for the installation to **Complete** and Thats it..!, click **Close**.<br></br>
+**For Video guide**<a href="https://drive.google.com/open?id=1Wsfzchb-jPMnH4BlIoWVbZ8ZVzPDjqjw">Click This Link</a>
 
 ## **Enrolling Faculty**
 For enrolling a faculty requires 3 data `Department Name`, `Faculty Name`, `Faculty Code` by default `iguess` comes with the following `Department Name` builtin
@@ -44,7 +44,7 @@ For enrolling a faculty requires 3 data `Department Name`, `Faculty Name`, `Facu
 2) Select `Department Name` from the drop-down menu.
 3) Enter the `faculty name`.
 4) Enter the unique `Faculty Code`.
-5) Click **ADD Faculty**, Thats it!...<br>
+5) Click **ADD Faculty**, Thats it!...<br></br>
 **For Video guide** <a href="https://drive.google.com/open?id=1GljDPZ7Sd4g916WC6jryDjEyVLgUlMOc">Click This Link</a>
 
 ## **Adding feedbacks**
