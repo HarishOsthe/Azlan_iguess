@@ -45,7 +45,7 @@ For enrolling a faculty requires 3 data `Department Name`, `Faculty Name`, `Facu
 3) Enter the `faculty name`.
 4) Enter the unique `Faculty Code`.
 5) Click **ADD Faculty**,<img src="/Azlan_iguess/Resources/fac_new.png" width=25 height=25> Thats it!...<br>
-7) or If you wanna continue with existing faculty click `Clear`.
+7) or If you wanna continue with existing faculty click `Clear` <img src="/Azlan_iguess/Resources/clear.png" width=25 height=25>.
 6) **For Video guide** <a href="https://drive.google.com/open?id=1GljDPZ7Sd4g916WC6jryDjEyVLgUlMOc">Click This Link</a>
 
 ## **Adding feedbacks**
@@ -58,48 +58,48 @@ Before entering feedbacks make sure you have filled all the following fields:
 - `Total Strength`
 - `Month/Year`
 - `Subject Name`
-- `Section` this one is optional<br></br>
-**Steps to enter the feedback**
-1) Make sure the above fields are filled.
+- `Section` **this one is optional**<br></br>
+#### **Steps to enter the feedback**
+1) Make sure these fields `Department Name`, `Faculty Name`, `Faculty Code`, `Stream`, `Class`, `Total Strength`, `Month / Year`, `Subject Name` are filled.
 2) Enter the feedbacks of a students by clicking relevant rating.
-3) Click **Add** to enter the next student feedback.
-4) Use the **Next** and **Previous** buttons to edit the student feedbacks. After editing the feedback please click the **Add** to update the changes.
-5) If you want to clear all feedback and do it again from the first just click **Clear**
-4) If you are done with entering the feedback click **Save** to store in the DataBase and to evaluate the feedbacks.<br>
-5) **For Video guide** <a href="https://drive.google.com/open?id=1gOyxj26MMQOd4HdYtxvSds4fETFtsQsL">Click This Link</a>
+3) Click **Add** <img src="/Azlan_iguess/Resources/add.png" width=25 height=25> to enter the next student feedback.
+4) If you want to clear all feedback and do it again from the first just click **Clear** <img src="/Azlan_iguess/Resources/clear.png" width=25 height=25>
+5) If you are done with entering the feedback click **Save** <img src="/Azlan_iguess/Resources/save.png" width=25 height=25> to store in the DataBase<br>
+6) **For Video guide** <a href="https://drive.google.com/open?id=1gOyxj26MMQOd4HdYtxvSds4fETFtsQsL">Click This Link</a>
 
 ## Editing feedbacks
-If you made some mistakes while clicking the feedback you can use the **Previous** and **Next** buttons to edit the previously entred feedbacks for more details you can follow the video guide given below.<br>
+If you made some mistakes while clicking the feedback you can use the **Previous** <img src="/Azlan_iguess/Resources/previous.png" width=25 height=25> and **Next** <img src="/Azlan_iguess/Resources/next.png" width=25 height=25> buttons to edit the previously entred feedbacks for more details you can follow the video guide given below.<br>
+After editing the feedback please click the **Add** <img src="/Azlan_iguess/Resources/add.png" width=25 height=25> to update the changes.<br>
 **For Video guide** <a href="https://drive.google.com/open?id=1j1EEPQvwqiRJh2T-Q9dKozNZ_SI55ypt">Click This Link</a>
 
 ## Saving feedbacks
 After you're done with entering all feedbacks now its time to store and evaluate the results.
-you can store the feedback just by clicking the **Save** button.<br>
+you can store the feedback just by clicking the **Save** <img src="/Azlan_iguess/Resources/save.png" width=25 height=25> button.<br>
 **For Video guide** <a href="https://drive.google.com/open?id=16m9aBTTdPFaJOYx_WL6wD_X4XEoiNAZO">Click This Link</a>
 
 ## Clear
-If you done any mistakes or done anything wrong while entering feedbacks or while adding faculty just click **Clear**
+If you done any mistakes or done anything wrong while entering feedbacks or while adding faculty just click **Clear** <img src="/Azlan_iguess/Resources/clear.png" width=25 height=25>
 Thats it!, you can start again for more details video guide is below.<br>
 **For Video guide** <a href="https://drive.google.com/open?id=160RG-dwPp6vgIBdFx1Hia6M32zATEXFd">Click This Link</a>
 
 ## View Report and print
-Now we can see the reports and more details like the **data** in database and **graph** and **Rating start** and more...
-Here we can enter the principal's comment or feedback for that particular faculty and take **print** of the report.<br>
+Now we can see the reports and more details like the **data** in database and **graph** and **Rating star** and more...
+Here we can enter the principal's comment or feedback for that particular faculty and click **print** <img src="/Azlan_iguess/Resources/printlo.png" width=25 height=25> to take print<br>
 **For Video guide** <a href="https://drive.google.com/open?id=1eyNIEmd-yOkiOG6AvZ3MDq975G_h5fxv">Click This Link</a>
 
 ## Print faculties report from a department
 Taking individual faculty report each time it's time consuming!, so we are here now you can take a whole **department** faculties reports in just **ONE CLICK** is that simple.
 1) Select the `Department Name` from the drop-down menu to see all faculties reports of that particular department, 
 2) Select the `Evaluation Date`.
-3) If you want to add principal's comment, just select the faculty from the right table, and enter the feedback and click **Save**.
-4) If you are done time for some BAM!, just click **print**, for more details see the video guide.<br>
+3) If you want to add principal's comment, just select the faculty from the right table, and enter the feedback and click **Save** <img src="/Azlan_iguess/Resources/save.png" width=25 height=25>.
+4) If you are done, time for some BAM!... just click **print** <img src="/Azlan_iguess/Resources/printlo.png" width=25 height=25>, now you can take a whole department reports in no time, for more details see the video guide.<br>
 5) **For Video guide** <a href="https://drive.google.com/open?id=1HT5pEK_TdsT8r2j7e07BL2ydJvsxMQRk">Click This Link</a>
 
 ## Delete faculty
 If you want to delete a faculties reports and data, just follow the below steps.
 1) Select `Department Name` from the drop-down menu.
 2) Select the `faculty Name` you want to delete.
-3) Click **Remove Faculty**. Thats it!, for more details see the video guide.<br>
+3) Click **Remove Faculty** <img src="/Azlan_iguess/Resources/delete.png" width=25 height=25>. Thats it!, for more details see the video guide.<br>
 4) **For Video guide** <a href="https://drive.google.com/open?id=1ggyAU3xSSE-6hc-3hPKW-879BSCY8c-K">Click This Link</a><br>
 
 **If you like my SIMPLE WORK!, don't forget to star this repo**
