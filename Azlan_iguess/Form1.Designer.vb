@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim Animation1 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
+        Dim Animation2 As BunifuAnimatorNS.Animation = New BunifuAnimatorNS.Animation()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.BunifuDragControl1 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
         Me.Panel2 = New System.Windows.Forms.Panel()
@@ -35,12 +35,12 @@ Partial Class Form1
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.BunifuTransition1 = New BunifuAnimatorNS.BunifuTransition(Me.components)
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.p1 = New Bunifu.Framework.UI.BunifuCards()
         Me.butabout = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.butprint = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.butreport = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.buteval = New Bunifu.Framework.UI.BunifuFlatButton()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.About1 = New Azlan_iguess.about()
@@ -171,34 +171,34 @@ Partial Class Form1
         '
         Me.BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
         Me.BunifuTransition1.Cursor = Nothing
-        Animation1.AnimateOnlyDifferences = True
-        Animation1.BlindCoeff = CType(resources.GetObject("Animation1.BlindCoeff"), System.Drawing.PointF)
-        Animation1.LeafCoeff = 0!
-        Animation1.MaxTime = 1.0!
-        Animation1.MinTime = 0!
-        Animation1.MosaicCoeff = CType(resources.GetObject("Animation1.MosaicCoeff"), System.Drawing.PointF)
-        Animation1.MosaicShift = CType(resources.GetObject("Animation1.MosaicShift"), System.Drawing.PointF)
-        Animation1.MosaicSize = 0
-        Animation1.Padding = New System.Windows.Forms.Padding(50)
-        Animation1.RotateCoeff = 1.0!
-        Animation1.RotateLimit = 0!
-        Animation1.ScaleCoeff = CType(resources.GetObject("Animation1.ScaleCoeff"), System.Drawing.PointF)
-        Animation1.SlideCoeff = CType(resources.GetObject("Animation1.SlideCoeff"), System.Drawing.PointF)
-        Animation1.TimeCoeff = 0!
-        Animation1.TransparencyCoeff = 1.0!
-        Me.BunifuTransition1.DefaultAnimation = Animation1
+        Animation2.AnimateOnlyDifferences = True
+        Animation2.BlindCoeff = CType(resources.GetObject("Animation2.BlindCoeff"), System.Drawing.PointF)
+        Animation2.LeafCoeff = 0!
+        Animation2.MaxTime = 1.0!
+        Animation2.MinTime = 0!
+        Animation2.MosaicCoeff = CType(resources.GetObject("Animation2.MosaicCoeff"), System.Drawing.PointF)
+        Animation2.MosaicShift = CType(resources.GetObject("Animation2.MosaicShift"), System.Drawing.PointF)
+        Animation2.MosaicSize = 0
+        Animation2.Padding = New System.Windows.Forms.Padding(50)
+        Animation2.RotateCoeff = 1.0!
+        Animation2.RotateLimit = 0!
+        Animation2.ScaleCoeff = CType(resources.GetObject("Animation2.ScaleCoeff"), System.Drawing.PointF)
+        Animation2.SlideCoeff = CType(resources.GetObject("Animation2.SlideCoeff"), System.Drawing.PointF)
+        Animation2.TimeCoeff = 0!
+        Animation2.TransparencyCoeff = 1.0!
+        Me.BunifuTransition1.DefaultAnimation = Animation2
         Me.BunifuTransition1.TimeStep = 0.06!
         '
         'Panel1
         '
         Me.Panel1.BackgroundImage = Global.Azlan_iguess.My.Resources.Resources.download__1_
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.p1)
         Me.Panel1.Controls.Add(Me.butabout)
         Me.Panel1.Controls.Add(Me.butprint)
         Me.Panel1.Controls.Add(Me.butreport)
         Me.Panel1.Controls.Add(Me.buteval)
+        Me.Panel1.Controls.Add(Me.PictureBox3)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Controls.Add(Me.PictureBox2)
         Me.BunifuTransition1.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
@@ -208,6 +208,171 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(267, 753)
         Me.Panel1.TabIndex = 0
+        '
+        'p1
+        '
+        Me.p1.BackColor = System.Drawing.Color.Snow
+        Me.p1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.p1.BorderRadius = 25
+        Me.p1.BottomSahddow = True
+        Me.p1.color = System.Drawing.Color.Transparent
+        Me.BunifuTransition1.SetDecoration(Me.p1, BunifuAnimatorNS.DecorationType.None)
+        Me.p1.LeftSahddow = True
+        Me.p1.Location = New System.Drawing.Point(247, 178)
+        Me.p1.Margin = New System.Windows.Forms.Padding(4)
+        Me.p1.Name = "p1"
+        Me.p1.RightSahddow = True
+        Me.p1.ShadowDepth = 50
+        Me.p1.Size = New System.Drawing.Size(13, 65)
+        Me.p1.TabIndex = 11
+        '
+        'butabout
+        '
+        Me.butabout.Activecolor = System.Drawing.Color.Plum
+        Me.butabout.BackColor = System.Drawing.Color.Transparent
+        Me.butabout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.butabout.BorderRadius = 0
+        Me.butabout.ButtonText = "About"
+        Me.butabout.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.butabout, BunifuAnimatorNS.DecorationType.None)
+        Me.butabout.DisabledColor = System.Drawing.Color.Gray
+        Me.butabout.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butabout.Iconcolor = System.Drawing.Color.Transparent
+        Me.butabout.Iconimage = Global.Azlan_iguess.My.Resources.Resources.icon_09_512
+        Me.butabout.Iconimage_right = Nothing
+        Me.butabout.Iconimage_right_Selected = Nothing
+        Me.butabout.Iconimage_Selected = Nothing
+        Me.butabout.IconMarginLeft = 0
+        Me.butabout.IconMarginRight = 0
+        Me.butabout.IconRightVisible = True
+        Me.butabout.IconRightZoom = 0R
+        Me.butabout.IconVisible = True
+        Me.butabout.IconZoom = 100.0R
+        Me.butabout.IsTab = False
+        Me.butabout.Location = New System.Drawing.Point(0, 488)
+        Me.butabout.Margin = New System.Windows.Forms.Padding(5)
+        Me.butabout.Name = "butabout"
+        Me.butabout.Normalcolor = System.Drawing.Color.Transparent
+        Me.butabout.OnHovercolor = System.Drawing.Color.Plum
+        Me.butabout.OnHoverTextColor = System.Drawing.Color.White
+        Me.butabout.selected = False
+        Me.butabout.Size = New System.Drawing.Size(299, 59)
+        Me.butabout.TabIndex = 7
+        Me.butabout.Text = "About"
+        Me.butabout.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.butabout.Textcolor = System.Drawing.Color.Lavender
+        Me.butabout.TextFont = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'butprint
+        '
+        Me.butprint.Activecolor = System.Drawing.Color.Plum
+        Me.butprint.BackColor = System.Drawing.Color.Transparent
+        Me.butprint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.butprint.BorderRadius = 0
+        Me.butprint.ButtonText = "Print All"
+        Me.butprint.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.butprint, BunifuAnimatorNS.DecorationType.None)
+        Me.butprint.DisabledColor = System.Drawing.Color.Gray
+        Me.butprint.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butprint.Iconcolor = System.Drawing.Color.Transparent
+        Me.butprint.Iconimage = Global.Azlan_iguess.My.Resources.Resources.print
+        Me.butprint.Iconimage_right = Nothing
+        Me.butprint.Iconimage_right_Selected = Nothing
+        Me.butprint.Iconimage_Selected = Nothing
+        Me.butprint.IconMarginLeft = 0
+        Me.butprint.IconMarginRight = 0
+        Me.butprint.IconRightVisible = True
+        Me.butprint.IconRightZoom = 0R
+        Me.butprint.IconVisible = True
+        Me.butprint.IconZoom = 80.0R
+        Me.butprint.IsTab = False
+        Me.butprint.Location = New System.Drawing.Point(0, 374)
+        Me.butprint.Margin = New System.Windows.Forms.Padding(5)
+        Me.butprint.Name = "butprint"
+        Me.butprint.Normalcolor = System.Drawing.Color.Transparent
+        Me.butprint.OnHovercolor = System.Drawing.Color.Plum
+        Me.butprint.OnHoverTextColor = System.Drawing.Color.White
+        Me.butprint.selected = False
+        Me.butprint.Size = New System.Drawing.Size(299, 59)
+        Me.butprint.TabIndex = 8
+        Me.butprint.Text = "Print All"
+        Me.butprint.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.butprint.Textcolor = System.Drawing.Color.Lavender
+        Me.butprint.TextFont = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'butreport
+        '
+        Me.butreport.Activecolor = System.Drawing.Color.Plum
+        Me.butreport.BackColor = System.Drawing.Color.Transparent
+        Me.butreport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.butreport.BorderRadius = 0
+        Me.butreport.ButtonText = "Reports"
+        Me.butreport.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.butreport, BunifuAnimatorNS.DecorationType.None)
+        Me.butreport.DisabledColor = System.Drawing.Color.Gray
+        Me.butreport.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.butreport.Iconcolor = System.Drawing.Color.Transparent
+        Me.butreport.Iconimage = Global.Azlan_iguess.My.Resources.Resources.report
+        Me.butreport.Iconimage_right = Nothing
+        Me.butreport.Iconimage_right_Selected = Nothing
+        Me.butreport.Iconimage_Selected = Nothing
+        Me.butreport.IconMarginLeft = 0
+        Me.butreport.IconMarginRight = 0
+        Me.butreport.IconRightVisible = True
+        Me.butreport.IconRightZoom = 0R
+        Me.butreport.IconVisible = True
+        Me.butreport.IconZoom = 80.0R
+        Me.butreport.IsTab = False
+        Me.butreport.Location = New System.Drawing.Point(0, 286)
+        Me.butreport.Margin = New System.Windows.Forms.Padding(5)
+        Me.butreport.Name = "butreport"
+        Me.butreport.Normalcolor = System.Drawing.Color.Transparent
+        Me.butreport.OnHovercolor = System.Drawing.Color.Plum
+        Me.butreport.OnHoverTextColor = System.Drawing.Color.White
+        Me.butreport.selected = False
+        Me.butreport.Size = New System.Drawing.Size(299, 59)
+        Me.butreport.TabIndex = 9
+        Me.butreport.Text = "Reports"
+        Me.butreport.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.butreport.Textcolor = System.Drawing.Color.Lavender
+        Me.butreport.TextFont = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        '
+        'buteval
+        '
+        Me.buteval.Activecolor = System.Drawing.Color.Plum
+        Me.buteval.BackColor = System.Drawing.Color.Transparent
+        Me.buteval.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.buteval.BorderRadius = 0
+        Me.buteval.ButtonText = "Evaluation"
+        Me.buteval.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.BunifuTransition1.SetDecoration(Me.buteval, BunifuAnimatorNS.DecorationType.None)
+        Me.buteval.DisabledColor = System.Drawing.Color.Gray
+        Me.buteval.Font = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.buteval.Iconcolor = System.Drawing.Color.Transparent
+        Me.buteval.Iconimage = Global.Azlan_iguess.My.Resources.Resources.Evaluation
+        Me.buteval.Iconimage_right = Nothing
+        Me.buteval.Iconimage_right_Selected = Nothing
+        Me.buteval.Iconimage_Selected = Nothing
+        Me.buteval.IconMarginLeft = 0
+        Me.buteval.IconMarginRight = 0
+        Me.buteval.IconRightVisible = True
+        Me.buteval.IconRightZoom = 0R
+        Me.buteval.IconVisible = True
+        Me.buteval.IconZoom = 90.0R
+        Me.buteval.IsTab = False
+        Me.buteval.Location = New System.Drawing.Point(3, 184)
+        Me.buteval.Margin = New System.Windows.Forms.Padding(5)
+        Me.buteval.Name = "buteval"
+        Me.buteval.Normalcolor = System.Drawing.Color.Transparent
+        Me.buteval.OnHovercolor = System.Drawing.Color.Plum
+        Me.buteval.OnHoverTextColor = System.Drawing.Color.White
+        Me.buteval.selected = False
+        Me.buteval.Size = New System.Drawing.Size(299, 59)
+        Me.buteval.TabIndex = 10
+        Me.buteval.Text = "Evaluation"
+        Me.buteval.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.buteval.Textcolor = System.Drawing.Color.Lavender
+        Me.buteval.TextFont = New System.Drawing.Font("Century Gothic", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'PictureBox3
         '
@@ -221,171 +386,6 @@ Partial Class Form1
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
         Me.PictureBox3.TabIndex = 6
         Me.PictureBox3.TabStop = False
-        '
-        'p1
-        '
-        Me.p1.BackColor = System.Drawing.Color.Snow
-        Me.p1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.p1.BorderRadius = 25
-        Me.p1.BottomSahddow = True
-        Me.p1.color = System.Drawing.Color.Transparent
-        Me.BunifuTransition1.SetDecoration(Me.p1, BunifuAnimatorNS.DecorationType.None)
-        Me.p1.LeftSahddow = True
-        Me.p1.Location = New System.Drawing.Point(237, 210)
-        Me.p1.Margin = New System.Windows.Forms.Padding(4)
-        Me.p1.Name = "p1"
-        Me.p1.RightSahddow = True
-        Me.p1.ShadowDepth = 50
-        Me.p1.Size = New System.Drawing.Size(13, 65)
-        Me.p1.TabIndex = 5
-        '
-        'butabout
-        '
-        Me.butabout.Activecolor = System.Drawing.Color.Plum
-        Me.butabout.BackColor = System.Drawing.Color.Transparent
-        Me.butabout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.butabout.BorderRadius = 0
-        Me.butabout.ButtonText = "About"
-        Me.butabout.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransition1.SetDecoration(Me.butabout, BunifuAnimatorNS.DecorationType.None)
-        Me.butabout.DisabledColor = System.Drawing.Color.Gray
-        Me.butabout.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.butabout.Iconcolor = System.Drawing.Color.Transparent
-        Me.butabout.Iconimage = Global.Azlan_iguess.My.Resources.Resources.icon_09_512
-        Me.butabout.Iconimage_right = Nothing
-        Me.butabout.Iconimage_right_Selected = Nothing
-        Me.butabout.Iconimage_Selected = Nothing
-        Me.butabout.IconMarginLeft = 0
-        Me.butabout.IconMarginRight = 0
-        Me.butabout.IconRightVisible = True
-        Me.butabout.IconRightZoom = 0R
-        Me.butabout.IconVisible = True
-        Me.butabout.IconZoom = 100.0R
-        Me.butabout.IsTab = False
-        Me.butabout.Location = New System.Drawing.Point(-3, 543)
-        Me.butabout.Margin = New System.Windows.Forms.Padding(5)
-        Me.butabout.Name = "butabout"
-        Me.butabout.Normalcolor = System.Drawing.Color.Transparent
-        Me.butabout.OnHovercolor = System.Drawing.Color.Plum
-        Me.butabout.OnHoverTextColor = System.Drawing.Color.White
-        Me.butabout.selected = False
-        Me.butabout.Size = New System.Drawing.Size(299, 59)
-        Me.butabout.TabIndex = 2
-        Me.butabout.Text = "About"
-        Me.butabout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.butabout.Textcolor = System.Drawing.Color.Lavender
-        Me.butabout.TextFont = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'butprint
-        '
-        Me.butprint.Activecolor = System.Drawing.Color.Plum
-        Me.butprint.BackColor = System.Drawing.Color.Transparent
-        Me.butprint.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.butprint.BorderRadius = 0
-        Me.butprint.ButtonText = "Print"
-        Me.butprint.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransition1.SetDecoration(Me.butprint, BunifuAnimatorNS.DecorationType.None)
-        Me.butprint.DisabledColor = System.Drawing.Color.Gray
-        Me.butprint.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.butprint.Iconcolor = System.Drawing.Color.Transparent
-        Me.butprint.Iconimage = Global.Azlan_iguess.My.Resources.Resources.print
-        Me.butprint.Iconimage_right = Nothing
-        Me.butprint.Iconimage_right_Selected = Nothing
-        Me.butprint.Iconimage_Selected = Nothing
-        Me.butprint.IconMarginLeft = 0
-        Me.butprint.IconMarginRight = 0
-        Me.butprint.IconRightVisible = True
-        Me.butprint.IconRightZoom = 0R
-        Me.butprint.IconVisible = True
-        Me.butprint.IconZoom = 80.0R
-        Me.butprint.IsTab = False
-        Me.butprint.Location = New System.Drawing.Point(0, 443)
-        Me.butprint.Margin = New System.Windows.Forms.Padding(5)
-        Me.butprint.Name = "butprint"
-        Me.butprint.Normalcolor = System.Drawing.Color.Transparent
-        Me.butprint.OnHovercolor = System.Drawing.Color.Plum
-        Me.butprint.OnHoverTextColor = System.Drawing.Color.White
-        Me.butprint.selected = False
-        Me.butprint.Size = New System.Drawing.Size(299, 59)
-        Me.butprint.TabIndex = 2
-        Me.butprint.Text = "Print"
-        Me.butprint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.butprint.Textcolor = System.Drawing.Color.Lavender
-        Me.butprint.TextFont = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'butreport
-        '
-        Me.butreport.Activecolor = System.Drawing.Color.Plum
-        Me.butreport.BackColor = System.Drawing.Color.Transparent
-        Me.butreport.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.butreport.BorderRadius = 0
-        Me.butreport.ButtonText = "Report"
-        Me.butreport.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransition1.SetDecoration(Me.butreport, BunifuAnimatorNS.DecorationType.None)
-        Me.butreport.DisabledColor = System.Drawing.Color.Gray
-        Me.butreport.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.butreport.Iconcolor = System.Drawing.Color.Transparent
-        Me.butreport.Iconimage = Global.Azlan_iguess.My.Resources.Resources.report
-        Me.butreport.Iconimage_right = Nothing
-        Me.butreport.Iconimage_right_Selected = Nothing
-        Me.butreport.Iconimage_Selected = Nothing
-        Me.butreport.IconMarginLeft = 0
-        Me.butreport.IconMarginRight = 0
-        Me.butreport.IconRightVisible = True
-        Me.butreport.IconRightZoom = 0R
-        Me.butreport.IconVisible = True
-        Me.butreport.IconZoom = 80.0R
-        Me.butreport.IsTab = False
-        Me.butreport.Location = New System.Drawing.Point(0, 324)
-        Me.butreport.Margin = New System.Windows.Forms.Padding(5)
-        Me.butreport.Name = "butreport"
-        Me.butreport.Normalcolor = System.Drawing.Color.Transparent
-        Me.butreport.OnHovercolor = System.Drawing.Color.Plum
-        Me.butreport.OnHoverTextColor = System.Drawing.Color.White
-        Me.butreport.selected = False
-        Me.butreport.Size = New System.Drawing.Size(299, 59)
-        Me.butreport.TabIndex = 2
-        Me.butreport.Text = "Report"
-        Me.butreport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.butreport.Textcolor = System.Drawing.Color.Lavender
-        Me.butreport.TextFont = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '
-        'buteval
-        '
-        Me.buteval.Activecolor = System.Drawing.Color.Plum
-        Me.buteval.BackColor = System.Drawing.Color.Transparent
-        Me.buteval.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.buteval.BorderRadius = 0
-        Me.buteval.ButtonText = "Evaluation"
-        Me.buteval.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.BunifuTransition1.SetDecoration(Me.buteval, BunifuAnimatorNS.DecorationType.None)
-        Me.buteval.DisabledColor = System.Drawing.Color.Gray
-        Me.buteval.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold)
-        Me.buteval.Iconcolor = System.Drawing.Color.Transparent
-        Me.buteval.Iconimage = Global.Azlan_iguess.My.Resources.Resources.Evaluation
-        Me.buteval.Iconimage_right = Nothing
-        Me.buteval.Iconimage_right_Selected = Nothing
-        Me.buteval.Iconimage_Selected = Nothing
-        Me.buteval.IconMarginLeft = 0
-        Me.buteval.IconMarginRight = 0
-        Me.buteval.IconRightVisible = True
-        Me.buteval.IconRightZoom = 0R
-        Me.buteval.IconVisible = True
-        Me.buteval.IconZoom = 90.0R
-        Me.buteval.IsTab = False
-        Me.buteval.Location = New System.Drawing.Point(0, 217)
-        Me.buteval.Margin = New System.Windows.Forms.Padding(5)
-        Me.buteval.Name = "buteval"
-        Me.buteval.Normalcolor = System.Drawing.Color.Transparent
-        Me.buteval.OnHovercolor = System.Drawing.Color.Plum
-        Me.buteval.OnHoverTextColor = System.Drawing.Color.White
-        Me.buteval.selected = False
-        Me.buteval.Size = New System.Drawing.Size(299, 59)
-        Me.buteval.TabIndex = 2
-        Me.buteval.Text = "Evaluation"
-        Me.buteval.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.buteval.Textcolor = System.Drawing.Color.Lavender
-        Me.buteval.TextFont = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         '
         'PictureBox1
         '
@@ -527,9 +527,6 @@ Partial Class Form1
     Friend WithEvents BunifuDragControl1 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents buteval As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents butprint As Bunifu.Framework.UI.BunifuFlatButton
-    Friend WithEvents butreport As Bunifu.Framework.UI.BunifuFlatButton
 
     Friend WithEvents BunifuTransition1 As BunifuAnimatorNS.BunifuTransition
     Friend WithEvents Evaluation1 As evaluation
@@ -541,7 +538,6 @@ Partial Class Form1
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents p1 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents BunifuDragControl2 As Bunifu.Framework.UI.BunifuDragControl
     Friend WithEvents Report1 As Report
     Friend WithEvents PrintAll1 As PrintAll
@@ -550,5 +546,9 @@ Partial Class Form1
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents About1 As about
     Friend WithEvents BunifuElipse2 As Bunifu.Framework.UI.BunifuElipse
+    Friend WithEvents p1 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents butabout As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents butprint As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents butreport As Bunifu.Framework.UI.BunifuFlatButton
+    Friend WithEvents buteval As Bunifu.Framework.UI.BunifuFlatButton
 End Class

@@ -42,22 +42,7 @@ Azlan_iguess
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Azlan_iguess.My.Resources.Resources.ASW">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.ASW1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Azlan_iguess.My.Resources.Resources.ASW2">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.ASW3">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -67,37 +52,12 @@ Azlan_iguess
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Azlan_iguess.My.Resources.Resources.azlanlogo_iguess">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.azlanlogo_iguess1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.bub__4_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Azlan_iguess.My.Resources.Resources.bub_a_4_">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Azlan_iguess.My.Resources.Resources.but">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Azlan_iguess.My.Resources.Resources.clear">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.credits">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -132,16 +92,6 @@ Azlan_iguess
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Azlan_iguess.My.Resources.Resources.giphy__4_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.giphy__4_1">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Azlan_iguess.My.Resources.Resources.icon_09_512">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -157,27 +107,7 @@ Azlan_iguess
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Azlan_iguess.My.Resources.Resources.Jain">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.Jain_college_Logo__1_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Azlan_iguess.My.Resources.Resources.jain_college_logo_iguess">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.jainlogo">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.jainlogo1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -188,16 +118,6 @@ Azlan_iguess
 </summary>
 </member>
 <member name="P:Azlan_iguess.My.Resources.Resources.minimize">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.octo_loader">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.parrot">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -232,52 +152,7 @@ Azlan_iguess
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Azlan_iguess.My.Resources.Resources.te__1_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
 <member name="P:Azlan_iguess.My.Resources.Resources.te__4_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.TemptingUnsteadyBlackbuck_size_restricted">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.Untitled__2_">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.Untitled_11">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.Untitled_111">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.Untitled_12">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.Untitled_3">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.Untitled_4">
-<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member>
-<member name="P:Azlan_iguess.My.Resources.Resources.white">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

@@ -119,7 +119,9 @@
     <Compile Include="Controls\about.Designer.vb">
       <DependentUpon>about.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controls\about.vb" />
+    <Compile Include="Controls\about.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\evaluation.Designer.vb">
       <DependentUpon>evaluation.vb</DependentUpon>
     </Compile>
@@ -129,7 +131,9 @@
     <Compile Include="Controls\lets.Designer.vb">
       <DependentUpon>lets.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controls\lets.vb" />
+    <Compile Include="Controls\lets.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Controls\PrintAll.Designer.vb">
       <DependentUpon>PrintAll.vb</DependentUpon>
     </Compile>
@@ -195,6 +199,7 @@
   <ItemGroup>
     <None Include="Azlan_iguess_1_TemporaryKey.pfx" />
     <None Include="Azlan_iguess_TemporaryKey.pfx" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -231,9 +236,6 @@
     <None Include="Resources\report.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\azlanlogo_iguess.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\jain-college-logo_iguess.png" />
   </ItemGroup>
   <ItemGroup>
@@ -262,9 +264,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\white.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\but.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Jain-college-Logo %281%29.png" />
@@ -297,7 +296,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\azlanlogo_iguess1.png" />
     <None Include="Resources\giphy %284%29.gif" />
     <None Include="Resources\animated_loading__by__amiri.gif" />
     <None Include="Resources\parrot.gif" />
@@ -309,20 +307,17 @@
     <None Include="Resources\te %284%29.gif" />
     <None Include="Resources\credits.png" />
     <None Include="Resources\credits1.png" />
-    <None Include="Resources\bub %284%29.gif" />
     <None Include="Resources\bub a%284%29.gif" />
     <None Include="Resources\Untitled %282%29.gif" />
     <None Include="Resources\icon-09-512.png" />
-    <None Include="Resources\ASW.png" />
-    <None Include="Resources\ASW1.png" />
     <None Include="Resources\ASW2.png" />
-    <None Include="Resources\ASW3.png" />
     <None Include="Resources\ASW31.png" />
     <None Include="Resources\Untitled-11.jpg" />
     <None Include="Resources\Untitled-11.png" />
     <None Include="Resources\Untitled-12.png" />
     <None Include="Resources\Untitled-3.png" />
     <None Include="Resources\Untitled-4.png" />
+    <None Include="Resources\img_308416.png" />
     <Content Include="untitled_1_fWv_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

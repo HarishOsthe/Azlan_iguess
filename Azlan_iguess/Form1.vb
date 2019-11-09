@@ -2,29 +2,6 @@
 
 Public Class Form1
     Dim ttp As New ToolTip
-    Private Sub buteval_Click(sender As Object, e As EventArgs) Handles buteval.Click
-        buteval.Normalcolor = Color.Plum
-        butprint.Normalcolor = Color.Transparent
-        butreport.Normalcolor = Color.Transparent
-        butabout.Normalcolor = Color.Transparent
-
-        p1.Height = buteval.Height
-        p1.Top = buteval.Top
-        If Lets1.Visible = True Then
-            BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
-            BunifuTransition1.HideSync(Lets1)
-            Evaluation1.Show()
-            ''BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
-            ''BunifuTransition1.ShowSync(Evaluation1)
-        ElseIf Report1.Visible = True Or PrintAll1.Visible = True Or About1.Visible = True Then
-            BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
-            BunifuTransition1.HideSync(Report1)
-            BunifuTransition1.HideSync(PrintAll1)
-            BunifuTransition1.HideSync(About1)
-            BunifuTransition1.ShowSync(Evaluation1)
-        End If
-
-    End Sub
 
     Private Sub BunifuImageButton1_Click_1(sender As Object, e As EventArgs) Handles BunifuImageButton1.Click
         Application.Exit()
@@ -48,8 +25,7 @@ Public Class Form1
             BunifuTransition1.HideSync(Lets1)
             Report1.Show()
             Report1.eval_dates()
-            ''BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
-            ''BunifuTransition1.ShowSync(Report1)
+
 
         ElseIf Evaluation1.Visible = True Or PrintAll1.Visible = True Or About1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
@@ -75,8 +51,7 @@ Public Class Form1
             BunifuTransition1.HideSync(Lets1)
             PrintAll1.Show()
             PrintAll1.dept_names_load()
-            ''BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
-            ''BunifuTransition1.ShowSync(PrintAll1)
+
 
         ElseIf Report1.Visible = True Or Evaluation1.Visible = True Or About1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
@@ -98,17 +73,24 @@ Public Class Form1
         buteval.Width = 224
         buteval.Height = 48
         buteval.Location = New Point(0, 176)
-        buteval.TextAlign = ContentAlignment.MiddleLeft
+        buteval.TextAlign = ContentAlignment.MiddleCenter
+
 
         butreport.Width = 224
         butreport.Height = 48
         butreport.Location = New Point(0, 263)
-        butreport.TextAlign = ContentAlignment.MiddleLeft
+        butreport.TextAlign = ContentAlignment.MiddleCenter
+
 
         butprint.Width = 224
         butprint.Height = 48
-        butprint.Location = New Point(0, 357)
-        butprint.TextAlign = ContentAlignment.MiddleLeft
+        butprint.Location = New Point(0, 350)
+        butprint.TextAlign = ContentAlignment.MiddleCenter
+
+        butabout.Width = 224
+        butabout.Height = 48
+        butabout.Location = New Point(0, 440)
+        butabout.TextAlign = ContentAlignment.MiddleCenter
 
         Panel1.Width = 216
         Panel1.Height = 717
@@ -132,8 +114,7 @@ Public Class Form1
             BunifuTransition1.HideSync(Lets1)
             About1.Show()
 
-            ''BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
-            ''BunifuTransition1.ShowSync(About1)
+
         ElseIf Report1.Visible = True Or Evaluation1.Visible = True Or PrintAll1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
             BunifuTransition1.HideSync(Evaluation1)
@@ -175,5 +156,27 @@ Public Class Form1
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Dim url As String = “https://github.com/HarishOsthe/Azlan_iguess“
         Process.Start(url)
+    End Sub
+
+    Private Sub buteval_Click_1(sender As Object, e As EventArgs) Handles buteval.Click
+        buteval.Normalcolor = Color.Plum
+        butprint.Normalcolor = Color.Transparent
+        butreport.Normalcolor = Color.Transparent
+        butabout.Normalcolor = Color.Transparent
+
+        p1.Height = buteval.Height
+        p1.Top = buteval.Top
+        If Lets1.Visible = True Then
+            BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
+            BunifuTransition1.HideSync(Lets1)
+            Evaluation1.Show()
+
+        ElseIf Report1.Visible = True Or PrintAll1.Visible = True Or About1.Visible = True Then
+            BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
+            BunifuTransition1.HideSync(Report1)
+            BunifuTransition1.HideSync(PrintAll1)
+            BunifuTransition1.HideSync(About1)
+            BunifuTransition1.ShowSync(Evaluation1)
+        End If
     End Sub
 End Class
