@@ -44,7 +44,7 @@ For enrolling a faculty requires 3 data `Department Name`, `Faculty Name`, `Facu
 2) Select `Department Name` from the drop-down menu.
 3) Enter the `faculty name`.
 4) Enter the unique `Faculty Code`.
-5) Click **ADD Faculty**,<img src="/Azlan_iguess/Resources/fac_new.png"> Thats it!...<br>
+5) Click **ADD Faculty**,<img src="/Azlan_iguess/Resources/fac_new.png" width=25 height=25> Thats it!...<br>
 7) or If you wanna continue with existing faculty click `Clear`.
 6) **For Video guide** <a href="https://drive.google.com/open?id=1GljDPZ7Sd4g916WC6jryDjEyVLgUlMOc">Click This Link</a>
 
