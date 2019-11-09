@@ -148,10 +148,10 @@ Public Class PrintAll
                 e.Graphics.DrawString("Evaluation Period", font3, Brushes.Black, 450, 530)
                 e.Graphics.DrawString(": " + DG1.Rows(hari).Cells(3).Value, font3, Brushes.Black, 600, 530) ''eval period
                 Dim str As String = ""
-                If DG1.Rows(hari).Cells(23).Value.ToString = "-" Then
+                If DG1.Rows(hari).Cells(21).Value.ToString = "-" Then
                     str = ""
                 Else
-                    str = "'" & DG1.Rows(hari).Cells(23).Value.ToString & "'"
+                    str = "'" & DG1.Rows(hari).Cells(21).Value.ToString & "'"
                 End If
                 e.Graphics.DrawString("Class      ", font3, Brushes.Black, 30, 530)
                 e.Graphics.DrawString(": " + DG1.Rows(hari).Cells(4).Value + " " + DG1.Rows(hari).Cells(5).Value + " " + str, font3, Brushes.Black, 145, 530) ''class
@@ -183,7 +183,7 @@ Public Class PrintAll
 
                 Dim va As Integer = 38
                 For i = 1 To 10
-                    e.Graphics.DrawString(DG1.Rows(0).Cells(10 + i).Value, font3, Brushes.Black, va, 650)
+                    e.Graphics.DrawString(DG1.Rows(hari).Cells(10 + i).Value, font3, Brushes.Black, va, 650)
                     va += 39
                 Next
 
