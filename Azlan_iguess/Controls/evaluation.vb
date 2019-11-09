@@ -116,21 +116,6 @@ Public Class evaluation
         o5.Value = s
         o6.Value = s
         o7.Value = s
-        v1.Value = s
-        v2.Value = s
-        v3.Value = s
-        v4.Value = s
-        v5.Value = s
-        v6.Value = s
-        v7.Value = s
-
-        e1.Value = s
-        e2.Value = s
-        e3.Value = s
-        e4.Value = s
-        e5.Value = s
-        e6.Value = s
-        e7.Value = s
     End Sub
     Sub clear_data2(ByVal s As Boolean)
 
@@ -153,8 +138,8 @@ Public Class evaluation
         Label17.Text = ""
         Label18.Text = ""
         Label19.Text = ""
-        Label20.Text = ""
-        Label21.Text = ""
+        ''Label20.Text = ""
+        ''Label21.Text = ""
         Button1.Enabled = s
         Button2.Enabled = s
 
@@ -171,8 +156,8 @@ Public Class evaluation
         Label17.Text = ""
         Label18.Text = ""
         Label19.Text = ""
-        Label20.Text = ""
-        Label21.Text = ""
+        ''Label20.Text = ""
+        ''Label21.Text = ""
         Label22.Text = 1
         TextBox1.Enabled = False
         If Label23.Text = "Add Faculty" Then
@@ -203,7 +188,6 @@ Public Class evaluation
         Button4.Enabled = s
         Button7.Enabled = s
 
-
         BunifuCards24.Enabled = s
         BunifuCards23.Enabled = s
         BunifuCards22.Enabled = s
@@ -214,8 +198,6 @@ Public Class evaluation
         BunifuCards17.Enabled = s
         BunifuCards16.Enabled = s
         BunifuCards15.Enabled = s
-        BunifuCards14.Enabled = s
-        BunifuCards13.Enabled = s
     End Sub
 
     Sub record1_check()
@@ -230,7 +212,6 @@ Public Class evaluation
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-
     End Sub
     Sub record_check()
         Try
@@ -241,21 +222,17 @@ Public Class evaluation
             Dim dr As OleDbDataReader = cmd.ExecuteReader()
             dr.Read()
             ComboBox2.DropDownStyle = ComboBoxStyle.DropDown
-            '' dr(2).ToString
             ComboBox2.Text = dr(2).ToString ''fac name
             TextBox3.Text = dr(8).ToString
             TextBox1.Text = dr(1).ToString ''fac code
-            sectxt.Text = dr(21).ToString
+            sectxt.Text = dr(19).ToString
             TextBox2.Text = dr(3).ToString '' sub
             DateTimePicker1.Value = dr(4).ToString '' date
             ComboBox3.Text = dr(5).ToString '' course
             ComboBox4.Text = dr(6).ToString '' stream
             ComboBox1.Text = dr(7).ToString '' det name
-
-            ''sectxt.Text = dr(21).ToString
             clear_data2(False)
             dr.Close()
-
             record1_check()
             facsub()
         Catch ex As Exception
@@ -270,13 +247,10 @@ Public Class evaluation
             DS1 = New DataSet
             Dim cmd As New OleDbDataAdapter("Select * From Record order by Std_no", conn)
             cmd.Fill(DS1)
-
             DG1.DataSource = DS1.Tables(0)
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-
-
     End Sub
 
     Function calculate(ByVal col As String) As Double
@@ -321,21 +295,14 @@ Public Class evaluation
             avg = ((h1 * 1) + (h2 * 2) + (h3 * 3) + (h4 * 4) + (h5 * 5) + (h6 * 6) + (h7 * 7)) / stdno '' Val(Label22.Text)
 
             Select Case col
-                Case "q12"
+                Case "q10"
                     har12 = ""
                     har12 = h1 & "," & h2 & "," & h3 & "," & h4 & "," & h5 & "," & h6 & "," & h7
             End Select
-
-
-            '' MsgBox(har)
-            ''MsgBox(avg)
             Return avg
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-
-
-
     End Function
 
     Private Sub evaluation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -352,18 +319,16 @@ Public Class evaluation
                 record_check()
             End If
 
-            Label109.Text = "Faculty explains the concepts very clearly and speaks fluently on" + vbNewLine + "the subject."
-            Label110.Text = "Faculty uses of instructional aids like charts, presentation visuals," + vbNewLine + "etc, are exceptionally good and creative."
-            Label111.Text = "The faculty has updated knowledge on the subject and hence" + vbNewLine + "could co-relate the concepts with current trends in the field."
-            Label112.Text = "Faculty has eagerness to learn updating knowledge enables" + vbNewLine + "them to impart better understanding level on the subject to every student."
-            Label113.Text = "Every minute details of the concepts are being discussed" + vbNewLine + "which enables the students to practice for consecutive classes."
-            Label114.Text = "Query from students are well received, appreciated and" + vbNewLine + "convinving solutions are provided within the class hour without fail."
-            Label115.Text = "The assignments and workout problems provided in each of" + vbNewLine + "the concepts help a student to do their studies on day-to-day basis."
-            Label116.Text = "Teaching the concepts of study and the objective of the" + vbNewLine + "course are well turned to the needs of the student."
-            Label117.Text = "Faculty's listening skills enables every student to approach" + vbNewLine + "and ensure the student confidence level in understanding the concepts."
-            Label118.Text = "Faculty is able to control the class well and deals with the" + vbNewLine + "student maturity and professionally."
-            Label119.Text = "Faculty is very punctual and maintains class decorum."
-            Label120.Text = "The overall rating of the faculty."
+            Label109.Text = "1) Does the faculty explain the concepts very clearly and" + vbNewLine + "covers all the topics as per the syllabus?"
+            Label110.Text = "2) Does the faculty able to relate the concepts to both theory" + vbNewLine + "and practical aspects?"
+            Label111.Text = "3) Does the faculty encourage students participation in the" + vbNewLine + "class and build interest in the subject?"
+            Label112.Text = "4) Does the faculty maintain punctuality and engage the" + vbNewLine + "entire hour productively?"
+            Label113.Text = "5) Does the faculty address subject related queries / doubts" + vbNewLine + "and provide convincing solutions?"
+            Label114.Text = "6) Does the assignments / worked-out problems / case" + vbNewLine + "studies / presentation provided in each of the concepts" + vbNewLine + "help students to develop practical knowledge?"
+            Label115.Text = "7) Does the faculty able to control the class well and deals" + vbNewLine + "with the students maturely and professionally?"
+            Label116.Text = "8) Does the faculty effectively uses the black board / charts /" + vbNewLine + "OHP / PPT / Demo and notes for better communication?"
+            Label117.Text = "9) Does the faculty help the students from the examination" + vbNewLine + "popint of view (Question paper, relevant material etc.)"
+            Label118.Text = "10) The overall rating of the faculty is"
 
             DateTimePicker1.Format = DateTimePickerFormat.Custom
             DateTimePicker1.CustomFormat = "MMMM yyyy"
@@ -407,8 +372,6 @@ Public Class evaluation
                 BunifuCards17.Enabled = False
                 BunifuCards16.Enabled = False
                 BunifuCards15.Enabled = False
-                BunifuCards14.Enabled = False
-                BunifuCards13.Enabled = False
 
                 Label23.Text = "ADD Faculty*"
             End If
@@ -457,8 +420,6 @@ Public Class evaluation
                     BunifuCards17.Enabled = True
                     BunifuCards16.Enabled = True
                     BunifuCards15.Enabled = True
-                    BunifuCards14.Enabled = True
-                    BunifuCards13.Enabled = True
                 Catch ex As Exception
                     MsgBox(ex.Message)
                 End Try
@@ -466,8 +427,6 @@ Public Class evaluation
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-
-        ''Button3.Text = "ADD Faculty"
     End Sub ''checked
 
     Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
@@ -480,7 +439,7 @@ Public Class evaluation
                 Try
                     Dim cmd As New OleDbCommand("delete from FacultyDB where Fac_Code='" & TextBox1.Text & "'", conn)
                     cmd.ExecuteNonQuery()
-                    mg = MsgBox("Are You Sure! you want to DELETE FeedBacks & Details of " + ComboBox2.Text + " ?", MsgBoxStyle.Exclamation + MsgBoxStyle.OkCancel)
+                    mg = MsgBox("Are you sure! you wanna DELETE FeedBacks & Details of " + ComboBox2.Text + " ?", MsgBoxStyle.Exclamation + MsgBoxStyle.OkCancel)
 
 
                 Catch ex As Exception
@@ -511,7 +470,7 @@ Public Class evaluation
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Try
-            If ComboBox1.Text <> "" And ComboBox2.Text <> "" And TextBox1.Text <> "" And TextBox2.Text <> "" And ComboBox3.Text <> "" And ComboBox4.Text <> "" And TextBox3.Text <> "" And Label8.Text <> "" And Label10.Text <> "" And Label11.Text <> "" And Label12.Text <> "" And Label13.Text <> "" And Label14.Text <> "" And Label15.Text <> "" And Label16.Text <> "" And Label17.Text <> "" And Label18.Text <> "" And Label19.Text <> "" And Label20.Text <> "" And Label21.Text <> "" Then
+            If ComboBox1.Text <> "" And ComboBox2.Text <> "" And TextBox1.Text <> "" And TextBox2.Text <> "" And ComboBox3.Text <> "" And ComboBox4.Text <> "" And TextBox3.Text <> "" And Label8.Text <> "" And Label10.Text <> "" And Label11.Text <> "" And Label12.Text <> "" And Label13.Text <> "" And Label14.Text <> "" And Label15.Text <> "" And Label16.Text <> "" And Label17.Text <> "" And Label18.Text <> "" And Label19.Text <> "" Then ''And Label20.Text <> "" And Label21.Text <> "" Then
                 If sectxt.Text = "" Then
                     sectxt.Text = "-"
                 End If
@@ -527,7 +486,7 @@ Public Class evaluation
 
                 If conn.State = ConnectionState.Open Then conn.Close()
                 conn.Open()
-                Dim cmd As New OleDbCommand("insert into Record(Std_no,Fac_Code,Fac_Name,sub,Eval_date,Course,Stream,Dept_Name,total_strength,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,Sec) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", conn)
+                Dim cmd As New OleDbCommand("insert into Record(Std_no,Fac_Code,Fac_Name,sub,Eval_date,Course,Stream,Dept_Name,total_strength,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,Sec) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", conn)
                 cmd.Parameters.Clear()
                 cmd.Parameters.AddWithValue("Std_no", Label22.Text)
                 cmd.Parameters.AddWithValue("Fac_Code", TextBox1.Text)
@@ -548,8 +507,8 @@ Public Class evaluation
                 cmd.Parameters.AddWithValue("q8", Label17.Text)
                 cmd.Parameters.AddWithValue("q9", Label18.Text)
                 cmd.Parameters.AddWithValue("q10", Label19.Text)
-                cmd.Parameters.AddWithValue("q11", Label20.Text)
-                cmd.Parameters.AddWithValue("q12", Label21.Text)
+                ''cmd.Parameters.AddWithValue("q11", Label20.Text)
+                ''cmd.Parameters.AddWithValue("q12", Label21.Text)
                 cmd.Parameters.AddWithValue("Sec", sectxt.Text)
                 Try
                     cmd.ExecuteNonQuery()
@@ -622,8 +581,6 @@ Public Class evaluation
     End Sub
 
     Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
-        ''  If hr <> 0 Then
-        ''   MsgBox(DG1.RowCount)
         Try
             If conn.State = ConnectionState.Open Then conn.Close()
             conn.Open()
@@ -633,11 +590,10 @@ Public Class evaluation
             Dim d1 As OleDbDataReader = cmd11.ExecuteReader()
 
             If d1.HasRows Then
-                '' If (DG1.RowCount <> 0) Then
                 ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
                 Dim stdno As Integer = DG1.RowCount - 1
-                Dim q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12 As Double
-                q1 = q2 = q3 = q4 = q5 = q6 = q7 = q8 = q9 = q10 = q11 = q12 = 0
+                Dim q1, q2, q3, q4, q5, q6, q7, q8, q9, q10 As Double
+                q1 = q2 = q3 = q4 = q5 = q6 = q7 = q8 = q9 = q10 = 0
 
                 q1 = Math.Round(calculate("q1"))
                 q2 = Math.Round(calculate("q2"))
@@ -649,15 +605,15 @@ Public Class evaluation
                 q8 = Math.Round(calculate("q8"))
                 q9 = Math.Round(calculate("q9"))
                 q10 = Math.Round(calculate("q10"))
-                q11 = Math.Round(calculate("q11"))
-                q12 = Math.Round(calculate("q12"))
+                ''q11 = Math.Round(calculate("q11"))
+                ''q12 = Math.Round(calculate("q12"))
                 har = har12 ''har1 & har2 & har3 & har4 & har5 & har6 & har7 & har8 & har9 & har10 & har11 &
-                ''MsgBox(har)
+                MsgBox(har)
 
                 If conn.State = ConnectionState.Open Then conn.Close()
                 conn.Open()
 
-                Dim cmd As New OleDbCommand("insert into FacultyReport(Fac_Code,Fac_Name,sub,Eval_date,Course,Stream,Dept_Name,total_strength,no_of_present,Ratings,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,Sec) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", conn)
+                Dim cmd As New OleDbCommand("insert into FacultyReport(Fac_Code,Fac_Name,sub,Eval_date,Course,Stream,Dept_Name,total_strength,no_of_present,Ratings,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,Sec) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", conn)
                 cmd.Parameters.Clear()
                 cmd.Parameters.AddWithValue("Fac_Code", DG1.Rows(0).Cells(1).Value)
                 cmd.Parameters.AddWithValue("Fac_Name", DG1.Rows(0).Cells(2).Value)
@@ -679,8 +635,8 @@ Public Class evaluation
                 cmd.Parameters.AddWithValue("q8", q8)
                 cmd.Parameters.AddWithValue("q9", q9)
                 cmd.Parameters.AddWithValue("q10", q10)
-                cmd.Parameters.AddWithValue("q11", q11)
-                cmd.Parameters.AddWithValue("q12", q12)
+                ''cmd.Parameters.AddWithValue("q11", q11)
+                ''cmd.Parameters.AddWithValue("q12", q12)
                 cmd.Parameters.AddWithValue("Sec", sectxt.Text)
                 Try
                     cmd.ExecuteNonQuery()
@@ -713,7 +669,6 @@ Public Class evaluation
     End Sub
 
     Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
-        '' If (DG1.RowCount <> 0) Then
         Try
             ComboBox2.DropDownStyle = ComboBoxStyle.DropDownList
             If conn.State = ConnectionState.Open Then conn.Close()
@@ -725,12 +680,9 @@ Public Class evaluation
             facsub()
             clear_data(True)
             but(False)
-
-            '' MsgBox("records deletd")
         Catch ex As Exception
             MsgBox(ex.Message)
-            End Try
-        ''End If
+        End Try
     End Sub
     Sub light_val(ByVal h As String, ByVal val As Integer)
         Try
@@ -975,54 +927,6 @@ Public Class evaluation
                         Case 7
                             o7.Value = True
                     End Select
-                Case "v"
-                    v1.Value = False
-                    v2.Value = False
-                    v3.Value = False
-                    v4.Value = False
-                    v5.Value = False
-                    v6.Value = False
-                    v7.Value = False
-                    Select Case val
-                        Case 1
-                            v1.Value = True
-                        Case 2
-                            v2.Value = True
-                        Case 3
-                            v3.Value = True
-                        Case 4
-                            v4.Value = True
-                        Case 5
-                            v5.Value = True
-                        Case 6
-                            v6.Value = True
-                        Case 7
-                            v7.Value = True
-                    End Select
-                Case "e"
-                    e1.Value = False
-                    e2.Value = False
-                    e3.Value = False
-                    e4.Value = False
-                    e5.Value = False
-                    e6.Value = False
-                    e7.Value = False
-                    Select Case val
-                        Case 1
-                            e1.Value = True
-                        Case 2
-                            e2.Value = True
-                        Case 3
-                            e3.Value = True
-                        Case 4
-                            e4.Value = True
-                        Case 5
-                            e5.Value = True
-                        Case 6
-                            e6.Value = True
-                        Case 7
-                            e7.Value = True
-                    End Select
             End Select
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -1046,11 +950,6 @@ Public Class evaluation
 
     Private Sub Button7_Click_1(sender As Object, e As EventArgs) Handles Button7.Click
         Try
-            ''  If hr <> 0 Then
-            ''MsgBox(DG1)
-            '' MsgBox(hr)
-            ''MsgBox(DS1.Tables(0).Rows.Count)
-
             If (DG1.RowCount <> 0) Then
                 If (hr < DS1.Tables(0).Rows.Count) Then ''DS1.Tables(0).Rows.Count) Then
                     hr += 1
@@ -1085,11 +984,11 @@ Public Class evaluation
                     Label19.Text = DS1.Tables(0).Rows(hr)("q10").ToString()
                     light_val("o", Val(Label19.Text))
 
-                    Label20.Text = DS1.Tables(0).Rows(hr)("q11").ToString()
-                    light_val("v", Val(Label20.Text))
+                    ''Label20.Text = DS1.Tables(0).Rows(hr)("q11").ToString()
+                    ''light_val("v", Val(Label20.Text))
 
-                    Label21.Text = DS1.Tables(0).Rows(hr)("q12").ToString()
-                    light_val("e", Val(Label21.Text))
+                    ''Label21.Text = DS1.Tables(0).Rows(hr)("q12").ToString()
+                    ''light_val("e", Val(Label21.Text))
                 End If
             End If
         Catch ex As System.IndexOutOfRangeException
@@ -1104,8 +1003,8 @@ Public Class evaluation
             Label17.Text = ""
             Label18.Text = ""
             Label19.Text = ""
-            Label20.Text = ""
-            Label21.Text = ""
+            ''Label20.Text = ""
+            ''Label21.Text = ""
             but(False)
         End Try
     End Sub
@@ -1134,7 +1033,7 @@ Public Class evaluation
             End Select
         Catch ex As Exception
             MsgBox(ex.Message)
-        End Try  ''MsgBox(sender.name.ToString)
+        End Try
 
     End Sub
 
@@ -1143,9 +1042,6 @@ Public Class evaluation
             If (hr = 0 Or hr = -1) Then
                 hr = 1
             End If
-
-            '' MsgBox(hr)
-            ''MsgBox(DS1.Tables(0).Rows.Count)
             If (DG1.RowCount <> 0) Then
                 If (hr <= DS1.Tables(0).Rows.Count) Then
                     hr -= 1
@@ -1180,11 +1076,11 @@ Public Class evaluation
                     Label19.Text = DS1.Tables(0).Rows(hr)("q10").ToString()
                     light_val("o", Val(Label19.Text))
 
-                    Label20.Text = DS1.Tables(0).Rows(hr)("q11").ToString()
-                    light_val("v", Val(Label20.Text))
+                    ''Label20.Text = DS1.Tables(0).Rows(hr)("q11").ToString()
+                    ''light_val("v", Val(Label20.Text))
 
-                    Label21.Text = DS1.Tables(0).Rows(hr)("q12").ToString()
-                    light_val("e", Val(Label21.Text))
+                    ''Label21.Text = DS1.Tables(0).Rows(hr)("q12").ToString()
+                    ''light_val("e", Val(Label21.Text))
                 End If
             End If
             ''S  End If
@@ -1200,8 +1096,8 @@ Public Class evaluation
             Label17.Text = ""
             Label18.Text = ""
             Label19.Text = ""
-            Label20.Text = ""
-            Label21.Text = ""
+            'Label20.Text = ""
+            'Label21.Text = ""
             but(False)
         End Try
     End Sub
@@ -1209,7 +1105,7 @@ Public Class evaluation
     Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
         Label8.Text = DateTimePicker1.Text
     End Sub
-    Private Sub h7_MouseClick(sender As Object, e As MouseEventArgs) Handles h7.MouseClick, h6.MouseClick, h5.MouseClick, h4.MouseClick, h3.MouseClick, h2.MouseClick, h1.MouseClick, a7.MouseClick, a6.MouseClick, a5.MouseClick, a4.MouseClick, a3.MouseClick, a2.MouseClick, a1.MouseClick, r7.MouseClick, r6.MouseClick, r5.MouseClick, r4.MouseClick, r3.MouseClick, r2.MouseClick, r1.MouseClick, s7.MouseClick, s6.MouseClick, s5.MouseClick, s4.MouseClick, s3.MouseClick, s2.MouseClick, s1.MouseClick, hh7.MouseClick, hh6.MouseClick, hh5.MouseClick, hh4.MouseClick, hh3.MouseClick, hh2.MouseClick, hh1.MouseClick, i7.MouseClick, i6.MouseClick, i5.MouseClick, i4.MouseClick, i3.MouseClick, i2.MouseClick, i1.MouseClick, n7.MouseClick, n6.MouseClick, n5.MouseClick, n4.MouseClick, n3.MouseClick, n2.MouseClick, n1.MouseClick, ii7.MouseClick, ii6.MouseClick, ii5.MouseClick, ii4.MouseClick, ii3.MouseClick, ii2.MouseClick, ii1.MouseClick, l7.MouseClick, l6.MouseClick, l5.MouseClick, l4.MouseClick, l3.MouseClick, l2.MouseClick, l1.MouseClick, o7.MouseClick, o6.MouseClick, o5.MouseClick, o4.MouseClick, o3.MouseClick, o2.MouseClick, o1.MouseClick, v7.MouseClick, v6.MouseClick, v5.MouseClick, v4.MouseClick, v3.MouseClick, v2.MouseClick, v1.MouseClick, e7.MouseClick, e6.MouseClick, e5.MouseClick, e4.MouseClick, e3.MouseClick, e2.MouseClick, e1.MouseClick
+    Private Sub h7_MouseClick(sender As Object, e As MouseEventArgs) Handles h7.MouseClick, h6.MouseClick, h5.MouseClick, h4.MouseClick, h3.MouseClick, h2.MouseClick, h1.MouseClick, a7.MouseClick, a6.MouseClick, a5.MouseClick, a4.MouseClick, a3.MouseClick, a2.MouseClick, a1.MouseClick, r7.MouseClick, r6.MouseClick, r5.MouseClick, r4.MouseClick, r3.MouseClick, r2.MouseClick, r1.MouseClick, s7.MouseClick, s6.MouseClick, s5.MouseClick, s4.MouseClick, s3.MouseClick, s2.MouseClick, s1.MouseClick, hh7.MouseClick, hh6.MouseClick, hh5.MouseClick, hh4.MouseClick, hh3.MouseClick, hh2.MouseClick, hh1.MouseClick, i7.MouseClick, i6.MouseClick, i5.MouseClick, i4.MouseClick, i3.MouseClick, i2.MouseClick, i1.MouseClick, n7.MouseClick, n6.MouseClick, n5.MouseClick, n4.MouseClick, n3.MouseClick, n2.MouseClick, n1.MouseClick, ii7.MouseClick, ii6.MouseClick, ii5.MouseClick, ii4.MouseClick, ii3.MouseClick, ii2.MouseClick, ii1.MouseClick, l7.MouseClick, l6.MouseClick, l5.MouseClick, l4.MouseClick, l3.MouseClick, l2.MouseClick, l1.MouseClick, o7.MouseClick, o6.MouseClick, o5.MouseClick, o4.MouseClick, o3.MouseClick, o2.MouseClick, o1.MouseClick
         Try
             Dim str As String = sender.name.ToString
             Select Case str
@@ -1313,26 +1209,6 @@ Public Class evaluation
                     o7.Value = False
                     sender.value = True
                     Label19.Text = sender.name.ToString.Substring(1)
-                Case "v1", "v2", "v3", "v4", "v5", "v6", "v7"
-                    v1.Value = False
-                    v2.Value = False
-                    v3.Value = False
-                    v4.Value = False
-                    v5.Value = False
-                    v6.Value = False
-                    v7.Value = False
-                    sender.value = True
-                    Label20.Text = sender.name.ToString.Substring(1)
-                Case "e1", "e2", "e3", "e4", "e5", "e6", "e7"
-                    e1.Value = False
-                    e2.Value = False
-                    e3.Value = False
-                    e4.Value = False
-                    e5.Value = False
-                    e6.Value = False
-                    e7.Value = False
-                    sender.value = True
-                    Label21.Text = sender.name.ToString.Substring(1)
             End Select
 
         Catch ex As Exception
@@ -1340,14 +1216,14 @@ Public Class evaluation
         End Try
     End Sub
 
-    Private Sub BunifuCards24_MouseEnter(sender As Object, e As EventArgs) Handles BunifuCards24.MouseEnter, BunifuCards23.MouseEnter, BunifuCards22.MouseEnter, BunifuCards21.MouseEnter, BunifuCards20.MouseEnter, BunifuCards19.MouseEnter, BunifuCards18.MouseEnter, BunifuCards17.MouseEnter, BunifuCards16.MouseEnter, BunifuCards15.MouseEnter, BunifuCards14.MouseEnter, BunifuCards13.MouseEnter
+    Private Sub BunifuCards24_MouseEnter(sender As Object, e As EventArgs) Handles BunifuCards24.MouseEnter, BunifuCards23.MouseEnter, BunifuCards22.MouseEnter, BunifuCards21.MouseEnter, BunifuCards20.MouseEnter, BunifuCards19.MouseEnter, BunifuCards18.MouseEnter, BunifuCards17.MouseEnter, BunifuCards16.MouseEnter, BunifuCards15.MouseEnter
         sender.BackColor = Color.Gainsboro
     End Sub
-    Private Sub BunifuCards24_MouseLeave(sender As Object, e As EventArgs) Handles BunifuCards24.MouseLeave, BunifuCards23.MouseLeave, BunifuCards22.MouseLeave, BunifuCards21.MouseLeave, BunifuCards20.MouseLeave, BunifuCards19.MouseLeave, BunifuCards18.MouseLeave, BunifuCards17.MouseLeave, BunifuCards16.MouseLeave, BunifuCards15.MouseLeave, BunifuCards14.MouseLeave, BunifuCards13.MouseLeave
+    Private Sub BunifuCards24_MouseLeave(sender As Object, e As EventArgs) Handles BunifuCards24.MouseLeave, BunifuCards23.MouseLeave, BunifuCards22.MouseLeave, BunifuCards21.MouseLeave, BunifuCards20.MouseLeave, BunifuCards19.MouseLeave, BunifuCards18.MouseLeave, BunifuCards17.MouseLeave, BunifuCards16.MouseLeave, BunifuCards15.MouseLeave
         sender.BackColor = Color.White
     End Sub
 
-    Private Sub h7_MouseEnter(sender As Object, e As EventArgs) Handles h7.MouseEnter, h6.MouseEnter, h5.MouseEnter, h4.MouseEnter, h3.MouseEnter, h2.MouseEnter, h1.MouseEnter, a7.MouseEnter, a6.MouseEnter, a5.MouseEnter, a4.MouseEnter, a3.MouseEnter, a2.MouseEnter, a1.MouseEnter, r7.MouseEnter, r6.MouseEnter, r5.MouseEnter, r4.MouseEnter, r3.MouseEnter, r2.MouseEnter, r1.MouseEnter, s7.MouseEnter, s6.MouseEnter, s5.MouseEnter, s4.MouseEnter, s3.MouseEnter, s2.MouseEnter, s1.MouseEnter, hh7.MouseEnter, hh6.MouseEnter, hh5.MouseEnter, hh4.MouseEnter, hh3.MouseEnter, hh2.MouseEnter, hh1.MouseEnter, i7.MouseEnter, i6.MouseEnter, i5.MouseEnter, i4.MouseEnter, i3.MouseEnter, i2.MouseEnter, i1.MouseEnter, n7.MouseEnter, n6.MouseEnter, n5.MouseEnter, n4.MouseEnter, n3.MouseEnter, n2.MouseEnter, n1.MouseEnter, ii7.MouseEnter, ii6.MouseEnter, ii5.MouseEnter, ii4.MouseEnter, ii3.MouseEnter, ii2.MouseEnter, ii1.MouseEnter, l7.MouseEnter, l6.MouseEnter, l5.MouseEnter, l4.MouseEnter, l3.MouseEnter, l2.MouseEnter, l1.MouseEnter, o7.MouseEnter, o6.MouseEnter, o5.MouseEnter, o4.MouseEnter, o3.MouseEnter, o2.MouseEnter, o1.MouseEnter, v7.MouseEnter, v6.MouseEnter, v5.MouseEnter, v4.MouseEnter, v3.MouseEnter, v2.MouseEnter, v1.MouseEnter, e7.MouseEnter, e6.MouseEnter, e5.MouseEnter, e4.MouseEnter, e3.MouseEnter, e2.MouseEnter, e1.MouseEnter, Label109.MouseEnter, Label110.MouseEnter, Label111.MouseEnter, Label112.MouseEnter, Label113.MouseEnter, Label114.MouseEnter, Label115.MouseEnter, Label116.MouseEnter, Label117.MouseEnter, Label118.MouseEnter, Label119.MouseEnter, Label120.MouseEnter
+    Private Sub h7_MouseEnter(sender As Object, e As EventArgs) Handles h7.MouseEnter, h6.MouseEnter, h5.MouseEnter, h4.MouseEnter, h3.MouseEnter, h2.MouseEnter, h1.MouseEnter, a7.MouseEnter, a6.MouseEnter, a5.MouseEnter, a4.MouseEnter, a3.MouseEnter, a2.MouseEnter, a1.MouseEnter, r7.MouseEnter, r6.MouseEnter, r5.MouseEnter, r4.MouseEnter, r3.MouseEnter, r2.MouseEnter, r1.MouseEnter, s7.MouseEnter, s6.MouseEnter, s5.MouseEnter, s4.MouseEnter, s3.MouseEnter, s2.MouseEnter, s1.MouseEnter, hh7.MouseEnter, hh6.MouseEnter, hh5.MouseEnter, hh4.MouseEnter, hh3.MouseEnter, hh2.MouseEnter, hh1.MouseEnter, i7.MouseEnter, i6.MouseEnter, i5.MouseEnter, i4.MouseEnter, i3.MouseEnter, i2.MouseEnter, i1.MouseEnter, n7.MouseEnter, n6.MouseEnter, n5.MouseEnter, n4.MouseEnter, n3.MouseEnter, n2.MouseEnter, n1.MouseEnter, ii7.MouseEnter, ii6.MouseEnter, ii5.MouseEnter, ii4.MouseEnter, ii3.MouseEnter, ii2.MouseEnter, ii1.MouseEnter, l7.MouseEnter, l6.MouseEnter, l5.MouseEnter, l4.MouseEnter, l3.MouseEnter, l2.MouseEnter, l1.MouseEnter, o7.MouseEnter, o6.MouseEnter, o5.MouseEnter, o4.MouseEnter, o3.MouseEnter, o2.MouseEnter, o1.MouseEnter, Label109.MouseEnter, Label110.MouseEnter, Label111.MouseEnter, Label112.MouseEnter, Label113.MouseEnter, Label114.MouseEnter, Label115.MouseEnter, Label116.MouseEnter, Label117.MouseEnter, Label118.MouseEnter
         Try
             Select Case sender.name.ToString
                 Case "h1", "h2", "h3", "h4", "h5", "h6", "h7", "Label109"
@@ -1370,17 +1246,13 @@ Public Class evaluation
                     BunifuCards16.BackColor = Color.Gainsboro
                 Case "o1", "o2", "o3", "o4", "o5", "o6", "o7", "Label118"
                     BunifuCards15.BackColor = Color.Gainsboro
-                Case "v1", "v2", "v3", "v4", "v5", "v6", "v7", "Label119"
-                    BunifuCards14.BackColor = Color.Gainsboro
-                Case "e1", "e2", "e3", "e4", "e5", "e6", "e7", "Label120"
-                    BunifuCards13.BackColor = Color.Gainsboro
             End Select
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
 
     End Sub
-    Private Sub h7_MouseLeave(sender As Object, e As EventArgs) Handles h7.MouseLeave, h6.MouseLeave, h5.MouseLeave, h4.MouseLeave, h3.MouseLeave, h2.MouseLeave, h1.MouseLeave, a7.MouseLeave, a6.MouseLeave, a5.MouseLeave, a4.MouseLeave, a3.MouseLeave, a2.MouseLeave, a1.MouseLeave, r7.MouseLeave, r6.MouseLeave, r5.MouseLeave, r4.MouseLeave, r3.MouseLeave, r2.MouseLeave, r1.MouseLeave, s7.MouseLeave, s6.MouseLeave, s5.MouseLeave, s4.MouseLeave, s3.MouseLeave, s2.MouseLeave, s1.MouseLeave, hh7.MouseLeave, hh6.MouseLeave, hh5.MouseLeave, hh4.MouseLeave, hh3.MouseLeave, hh2.MouseLeave, hh1.MouseLeave, i7.MouseLeave, i6.MouseLeave, i5.MouseLeave, i4.MouseLeave, i3.MouseLeave, i2.MouseLeave, i1.MouseLeave, n7.MouseLeave, n6.MouseLeave, n5.MouseLeave, n4.MouseLeave, n3.MouseLeave, n2.MouseLeave, n1.MouseLeave, ii7.MouseLeave, ii6.MouseLeave, ii5.MouseLeave, ii4.MouseLeave, ii3.MouseLeave, ii2.MouseLeave, ii1.MouseLeave, l7.MouseLeave, l6.MouseLeave, l5.MouseLeave, l4.MouseLeave, l3.MouseLeave, l2.MouseLeave, l1.MouseLeave, o7.MouseLeave, o6.MouseLeave, o5.MouseLeave, o4.MouseLeave, o3.MouseLeave, o2.MouseLeave, o1.MouseLeave, v7.MouseLeave, v6.MouseLeave, v5.MouseLeave, v4.MouseLeave, v3.MouseLeave, v2.MouseLeave, v1.MouseLeave, e7.MouseLeave, e6.MouseLeave, e5.MouseLeave, e4.MouseLeave, e3.MouseLeave, e2.MouseLeave, e1.MouseLeave, Label109.MouseLeave, Label110.MouseLeave, Label111.MouseLeave, Label112.MouseLeave, Label113.MouseLeave, Label114.MouseLeave, Label115.MouseLeave, Label116.MouseLeave, Label117.MouseLeave, Label118.MouseLeave, Label119.MouseLeave, Label120.MouseLeave
+    Private Sub h7_MouseLeave(sender As Object, e As EventArgs) Handles h7.MouseLeave, h6.MouseLeave, h5.MouseLeave, h4.MouseLeave, h3.MouseLeave, h2.MouseLeave, h1.MouseLeave, a7.MouseLeave, a6.MouseLeave, a5.MouseLeave, a4.MouseLeave, a3.MouseLeave, a2.MouseLeave, a1.MouseLeave, r7.MouseLeave, r6.MouseLeave, r5.MouseLeave, r4.MouseLeave, r3.MouseLeave, r2.MouseLeave, r1.MouseLeave, s7.MouseLeave, s6.MouseLeave, s5.MouseLeave, s4.MouseLeave, s3.MouseLeave, s2.MouseLeave, s1.MouseLeave, hh7.MouseLeave, hh6.MouseLeave, hh5.MouseLeave, hh4.MouseLeave, hh3.MouseLeave, hh2.MouseLeave, hh1.MouseLeave, i7.MouseLeave, i6.MouseLeave, i5.MouseLeave, i4.MouseLeave, i3.MouseLeave, i2.MouseLeave, i1.MouseLeave, n7.MouseLeave, n6.MouseLeave, n5.MouseLeave, n4.MouseLeave, n3.MouseLeave, n2.MouseLeave, n1.MouseLeave, ii7.MouseLeave, ii6.MouseLeave, ii5.MouseLeave, ii4.MouseLeave, ii3.MouseLeave, ii2.MouseLeave, ii1.MouseLeave, l7.MouseLeave, l6.MouseLeave, l5.MouseLeave, l4.MouseLeave, l3.MouseLeave, l2.MouseLeave, l1.MouseLeave, o7.MouseLeave, o6.MouseLeave, o5.MouseLeave, o4.MouseLeave, o3.MouseLeave, o2.MouseLeave, o1.MouseLeave, Label109.MouseLeave, Label110.MouseLeave, Label111.MouseLeave, Label112.MouseLeave, Label113.MouseLeave, Label114.MouseLeave, Label115.MouseLeave, Label116.MouseLeave, Label117.MouseLeave, Label118.MouseLeave
         Try
             Select Case sender.name.ToString
                 Case "h1", "h2", "h3", "h4", "h5", "h6", "h7", "Label109"
@@ -1403,10 +1275,6 @@ Public Class evaluation
                     BunifuCards16.BackColor = Color.White
                 Case "o1", "o2", "o3", "o4", "o5", "o6", "o7", "Label118"
                     BunifuCards15.BackColor = Color.White
-                Case "v1", "v2", "v3", "v4", "v5", "v6", "v7", "Label119"
-                    BunifuCards14.BackColor = Color.White
-                Case "e1", "e2", "e3", "e4", "e5", "e6", "e7", "Label120"
-                    BunifuCards13.BackColor = Color.White
             End Select
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -1415,7 +1283,6 @@ Public Class evaluation
     End Sub
 
     Private Sub ComboBox2_KeyPress(sender As Object, e As KeyPressEventArgs) Handles ComboBox2.KeyPress
-        '' MsgBox(Asc(e.KeyChar))
         Try
             If Not (Asc(e.KeyChar) = 8) Then
                 If Not ((Asc(e.KeyChar) >= 97 And Asc(e.KeyChar) <= 122) Or (Asc(e.KeyChar) >= 65 And Asc(e.KeyChar) <= 90) Or (Asc(e.KeyChar) = 32)) Then
@@ -1503,8 +1370,5 @@ Public Class evaluation
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-
-
-
     End Sub
 End Class

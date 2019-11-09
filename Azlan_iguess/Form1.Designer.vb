@@ -43,13 +43,13 @@ Partial Class Form1
         Me.buteval = New Bunifu.Framework.UI.BunifuFlatButton()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
-        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.About1 = New Azlan_iguess.about()
         Me.Lets1 = New Azlan_iguess.lets()
         Me.PrintAll1 = New Azlan_iguess.PrintAll()
         Me.Report1 = New Azlan_iguess.Report()
         Me.Evaluation1 = New Azlan_iguess.evaluation()
+        Me.BunifuDragControl2 = New Bunifu.Framework.UI.BunifuDragControl(Me.components)
+        Me.BunifuElipse1 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.BunifuElipse2 = New Bunifu.Framework.UI.BunifuElipse(Me.components)
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -79,9 +79,10 @@ Partial Class Form1
         Me.Panel2.Controls.Add(Me.BunifuImageButton1)
         Me.BunifuTransition1.SetDecoration(Me.Panel2, BunifuAnimatorNS.DecorationType.None)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(200, 0)
+        Me.Panel2.Location = New System.Drawing.Point(267, 0)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(828, 47)
+        Me.Panel2.Size = New System.Drawing.Size(1104, 58)
         Me.Panel2.TabIndex = 5
         '
         'BunifuSeparator1
@@ -90,10 +91,10 @@ Partial Class Form1
         Me.BunifuTransition1.SetDecoration(Me.BunifuSeparator1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer), CType(CType(105, Byte), Integer))
         Me.BunifuSeparator1.LineThickness = 1
-        Me.BunifuSeparator1.Location = New System.Drawing.Point(0, 41)
-        Me.BunifuSeparator1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BunifuSeparator1.Location = New System.Drawing.Point(0, 50)
+        Me.BunifuSeparator1.Margin = New System.Windows.Forms.Padding(5)
         Me.BunifuSeparator1.Name = "BunifuSeparator1"
-        Me.BunifuSeparator1.Size = New System.Drawing.Size(1012, 8)
+        Me.BunifuSeparator1.Size = New System.Drawing.Size(1349, 10)
         Me.BunifuSeparator1.TabIndex = 5
         Me.BunifuSeparator1.Transparency = 255
         Me.BunifuSeparator1.Vertical = False
@@ -105,9 +106,10 @@ Partial Class Form1
         Me.BunifuTransition1.SetDecoration(Me.Label1, BunifuAnimatorNS.DecorationType.None)
         Me.Label1.Font = New System.Drawing.Font("Eras Medium ITC", 8.25!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaption
-        Me.Label1.Location = New System.Drawing.Point(30, 26)
+        Me.Label1.Location = New System.Drawing.Point(40, 32)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(106, 14)
+        Me.Label1.Size = New System.Drawing.Size(129, 17)
         Me.Label1.TabIndex = 6
         Me.Label1.Text = "FeedBack System"
         '
@@ -116,8 +118,9 @@ Partial Class Form1
         Me.BunifuTransition1.SetDecoration(Me.PictureBox5, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox5.Image = Global.Azlan_iguess.My.Resources.Resources.feedback
         Me.PictureBox5.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(55, 47)
+        Me.PictureBox5.Size = New System.Drawing.Size(73, 58)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 5
         Me.PictureBox5.TabStop = False
@@ -126,9 +129,10 @@ Partial Class Form1
         '
         Me.BunifuTransition1.SetDecoration(Me.PictureBox4, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox4.Image = Global.Azlan_iguess.My.Resources.Resources.jain_college_logo_iguess
-        Me.PictureBox4.Location = New System.Drawing.Point(389, 3)
+        Me.PictureBox4.Location = New System.Drawing.Point(519, 4)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(206, 37)
+        Me.PictureBox4.Size = New System.Drawing.Size(275, 46)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 4
         Me.PictureBox4.TabStop = False
@@ -139,9 +143,10 @@ Partial Class Form1
         Me.BunifuTransition1.SetDecoration(Me.BunifuImageButton2, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuImageButton2.Image = Global.Azlan_iguess.My.Resources.Resources.minimize
         Me.BunifuImageButton2.ImageActive = Nothing
-        Me.BunifuImageButton2.Location = New System.Drawing.Point(911, 10)
+        Me.BunifuImageButton2.Location = New System.Drawing.Point(1215, 12)
+        Me.BunifuImageButton2.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuImageButton2.Name = "BunifuImageButton2"
-        Me.BunifuImageButton2.Size = New System.Drawing.Size(34, 30)
+        Me.BunifuImageButton2.Size = New System.Drawing.Size(45, 37)
         Me.BunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuImageButton2.TabIndex = 2
         Me.BunifuImageButton2.TabStop = False
@@ -153,9 +158,10 @@ Partial Class Form1
         Me.BunifuTransition1.SetDecoration(Me.BunifuImageButton1, BunifuAnimatorNS.DecorationType.None)
         Me.BunifuImageButton1.Image = Global.Azlan_iguess.My.Resources.Resources._exit
         Me.BunifuImageButton1.ImageActive = Nothing
-        Me.BunifuImageButton1.Location = New System.Drawing.Point(951, 10)
+        Me.BunifuImageButton1.Location = New System.Drawing.Point(1268, 12)
+        Me.BunifuImageButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.BunifuImageButton1.Name = "BunifuImageButton1"
-        Me.BunifuImageButton1.Size = New System.Drawing.Size(34, 30)
+        Me.BunifuImageButton1.Size = New System.Drawing.Size(45, 37)
         Me.BunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BunifuImageButton1.TabIndex = 3
         Me.BunifuImageButton1.TabStop = False
@@ -198,8 +204,9 @@ Partial Class Form1
         Me.BunifuTransition1.SetDecoration(Me.Panel1, BunifuAnimatorNS.DecorationType.None)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 612)
+        Me.Panel1.Size = New System.Drawing.Size(267, 753)
         Me.Panel1.TabIndex = 0
         '
         'PictureBox3
@@ -207,8 +214,8 @@ Partial Class Form1
         Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
         Me.BunifuTransition1.SetDecoration(Me.PictureBox3, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox3.Image = Global.Azlan_iguess.My.Resources.Resources.ASW31
-        Me.PictureBox3.Location = New System.Drawing.Point(5, 646)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.PictureBox3.Location = New System.Drawing.Point(7, 795)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(150, 85)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
@@ -224,11 +231,12 @@ Partial Class Form1
         Me.p1.color = System.Drawing.Color.Transparent
         Me.BunifuTransition1.SetDecoration(Me.p1, BunifuAnimatorNS.DecorationType.None)
         Me.p1.LeftSahddow = True
-        Me.p1.Location = New System.Drawing.Point(178, 171)
+        Me.p1.Location = New System.Drawing.Point(237, 210)
+        Me.p1.Margin = New System.Windows.Forms.Padding(4)
         Me.p1.Name = "p1"
         Me.p1.RightSahddow = True
         Me.p1.ShadowDepth = 50
-        Me.p1.Size = New System.Drawing.Size(10, 53)
+        Me.p1.Size = New System.Drawing.Size(13, 65)
         Me.p1.TabIndex = 5
         '
         'butabout
@@ -254,14 +262,14 @@ Partial Class Form1
         Me.butabout.IconVisible = True
         Me.butabout.IconZoom = 100.0R
         Me.butabout.IsTab = False
-        Me.butabout.Location = New System.Drawing.Point(-2, 441)
-        Me.butabout.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.butabout.Location = New System.Drawing.Point(-3, 543)
+        Me.butabout.Margin = New System.Windows.Forms.Padding(5)
         Me.butabout.Name = "butabout"
         Me.butabout.Normalcolor = System.Drawing.Color.Transparent
         Me.butabout.OnHovercolor = System.Drawing.Color.Plum
         Me.butabout.OnHoverTextColor = System.Drawing.Color.White
         Me.butabout.selected = False
-        Me.butabout.Size = New System.Drawing.Size(224, 48)
+        Me.butabout.Size = New System.Drawing.Size(299, 59)
         Me.butabout.TabIndex = 2
         Me.butabout.Text = "About"
         Me.butabout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -291,14 +299,14 @@ Partial Class Form1
         Me.butprint.IconVisible = True
         Me.butprint.IconZoom = 80.0R
         Me.butprint.IsTab = False
-        Me.butprint.Location = New System.Drawing.Point(0, 360)
-        Me.butprint.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.butprint.Location = New System.Drawing.Point(0, 443)
+        Me.butprint.Margin = New System.Windows.Forms.Padding(5)
         Me.butprint.Name = "butprint"
         Me.butprint.Normalcolor = System.Drawing.Color.Transparent
         Me.butprint.OnHovercolor = System.Drawing.Color.Plum
         Me.butprint.OnHoverTextColor = System.Drawing.Color.White
         Me.butprint.selected = False
-        Me.butprint.Size = New System.Drawing.Size(224, 48)
+        Me.butprint.Size = New System.Drawing.Size(299, 59)
         Me.butprint.TabIndex = 2
         Me.butprint.Text = "Print"
         Me.butprint.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -328,14 +336,14 @@ Partial Class Form1
         Me.butreport.IconVisible = True
         Me.butreport.IconZoom = 80.0R
         Me.butreport.IsTab = False
-        Me.butreport.Location = New System.Drawing.Point(0, 263)
-        Me.butreport.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.butreport.Location = New System.Drawing.Point(0, 324)
+        Me.butreport.Margin = New System.Windows.Forms.Padding(5)
         Me.butreport.Name = "butreport"
         Me.butreport.Normalcolor = System.Drawing.Color.Transparent
         Me.butreport.OnHovercolor = System.Drawing.Color.Plum
         Me.butreport.OnHoverTextColor = System.Drawing.Color.White
         Me.butreport.selected = False
-        Me.butreport.Size = New System.Drawing.Size(224, 48)
+        Me.butreport.Size = New System.Drawing.Size(299, 59)
         Me.butreport.TabIndex = 2
         Me.butreport.Text = "Report"
         Me.butreport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -365,14 +373,14 @@ Partial Class Form1
         Me.buteval.IconVisible = True
         Me.buteval.IconZoom = 90.0R
         Me.buteval.IsTab = False
-        Me.buteval.Location = New System.Drawing.Point(0, 176)
-        Me.buteval.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.buteval.Location = New System.Drawing.Point(0, 217)
+        Me.buteval.Margin = New System.Windows.Forms.Padding(5)
         Me.buteval.Name = "buteval"
         Me.buteval.Normalcolor = System.Drawing.Color.Transparent
         Me.buteval.OnHovercolor = System.Drawing.Color.Plum
         Me.buteval.OnHoverTextColor = System.Drawing.Color.White
         Me.buteval.selected = False
-        Me.buteval.Size = New System.Drawing.Size(224, 48)
+        Me.buteval.Size = New System.Drawing.Size(299, 59)
         Me.buteval.TabIndex = 2
         Me.buteval.Text = "Evaluation"
         Me.buteval.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -384,9 +392,10 @@ Partial Class Form1
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.BunifuTransition1.SetDecoration(Me.PictureBox1, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox1.Image = Global.Azlan_iguess.My.Resources.Resources.iguessIcons
-        Me.PictureBox1.Location = New System.Drawing.Point(75, 20)
+        Me.PictureBox1.Location = New System.Drawing.Point(100, 25)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(51, 51)
+        Me.PictureBox1.Size = New System.Drawing.Size(68, 63)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -396,12 +405,73 @@ Partial Class Form1
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.BunifuTransition1.SetDecoration(Me.PictureBox2, BunifuAnimatorNS.DecorationType.None)
         Me.PictureBox2.Image = Global.Azlan_iguess.My.Resources.Resources.iguesstxt
-        Me.PictureBox2.Location = New System.Drawing.Point(61, 54)
+        Me.PictureBox2.Location = New System.Drawing.Point(81, 66)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(81, 60)
+        Me.PictureBox2.Size = New System.Drawing.Size(108, 74)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 2
         Me.PictureBox2.TabStop = False
+        '
+        'About1
+        '
+        Me.About1.BackColor = System.Drawing.Color.Transparent
+        Me.About1.BackgroundImage = CType(resources.GetObject("About1.BackgroundImage"), System.Drawing.Image)
+        Me.About1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.BunifuTransition1.SetDecoration(Me.About1, BunifuAnimatorNS.DecorationType.None)
+        Me.About1.Location = New System.Drawing.Point(571, 159)
+        Me.About1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.About1.Name = "About1"
+        Me.About1.Size = New System.Drawing.Size(685, 546)
+        Me.About1.TabIndex = 9
+        Me.About1.Visible = False
+        '
+        'Lets1
+        '
+        Me.Lets1.BackColor = System.Drawing.Color.White
+        Me.BunifuTransition1.SetDecoration(Me.Lets1, BunifuAnimatorNS.DecorationType.None)
+        Me.Lets1.Location = New System.Drawing.Point(587, 159)
+        Me.Lets1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Lets1.Name = "Lets1"
+        Me.Lets1.Size = New System.Drawing.Size(645, 470)
+        Me.Lets1.TabIndex = 8
+        '
+        'PrintAll1
+        '
+        Me.PrintAll1.BackColor = System.Drawing.Color.White
+        Me.BunifuTransition1.SetDecoration(Me.PrintAll1, BunifuAnimatorNS.DecorationType.None)
+        Me.PrintAll1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.PrintAll1.Location = New System.Drawing.Point(267, 58)
+        Me.PrintAll1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PrintAll1.Name = "PrintAll1"
+        Me.PrintAll1.Size = New System.Drawing.Size(1104, 695)
+        Me.PrintAll1.TabIndex = 7
+        Me.PrintAll1.Visible = False
+        '
+        'Report1
+        '
+        Me.Report1.BackColor = System.Drawing.Color.White
+        Me.BunifuTransition1.SetDecoration(Me.Report1, BunifuAnimatorNS.DecorationType.None)
+        Me.Report1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Report1.Location = New System.Drawing.Point(267, 58)
+        Me.Report1.Margin = New System.Windows.Forms.Padding(5)
+        Me.Report1.Name = "Report1"
+        Me.Report1.Size = New System.Drawing.Size(1104, 695)
+        Me.Report1.TabIndex = 6
+        Me.Report1.Visible = False
+        '
+        'Evaluation1
+        '
+        Me.Evaluation1.BackColor = System.Drawing.Color.White
+        Me.Evaluation1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.BunifuTransition1.SetDecoration(Me.Evaluation1, BunifuAnimatorNS.DecorationType.None)
+        Me.Evaluation1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Evaluation1.Location = New System.Drawing.Point(288, 54)
+        Me.Evaluation1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.Evaluation1.Name = "Evaluation1"
+        Me.Evaluation1.Size = New System.Drawing.Size(1492, 1108)
+        Me.Evaluation1.TabIndex = 4
+        Me.Evaluation1.Visible = False
         '
         'BunifuDragControl2
         '
@@ -415,66 +485,6 @@ Partial Class Form1
         Me.BunifuElipse1.ElipseRadius = 50
         Me.BunifuElipse1.TargetControl = Me
         '
-        'About1
-        '
-        Me.About1.BackColor = System.Drawing.Color.Transparent
-        Me.About1.BackgroundImage = CType(resources.GetObject("About1.BackgroundImage"), System.Drawing.Image)
-        Me.About1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuTransition1.SetDecoration(Me.About1, BunifuAnimatorNS.DecorationType.None)
-        Me.About1.Location = New System.Drawing.Point(428, 129)
-        Me.About1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.About1.Name = "About1"
-        Me.About1.Size = New System.Drawing.Size(514, 444)
-        Me.About1.TabIndex = 9
-        Me.About1.Visible = False
-        '
-        'Lets1
-        '
-        Me.Lets1.BackColor = System.Drawing.Color.White
-        Me.BunifuTransition1.SetDecoration(Me.Lets1, BunifuAnimatorNS.DecorationType.None)
-        Me.Lets1.Location = New System.Drawing.Point(440, 129)
-        Me.Lets1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Lets1.Name = "Lets1"
-        Me.Lets1.Size = New System.Drawing.Size(484, 382)
-        Me.Lets1.TabIndex = 8
-        '
-        'PrintAll1
-        '
-        Me.PrintAll1.BackColor = System.Drawing.Color.White
-        Me.BunifuTransition1.SetDecoration(Me.PrintAll1, BunifuAnimatorNS.DecorationType.None)
-        Me.PrintAll1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PrintAll1.Location = New System.Drawing.Point(200, 47)
-        Me.PrintAll1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.PrintAll1.Name = "PrintAll1"
-        Me.PrintAll1.Size = New System.Drawing.Size(828, 565)
-        Me.PrintAll1.TabIndex = 7
-        Me.PrintAll1.Visible = False
-        '
-        'Report1
-        '
-        Me.Report1.BackColor = System.Drawing.Color.White
-        Me.BunifuTransition1.SetDecoration(Me.Report1, BunifuAnimatorNS.DecorationType.None)
-        Me.Report1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Report1.Location = New System.Drawing.Point(200, 47)
-        Me.Report1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Report1.Name = "Report1"
-        Me.Report1.Size = New System.Drawing.Size(828, 565)
-        Me.Report1.TabIndex = 6
-        Me.Report1.Visible = False
-        '
-        'Evaluation1
-        '
-        Me.Evaluation1.BackColor = System.Drawing.Color.White
-        Me.Evaluation1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.BunifuTransition1.SetDecoration(Me.Evaluation1, BunifuAnimatorNS.DecorationType.None)
-        Me.Evaluation1.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Evaluation1.Location = New System.Drawing.Point(216, 44)
-        Me.Evaluation1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Evaluation1.Name = "Evaluation1"
-        Me.Evaluation1.Size = New System.Drawing.Size(1119, 900)
-        Me.Evaluation1.TabIndex = 4
-        Me.Evaluation1.Visible = False
-        '
         'BunifuElipse2
         '
         Me.BunifuElipse2.ElipseRadius = 50
@@ -482,10 +492,10 @@ Partial Class Form1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1028, 612)
+        Me.ClientSize = New System.Drawing.Size(1371, 753)
         Me.Controls.Add(Me.About1)
         Me.Controls.Add(Me.Lets1)
         Me.Controls.Add(Me.PrintAll1)
@@ -496,6 +506,7 @@ Partial Class Form1
         Me.BunifuTransition1.SetDecoration(Me, BunifuAnimatorNS.DecorationType.None)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form1"

@@ -13,8 +13,9 @@ Public Class Form1
         If Lets1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
             BunifuTransition1.HideSync(Lets1)
-            BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
-            BunifuTransition1.ShowSync(Evaluation1)
+            Evaluation1.Show()
+            ''BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
+            ''BunifuTransition1.ShowSync(Evaluation1)
         ElseIf Report1.Visible = True Or PrintAll1.Visible = True Or About1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
             BunifuTransition1.HideSync(Report1)
@@ -32,46 +33,7 @@ Public Class Form1
     Private Sub BunifuImageButton2_Click(sender As Object, e As EventArgs) Handles BunifuImageButton2.Click
         WindowState = FormWindowState.Minimized
     End Sub
-    Private Sub PictureBox1_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox2.MouseEnter, PictureBox1.MouseEnter
-        ttp.Show("8 1 18 19 8 9 14 9", PictureBox2)
-        ttp.Show("8 1 18 19 8 9 14 9", PictureBox1)
-    End Sub
-    Private Sub PictureBox3_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox2.MouseLeave, PictureBox1.MouseLeave
-        ttp.Hide(PictureBox2)
-        ttp.Hide(PictureBox1)
-    End Sub
-    Private Sub BunifuImageButton2_MouseLeave(sender As Object, e As EventArgs) Handles BunifuImageButton2.MouseLeave, BunifuImageButton1.MouseLeave
-        Select Case sender.Name.ToString
-            Case "BunifuImageButton1"
-                ttp.Hide(BunifuImageButton1)
-            Case "BunifuImageButton2"
-                ttp.Hide(BunifuImageButton2)
-        End Select
-    End Sub
 
-    '' Dim screen As System.Windows.Forms.Screen = System.Windows.Forms.Screen.PrimaryScreen
-
-    ''Me.Width = 1624
-    ''Me.Height = 882
-
-    ''buteval.Width = 299
-    ''buteval.Height = 59
-
-    ''butreport.Width = 299
-    ''butreport.Height = 59
-
-    ''butprint.Width = 299
-    ''        butprint.Height = 59
-
-    ''Panel1.Width = 288
-    ''Panel1.Height = 882
-
-    ''Panel2.Width = 1336
-    ''Panel2.Height = 58
-
-    ''MsgBox(Me.Width & "," & Me.Height)
-    ''MsgBox(Me.Width & " " & Me.Height)
-    '' End Sub
     Private Sub butreport_Click(sender As Object, e As EventArgs) Handles butreport.Click
         buteval.Normalcolor = Color.Transparent
         butprint.Normalcolor = Color.Transparent
@@ -84,9 +46,11 @@ Public Class Form1
         If Lets1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
             BunifuTransition1.HideSync(Lets1)
-            BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
-            BunifuTransition1.ShowSync(Report1)
+            Report1.Show()
             Report1.eval_dates()
+            ''BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
+            ''BunifuTransition1.ShowSync(Report1)
+
         ElseIf Evaluation1.Visible = True Or PrintAll1.Visible = True Or About1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
             BunifuTransition1.HideSync(Evaluation1)
@@ -109,9 +73,11 @@ Public Class Form1
         If Lets1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
             BunifuTransition1.HideSync(Lets1)
-            BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
-            BunifuTransition1.ShowSync(PrintAll1)
+            PrintAll1.Show()
             PrintAll1.dept_names_load()
+            ''BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
+            ''BunifuTransition1.ShowSync(PrintAll1)
+
         ElseIf Report1.Visible = True Or Evaluation1.Visible = True Or About1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
             BunifuTransition1.HideSync(Evaluation1)
@@ -152,12 +118,6 @@ Public Class Form1
 
     End Sub
 
-    Private Sub PictureBox3_MouseHover(sender As Object, e As EventArgs) Handles PictureBox3.MouseHover, PictureBox2.MouseHover, PictureBox1.MouseHover
-        ''About1.Visible = True
-    End Sub
-
-
-
     Private Sub butabout_Click(sender As Object, e As EventArgs) Handles butabout.Click
         buteval.Normalcolor = Color.Transparent
         butprint.Normalcolor = Color.Transparent
@@ -170,8 +130,10 @@ Public Class Form1
         If Lets1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate
             BunifuTransition1.HideSync(Lets1)
-            BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
-            BunifuTransition1.ShowSync(About1)
+            About1.Show()
+
+            ''BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.ScaleAndRotate
+            ''BunifuTransition1.ShowSync(About1)
         ElseIf Report1.Visible = True Or Evaluation1.Visible = True Or PrintAll1.Visible = True Then
             BunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide
             BunifuTransition1.HideSync(Evaluation1)
@@ -181,15 +143,37 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub BunifuImageButton1_MouseEnter(sender As Object, e As EventArgs) Handles BunifuImageButton1.MouseEnter, BunifuImageButton2.MouseEnter
+    Private Sub BunifuImageButton1_MouseEnter(sender As Object, e As EventArgs) Handles BunifuImageButton1.MouseEnter, BunifuImageButton2.MouseEnter, PictureBox3.MouseEnter
         Select Case sender.Name.ToString
             Case "BunifuImageButton1"
                 ttp.Show("Close", BunifuImageButton1)
             Case "BunifuImageButton2"
                 ttp.Show("Minimize", BunifuImageButton2)
+            Case "PictureBox3"
+                ttp.Show("Click to View Documentaion", PictureBox3)
+        End Select
+    End Sub
+    Private Sub PictureBox1_MouseEnter(sender As Object, e As EventArgs) Handles PictureBox2.MouseEnter, PictureBox1.MouseEnter
+        ttp.Show("8 1 18 19 8 9 14 9", PictureBox2)
+        ttp.Show("8 1 18 19 8 9 14 9", PictureBox1)
+    End Sub
+    Private Sub PictureBox3_MouseLeave(sender As Object, e As EventArgs) Handles PictureBox2.MouseLeave, PictureBox1.MouseLeave
+        ttp.Hide(PictureBox2)
+        ttp.Hide(PictureBox1)
+    End Sub
+    Private Sub BunifuImageButton2_MouseLeave(sender As Object, e As EventArgs) Handles BunifuImageButton2.MouseLeave, BunifuImageButton1.MouseLeave, PictureBox3.MouseLeave
+        Select Case sender.Name.ToString
+            Case "BunifuImageButton1"
+                ttp.Hide(BunifuImageButton1)
+            Case "BunifuImageButton2"
+                ttp.Hide(BunifuImageButton2)
+            Case "PictureBox3"
+                ttp.Hide(PictureBox3)
         End Select
     End Sub
 
-
-
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Dim url As String = “https://github.com/HarishOsthe/Azlan_iguess“
+        Process.Start(url)
+    End Sub
 End Class

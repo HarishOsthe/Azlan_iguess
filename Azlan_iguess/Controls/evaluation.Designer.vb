@@ -209,38 +209,6 @@ Partial Class evaluation
         Me.Label43 = New System.Windows.Forms.Label()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Label45 = New System.Windows.Forms.Label()
-        Me.BunifuCards14 = New Bunifu.Framework.UI.BunifuCards()
-        Me.Label119 = New System.Windows.Forms.Label()
-        Me.v7 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.v1 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.v2 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.v3 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.v4 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.v5 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.Label32 = New System.Windows.Forms.Label()
-        Me.v6 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.Label33 = New System.Windows.Forms.Label()
-        Me.Label34 = New System.Windows.Forms.Label()
-        Me.Label35 = New System.Windows.Forms.Label()
-        Me.Label36 = New System.Windows.Forms.Label()
-        Me.Label37 = New System.Windows.Forms.Label()
-        Me.Label38 = New System.Windows.Forms.Label()
-        Me.BunifuCards13 = New Bunifu.Framework.UI.BunifuCards()
-        Me.Label120 = New System.Windows.Forms.Label()
-        Me.e7 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.e1 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.e2 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.e3 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.e4 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.e5 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.Label31 = New System.Windows.Forms.Label()
-        Me.e6 = New Bunifu.Framework.UI.BunifuiOSSwitch()
-        Me.Label30 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
         Me.BunifuCards10 = New Bunifu.Framework.UI.BunifuCards()
         Me.Button5 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Button6 = New Bunifu.Framework.UI.BunifuImageButton()
@@ -284,8 +252,6 @@ Partial Class evaluation
         Me.BunifuCards17.SuspendLayout()
         Me.BunifuCards16.SuspendLayout()
         Me.BunifuCards15.SuspendLayout()
-        Me.BunifuCards14.SuspendLayout()
-        Me.BunifuCards13.SuspendLayout()
         Me.BunifuCards10.SuspendLayout()
         CType(Me.Button5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Button6, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -315,7 +281,7 @@ Partial Class evaluation
         Me.Label1.ForeColor = System.Drawing.Color.DimGray
         Me.Label1.Location = New System.Drawing.Point(43, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(120, 18)
+        Me.Label1.Size = New System.Drawing.Size(161, 22)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Department Name"
         '
@@ -327,7 +293,7 @@ Partial Class evaluation
         Me.Label2.ForeColor = System.Drawing.Color.DimGray
         Me.Label2.Location = New System.Drawing.Point(301, -1)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(90, 18)
+        Me.Label2.Size = New System.Drawing.Size(124, 22)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Faculty Name"
         '
@@ -339,7 +305,7 @@ Partial Class evaluation
         Me.Label3.ForeColor = System.Drawing.Color.DimGray
         Me.Label3.Location = New System.Drawing.Point(472, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 18)
+        Me.Label3.Size = New System.Drawing.Size(116, 22)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Faculty Code"
         '
@@ -349,7 +315,7 @@ Partial Class evaluation
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(831, 74)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(0, 13)
+        Me.Label8.Size = New System.Drawing.Size(0, 17)
         Me.Label8.TabIndex = 5
         Me.Label8.Visible = False
         '
@@ -361,7 +327,7 @@ Partial Class evaluation
         Me.Label4.ForeColor = System.Drawing.Color.DimGray
         Me.Label4.Location = New System.Drawing.Point(276, 49)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(91, 18)
+        Me.Label4.Size = New System.Drawing.Size(125, 22)
         Me.Label4.TabIndex = 1
         Me.Label4.Text = "Subject Name"
         '
@@ -373,7 +339,7 @@ Partial Class evaluation
         Me.Label5.ForeColor = System.Drawing.Color.DimGray
         Me.Label5.Location = New System.Drawing.Point(768, 1)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(40, 18)
+        Me.Label5.Size = New System.Drawing.Size(52, 22)
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Class"
         '
@@ -385,7 +351,7 @@ Partial Class evaluation
         Me.Label6.ForeColor = System.Drawing.Color.DimGray
         Me.Label6.Location = New System.Drawing.Point(624, 1)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 18)
+        Me.Label6.Size = New System.Drawing.Size(67, 22)
         Me.Label6.TabIndex = 1
         Me.Label6.Text = "Stream"
         '
@@ -397,7 +363,7 @@ Partial Class evaluation
         Me.Label7.ForeColor = System.Drawing.Color.DimGray
         Me.Label7.Location = New System.Drawing.Point(52, 52)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(92, 18)
+        Me.Label7.Size = New System.Drawing.Size(128, 22)
         Me.Label7.TabIndex = 1
         Me.Label7.Text = "Month / Year"
         '
@@ -409,7 +375,7 @@ Partial Class evaluation
         Me.Label9.ForeColor = System.Drawing.Color.DimGray
         Me.Label9.Location = New System.Drawing.Point(873, -1)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(94, 18)
+        Me.Label9.Size = New System.Drawing.Size(129, 22)
         Me.Label9.TabIndex = 1
         Me.Label9.Text = "Total Strength"
         '
@@ -421,7 +387,7 @@ Partial Class evaluation
         Me.Label23.ForeColor = System.Drawing.Color.DimGray
         Me.Label23.Location = New System.Drawing.Point(410, 53)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(84, 18)
+        Me.Label23.Size = New System.Drawing.Size(113, 22)
         Me.Label23.TabIndex = 10
         Me.Label23.Text = "New Faculty"
         '
@@ -433,7 +399,7 @@ Partial Class evaluation
         Me.Label24.ForeColor = System.Drawing.Color.DimGray
         Me.Label24.Location = New System.Drawing.Point(521, 53)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(103, 18)
+        Me.Label24.Size = New System.Drawing.Size(139, 22)
         Me.Label24.TabIndex = 10
         Me.Label24.Text = "Remove Faculty"
         '
@@ -442,9 +408,9 @@ Partial Class evaluation
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Consolas", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label22.ForeColor = System.Drawing.Color.Gray
-        Me.Label22.Location = New System.Drawing.Point(832, 399)
+        Me.Label22.Location = New System.Drawing.Point(832, 415)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(100, 112)
+        Me.Label22.Size = New System.Drawing.Size(126, 140)
         Me.Label22.TabIndex = 11
         Me.Label22.Text = "1"
         '
@@ -453,7 +419,7 @@ Partial Class evaluation
         Me.Label11.AutoSize = True
         Me.Label11.Location = New System.Drawing.Point(58, 434)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(0, 15)
+        Me.Label11.Size = New System.Drawing.Size(0, 20)
         Me.Label11.TabIndex = 104
         Me.Label11.Visible = False
         '
@@ -462,7 +428,7 @@ Partial Class evaluation
         Me.Label12.AutoSize = True
         Me.Label12.Location = New System.Drawing.Point(113, 434)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(0, 15)
+        Me.Label12.Size = New System.Drawing.Size(0, 20)
         Me.Label12.TabIndex = 101
         Me.Label12.Visible = False
         '
@@ -471,7 +437,7 @@ Partial Class evaluation
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(162, 434)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(0, 15)
+        Me.Label13.Size = New System.Drawing.Size(0, 20)
         Me.Label13.TabIndex = 103
         Me.Label13.Visible = False
         '
@@ -480,7 +446,7 @@ Partial Class evaluation
         Me.Label14.AutoSize = True
         Me.Label14.Location = New System.Drawing.Point(215, 434)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(0, 15)
+        Me.Label14.Size = New System.Drawing.Size(0, 20)
         Me.Label14.TabIndex = 102
         Me.Label14.Visible = False
         '
@@ -489,7 +455,7 @@ Partial Class evaluation
         Me.Label15.AutoSize = True
         Me.Label15.Location = New System.Drawing.Point(3, 462)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(0, 15)
+        Me.Label15.Size = New System.Drawing.Size(0, 20)
         Me.Label15.TabIndex = 106
         Me.Label15.Visible = False
         '
@@ -498,7 +464,7 @@ Partial Class evaluation
         Me.Label16.AutoSize = True
         Me.Label16.Location = New System.Drawing.Point(58, 462)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(0, 15)
+        Me.Label16.Size = New System.Drawing.Size(0, 20)
         Me.Label16.TabIndex = 100
         Me.Label16.Visible = False
         '
@@ -507,7 +473,7 @@ Partial Class evaluation
         Me.Label17.AutoSize = True
         Me.Label17.Location = New System.Drawing.Point(113, 462)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(0, 15)
+        Me.Label17.Size = New System.Drawing.Size(0, 20)
         Me.Label17.TabIndex = 99
         Me.Label17.Visible = False
         '
@@ -516,7 +482,7 @@ Partial Class evaluation
         Me.Label18.AutoSize = True
         Me.Label18.Location = New System.Drawing.Point(168, 462)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(0, 15)
+        Me.Label18.Size = New System.Drawing.Size(0, 20)
         Me.Label18.TabIndex = 98
         Me.Label18.Visible = False
         '
@@ -525,7 +491,7 @@ Partial Class evaluation
         Me.Label19.AutoSize = True
         Me.Label19.Location = New System.Drawing.Point(782, 443)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(0, 15)
+        Me.Label19.Size = New System.Drawing.Size(0, 20)
         Me.Label19.TabIndex = 97
         Me.Label19.Visible = False
         '
@@ -534,7 +500,7 @@ Partial Class evaluation
         Me.Label20.AutoSize = True
         Me.Label20.Location = New System.Drawing.Point(709, 443)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(0, 15)
+        Me.Label20.Size = New System.Drawing.Size(0, 20)
         Me.Label20.TabIndex = 96
         Me.Label20.Visible = False
         '
@@ -543,18 +509,17 @@ Partial Class evaluation
         Me.Label21.AutoSize = True
         Me.Label21.Location = New System.Drawing.Point(215, 462)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(0, 15)
+        Me.Label21.Size = New System.Drawing.Size(0, 20)
         Me.Label21.TabIndex = 107
         Me.Label21.Visible = False
         '
         'DG1
         '
         Me.DG1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DG1.Location = New System.Drawing.Point(974, 16)
+        Me.DG1.Location = New System.Drawing.Point(910, 16)
         Me.DG1.Name = "DG1"
-        Me.DG1.Size = New System.Drawing.Size(126, 96)
+        Me.DG1.Size = New System.Drawing.Size(190, 101)
         Me.DG1.TabIndex = 8
-        Me.DG1.Visible = False
         '
         'BunifuCards1
         '
@@ -574,8 +539,6 @@ Partial Class evaluation
         Me.BunifuCards1.Controls.Add(Me.BunifuCards17)
         Me.BunifuCards1.Controls.Add(Me.BunifuCards16)
         Me.BunifuCards1.Controls.Add(Me.BunifuCards15)
-        Me.BunifuCards1.Controls.Add(Me.BunifuCards14)
-        Me.BunifuCards1.Controls.Add(Me.BunifuCards13)
         Me.BunifuCards1.Controls.Add(Me.BunifuCards10)
         Me.BunifuCards1.Controls.Add(Me.Label21)
         Me.BunifuCards1.Controls.Add(Me.Label20)
@@ -591,17 +554,17 @@ Partial Class evaluation
         Me.BunifuCards1.Controls.Add(Me.Label10)
         Me.BunifuCards1.Controls.Add(Me.Label22)
         Me.BunifuCards1.LeftSahddow = True
-        Me.BunifuCards1.Location = New System.Drawing.Point(4, 121)
+        Me.BunifuCards1.Location = New System.Drawing.Point(-1, 121)
         Me.BunifuCards1.Name = "BunifuCards1"
         Me.BunifuCards1.RightSahddow = True
         Me.BunifuCards1.ShadowDepth = 50
-        Me.BunifuCards1.Size = New System.Drawing.Size(1096, 494)
+        Me.BunifuCards1.Size = New System.Drawing.Size(1096, 541)
         Me.BunifuCards1.TabIndex = 7
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Azlan_iguess.My.Resources.Resources.parrot1
-        Me.PictureBox1.Location = New System.Drawing.Point(144, 420)
+        Me.PictureBox1.Location = New System.Drawing.Point(144, 441)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(113, 69)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -631,7 +594,7 @@ Partial Class evaluation
         Me.BunifuCards24.Controls.Add(Me.Label107)
         Me.BunifuCards24.Controls.Add(Me.Label108)
         Me.BunifuCards24.LeftSahddow = False
-        Me.BunifuCards24.Location = New System.Drawing.Point(1, 3)
+        Me.BunifuCards24.Location = New System.Drawing.Point(1, 2)
         Me.BunifuCards24.Name = "BunifuCards24"
         Me.BunifuCards24.RightSahddow = True
         Me.BunifuCards24.ShadowDepth = 50
@@ -645,7 +608,7 @@ Partial Class evaluation
         Me.Label109.ForeColor = System.Drawing.Color.DarkGray
         Me.Label109.Location = New System.Drawing.Point(2, 3)
         Me.Label109.Name = "Label109"
-        Me.Label109.Size = New System.Drawing.Size(112, 14)
+        Me.Label109.Size = New System.Drawing.Size(128, 18)
         Me.Label109.TabIndex = 124
         Me.Label109.Text = "koooooooooooooo"
         '
@@ -746,7 +709,7 @@ Partial Class evaluation
         Me.Label102.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label102.Location = New System.Drawing.Point(946, 9)
         Me.Label102.Name = "Label102"
-        Me.Label102.Size = New System.Drawing.Size(13, 14)
+        Me.Label102.Size = New System.Drawing.Size(16, 16)
         Me.Label102.TabIndex = 123
         Me.Label102.Text = "7"
         '
@@ -772,7 +735,7 @@ Partial Class evaluation
         Me.Label103.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label103.Location = New System.Drawing.Point(895, 9)
         Me.Label103.Name = "Label103"
-        Me.Label103.Size = New System.Drawing.Size(13, 14)
+        Me.Label103.Size = New System.Drawing.Size(16, 16)
         Me.Label103.TabIndex = 122
         Me.Label103.Text = "6"
         '
@@ -783,7 +746,7 @@ Partial Class evaluation
         Me.Label104.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label104.Location = New System.Drawing.Point(592, 9)
         Me.Label104.Name = "Label104"
-        Me.Label104.Size = New System.Drawing.Size(13, 14)
+        Me.Label104.Size = New System.Drawing.Size(16, 16)
         Me.Label104.TabIndex = 117
         Me.Label104.Text = "1"
         '
@@ -794,7 +757,7 @@ Partial Class evaluation
         Me.Label105.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label105.Location = New System.Drawing.Point(836, 9)
         Me.Label105.Name = "Label105"
-        Me.Label105.Size = New System.Drawing.Size(13, 14)
+        Me.Label105.Size = New System.Drawing.Size(16, 16)
         Me.Label105.TabIndex = 121
         Me.Label105.Text = "5"
         '
@@ -805,7 +768,7 @@ Partial Class evaluation
         Me.Label106.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label106.Location = New System.Drawing.Point(652, 9)
         Me.Label106.Name = "Label106"
-        Me.Label106.Size = New System.Drawing.Size(13, 14)
+        Me.Label106.Size = New System.Drawing.Size(16, 16)
         Me.Label106.TabIndex = 118
         Me.Label106.Text = "2"
         '
@@ -816,7 +779,7 @@ Partial Class evaluation
         Me.Label107.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label107.Location = New System.Drawing.Point(709, 9)
         Me.Label107.Name = "Label107"
-        Me.Label107.Size = New System.Drawing.Size(13, 14)
+        Me.Label107.Size = New System.Drawing.Size(16, 16)
         Me.Label107.TabIndex = 120
         Me.Label107.Text = "3"
         '
@@ -827,7 +790,7 @@ Partial Class evaluation
         Me.Label108.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label108.Location = New System.Drawing.Point(775, 9)
         Me.Label108.Name = "Label108"
-        Me.Label108.Size = New System.Drawing.Size(13, 14)
+        Me.Label108.Size = New System.Drawing.Size(16, 16)
         Me.Label108.TabIndex = 119
         Me.Label108.Text = "4"
         '
@@ -854,11 +817,11 @@ Partial Class evaluation
         Me.BunifuCards23.Controls.Add(Me.Label100)
         Me.BunifuCards23.Controls.Add(Me.Label101)
         Me.BunifuCards23.LeftSahddow = False
-        Me.BunifuCards23.Location = New System.Drawing.Point(1, 38)
+        Me.BunifuCards23.Location = New System.Drawing.Point(1, 41)
         Me.BunifuCards23.Name = "BunifuCards23"
         Me.BunifuCards23.RightSahddow = True
         Me.BunifuCards23.ShadowDepth = 50
-        Me.BunifuCards23.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards23.Size = New System.Drawing.Size(1089, 48)
         Me.BunifuCards23.TabIndex = 20
         '
         'Label110
@@ -868,7 +831,7 @@ Partial Class evaluation
         Me.Label110.ForeColor = System.Drawing.Color.DarkGray
         Me.Label110.Location = New System.Drawing.Point(2, 9)
         Me.Label110.Name = "Label110"
-        Me.Label110.Size = New System.Drawing.Size(112, 14)
+        Me.Label110.Size = New System.Drawing.Size(128, 18)
         Me.Label110.TabIndex = 124
         Me.Label110.Text = "koooooooooooooo"
         '
@@ -969,7 +932,7 @@ Partial Class evaluation
         Me.Label95.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label95.Location = New System.Drawing.Point(946, 9)
         Me.Label95.Name = "Label95"
-        Me.Label95.Size = New System.Drawing.Size(13, 14)
+        Me.Label95.Size = New System.Drawing.Size(16, 16)
         Me.Label95.TabIndex = 123
         Me.Label95.Text = "7"
         '
@@ -995,7 +958,7 @@ Partial Class evaluation
         Me.Label96.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label96.Location = New System.Drawing.Point(895, 9)
         Me.Label96.Name = "Label96"
-        Me.Label96.Size = New System.Drawing.Size(13, 14)
+        Me.Label96.Size = New System.Drawing.Size(16, 16)
         Me.Label96.TabIndex = 122
         Me.Label96.Text = "6"
         '
@@ -1006,7 +969,7 @@ Partial Class evaluation
         Me.Label97.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label97.Location = New System.Drawing.Point(592, 9)
         Me.Label97.Name = "Label97"
-        Me.Label97.Size = New System.Drawing.Size(13, 14)
+        Me.Label97.Size = New System.Drawing.Size(16, 16)
         Me.Label97.TabIndex = 117
         Me.Label97.Text = "1"
         '
@@ -1017,7 +980,7 @@ Partial Class evaluation
         Me.Label98.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label98.Location = New System.Drawing.Point(836, 9)
         Me.Label98.Name = "Label98"
-        Me.Label98.Size = New System.Drawing.Size(13, 14)
+        Me.Label98.Size = New System.Drawing.Size(16, 16)
         Me.Label98.TabIndex = 121
         Me.Label98.Text = "5"
         '
@@ -1028,7 +991,7 @@ Partial Class evaluation
         Me.Label99.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label99.Location = New System.Drawing.Point(652, 9)
         Me.Label99.Name = "Label99"
-        Me.Label99.Size = New System.Drawing.Size(13, 14)
+        Me.Label99.Size = New System.Drawing.Size(16, 16)
         Me.Label99.TabIndex = 118
         Me.Label99.Text = "2"
         '
@@ -1039,7 +1002,7 @@ Partial Class evaluation
         Me.Label100.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label100.Location = New System.Drawing.Point(709, 9)
         Me.Label100.Name = "Label100"
-        Me.Label100.Size = New System.Drawing.Size(13, 14)
+        Me.Label100.Size = New System.Drawing.Size(16, 16)
         Me.Label100.TabIndex = 120
         Me.Label100.Text = "3"
         '
@@ -1050,7 +1013,7 @@ Partial Class evaluation
         Me.Label101.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label101.Location = New System.Drawing.Point(775, 9)
         Me.Label101.Name = "Label101"
-        Me.Label101.Size = New System.Drawing.Size(13, 14)
+        Me.Label101.Size = New System.Drawing.Size(16, 16)
         Me.Label101.TabIndex = 119
         Me.Label101.Text = "4"
         '
@@ -1077,11 +1040,11 @@ Partial Class evaluation
         Me.BunifuCards22.Controls.Add(Me.Label93)
         Me.BunifuCards22.Controls.Add(Me.Label94)
         Me.BunifuCards22.LeftSahddow = False
-        Me.BunifuCards22.Location = New System.Drawing.Point(1, 73)
+        Me.BunifuCards22.Location = New System.Drawing.Point(1, 84)
         Me.BunifuCards22.Name = "BunifuCards22"
         Me.BunifuCards22.RightSahddow = True
         Me.BunifuCards22.ShadowDepth = 50
-        Me.BunifuCards22.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards22.Size = New System.Drawing.Size(1089, 48)
         Me.BunifuCards22.TabIndex = 20
         '
         'Label111
@@ -1091,7 +1054,7 @@ Partial Class evaluation
         Me.Label111.ForeColor = System.Drawing.Color.DarkGray
         Me.Label111.Location = New System.Drawing.Point(2, 10)
         Me.Label111.Name = "Label111"
-        Me.Label111.Size = New System.Drawing.Size(112, 14)
+        Me.Label111.Size = New System.Drawing.Size(128, 18)
         Me.Label111.TabIndex = 124
         Me.Label111.Text = "koooooooooooooo"
         '
@@ -1192,7 +1155,7 @@ Partial Class evaluation
         Me.Label88.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label88.Location = New System.Drawing.Point(946, 9)
         Me.Label88.Name = "Label88"
-        Me.Label88.Size = New System.Drawing.Size(13, 14)
+        Me.Label88.Size = New System.Drawing.Size(16, 16)
         Me.Label88.TabIndex = 123
         Me.Label88.Text = "7"
         '
@@ -1218,7 +1181,7 @@ Partial Class evaluation
         Me.Label89.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label89.Location = New System.Drawing.Point(895, 9)
         Me.Label89.Name = "Label89"
-        Me.Label89.Size = New System.Drawing.Size(13, 14)
+        Me.Label89.Size = New System.Drawing.Size(16, 16)
         Me.Label89.TabIndex = 122
         Me.Label89.Text = "6"
         '
@@ -1229,7 +1192,7 @@ Partial Class evaluation
         Me.Label90.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label90.Location = New System.Drawing.Point(592, 9)
         Me.Label90.Name = "Label90"
-        Me.Label90.Size = New System.Drawing.Size(13, 14)
+        Me.Label90.Size = New System.Drawing.Size(16, 16)
         Me.Label90.TabIndex = 117
         Me.Label90.Text = "1"
         '
@@ -1240,7 +1203,7 @@ Partial Class evaluation
         Me.Label91.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label91.Location = New System.Drawing.Point(836, 9)
         Me.Label91.Name = "Label91"
-        Me.Label91.Size = New System.Drawing.Size(13, 14)
+        Me.Label91.Size = New System.Drawing.Size(16, 16)
         Me.Label91.TabIndex = 121
         Me.Label91.Text = "5"
         '
@@ -1251,7 +1214,7 @@ Partial Class evaluation
         Me.Label92.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label92.Location = New System.Drawing.Point(652, 9)
         Me.Label92.Name = "Label92"
-        Me.Label92.Size = New System.Drawing.Size(13, 14)
+        Me.Label92.Size = New System.Drawing.Size(16, 16)
         Me.Label92.TabIndex = 118
         Me.Label92.Text = "2"
         '
@@ -1262,7 +1225,7 @@ Partial Class evaluation
         Me.Label93.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label93.Location = New System.Drawing.Point(709, 9)
         Me.Label93.Name = "Label93"
-        Me.Label93.Size = New System.Drawing.Size(13, 14)
+        Me.Label93.Size = New System.Drawing.Size(16, 16)
         Me.Label93.TabIndex = 120
         Me.Label93.Text = "3"
         '
@@ -1273,7 +1236,7 @@ Partial Class evaluation
         Me.Label94.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label94.Location = New System.Drawing.Point(775, 9)
         Me.Label94.Name = "Label94"
-        Me.Label94.Size = New System.Drawing.Size(13, 14)
+        Me.Label94.Size = New System.Drawing.Size(16, 16)
         Me.Label94.TabIndex = 119
         Me.Label94.Text = "4"
         '
@@ -1300,11 +1263,11 @@ Partial Class evaluation
         Me.BunifuCards21.Controls.Add(Me.Label86)
         Me.BunifuCards21.Controls.Add(Me.Label87)
         Me.BunifuCards21.LeftSahddow = False
-        Me.BunifuCards21.Location = New System.Drawing.Point(0, 107)
+        Me.BunifuCards21.Location = New System.Drawing.Point(0, 127)
         Me.BunifuCards21.Name = "BunifuCards21"
         Me.BunifuCards21.RightSahddow = True
         Me.BunifuCards21.ShadowDepth = 50
-        Me.BunifuCards21.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards21.Size = New System.Drawing.Size(1089, 48)
         Me.BunifuCards21.TabIndex = 20
         '
         'Label112
@@ -1314,7 +1277,7 @@ Partial Class evaluation
         Me.Label112.ForeColor = System.Drawing.Color.DarkGray
         Me.Label112.Location = New System.Drawing.Point(2, 9)
         Me.Label112.Name = "Label112"
-        Me.Label112.Size = New System.Drawing.Size(112, 14)
+        Me.Label112.Size = New System.Drawing.Size(128, 18)
         Me.Label112.TabIndex = 124
         Me.Label112.Text = "koooooooooooooo"
         '
@@ -1415,7 +1378,7 @@ Partial Class evaluation
         Me.Label81.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label81.Location = New System.Drawing.Point(946, 9)
         Me.Label81.Name = "Label81"
-        Me.Label81.Size = New System.Drawing.Size(13, 14)
+        Me.Label81.Size = New System.Drawing.Size(16, 16)
         Me.Label81.TabIndex = 123
         Me.Label81.Text = "7"
         '
@@ -1441,7 +1404,7 @@ Partial Class evaluation
         Me.Label82.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label82.Location = New System.Drawing.Point(895, 9)
         Me.Label82.Name = "Label82"
-        Me.Label82.Size = New System.Drawing.Size(13, 14)
+        Me.Label82.Size = New System.Drawing.Size(16, 16)
         Me.Label82.TabIndex = 122
         Me.Label82.Text = "6"
         '
@@ -1452,7 +1415,7 @@ Partial Class evaluation
         Me.Label83.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label83.Location = New System.Drawing.Point(592, 9)
         Me.Label83.Name = "Label83"
-        Me.Label83.Size = New System.Drawing.Size(13, 14)
+        Me.Label83.Size = New System.Drawing.Size(16, 16)
         Me.Label83.TabIndex = 117
         Me.Label83.Text = "1"
         '
@@ -1463,7 +1426,7 @@ Partial Class evaluation
         Me.Label84.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label84.Location = New System.Drawing.Point(836, 9)
         Me.Label84.Name = "Label84"
-        Me.Label84.Size = New System.Drawing.Size(13, 14)
+        Me.Label84.Size = New System.Drawing.Size(16, 16)
         Me.Label84.TabIndex = 121
         Me.Label84.Text = "5"
         '
@@ -1474,7 +1437,7 @@ Partial Class evaluation
         Me.Label85.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label85.Location = New System.Drawing.Point(652, 9)
         Me.Label85.Name = "Label85"
-        Me.Label85.Size = New System.Drawing.Size(13, 14)
+        Me.Label85.Size = New System.Drawing.Size(16, 16)
         Me.Label85.TabIndex = 118
         Me.Label85.Text = "2"
         '
@@ -1485,7 +1448,7 @@ Partial Class evaluation
         Me.Label86.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label86.Location = New System.Drawing.Point(709, 9)
         Me.Label86.Name = "Label86"
-        Me.Label86.Size = New System.Drawing.Size(13, 14)
+        Me.Label86.Size = New System.Drawing.Size(16, 16)
         Me.Label86.TabIndex = 120
         Me.Label86.Text = "3"
         '
@@ -1496,7 +1459,7 @@ Partial Class evaluation
         Me.Label87.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label87.Location = New System.Drawing.Point(775, 9)
         Me.Label87.Name = "Label87"
-        Me.Label87.Size = New System.Drawing.Size(13, 14)
+        Me.Label87.Size = New System.Drawing.Size(16, 16)
         Me.Label87.TabIndex = 119
         Me.Label87.Text = "4"
         '
@@ -1523,11 +1486,11 @@ Partial Class evaluation
         Me.BunifuCards20.Controls.Add(Me.Label79)
         Me.BunifuCards20.Controls.Add(Me.Label80)
         Me.BunifuCards20.LeftSahddow = False
-        Me.BunifuCards20.Location = New System.Drawing.Point(0, 140)
+        Me.BunifuCards20.Location = New System.Drawing.Point(0, 170)
         Me.BunifuCards20.Name = "BunifuCards20"
         Me.BunifuCards20.RightSahddow = True
         Me.BunifuCards20.ShadowDepth = 50
-        Me.BunifuCards20.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards20.Size = New System.Drawing.Size(1089, 48)
         Me.BunifuCards20.TabIndex = 20
         '
         'Label113
@@ -1537,7 +1500,7 @@ Partial Class evaluation
         Me.Label113.ForeColor = System.Drawing.Color.DarkGray
         Me.Label113.Location = New System.Drawing.Point(2, 11)
         Me.Label113.Name = "Label113"
-        Me.Label113.Size = New System.Drawing.Size(112, 14)
+        Me.Label113.Size = New System.Drawing.Size(128, 18)
         Me.Label113.TabIndex = 124
         Me.Label113.Text = "koooooooooooooo"
         '
@@ -1638,7 +1601,7 @@ Partial Class evaluation
         Me.Label74.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label74.Location = New System.Drawing.Point(946, 9)
         Me.Label74.Name = "Label74"
-        Me.Label74.Size = New System.Drawing.Size(13, 14)
+        Me.Label74.Size = New System.Drawing.Size(16, 16)
         Me.Label74.TabIndex = 123
         Me.Label74.Text = "7"
         '
@@ -1664,7 +1627,7 @@ Partial Class evaluation
         Me.Label75.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label75.Location = New System.Drawing.Point(895, 9)
         Me.Label75.Name = "Label75"
-        Me.Label75.Size = New System.Drawing.Size(13, 14)
+        Me.Label75.Size = New System.Drawing.Size(16, 16)
         Me.Label75.TabIndex = 122
         Me.Label75.Text = "6"
         '
@@ -1675,7 +1638,7 @@ Partial Class evaluation
         Me.Label76.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label76.Location = New System.Drawing.Point(592, 9)
         Me.Label76.Name = "Label76"
-        Me.Label76.Size = New System.Drawing.Size(13, 14)
+        Me.Label76.Size = New System.Drawing.Size(16, 16)
         Me.Label76.TabIndex = 117
         Me.Label76.Text = "1"
         '
@@ -1686,7 +1649,7 @@ Partial Class evaluation
         Me.Label77.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label77.Location = New System.Drawing.Point(836, 9)
         Me.Label77.Name = "Label77"
-        Me.Label77.Size = New System.Drawing.Size(13, 14)
+        Me.Label77.Size = New System.Drawing.Size(16, 16)
         Me.Label77.TabIndex = 121
         Me.Label77.Text = "5"
         '
@@ -1697,7 +1660,7 @@ Partial Class evaluation
         Me.Label78.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label78.Location = New System.Drawing.Point(652, 9)
         Me.Label78.Name = "Label78"
-        Me.Label78.Size = New System.Drawing.Size(13, 14)
+        Me.Label78.Size = New System.Drawing.Size(16, 16)
         Me.Label78.TabIndex = 118
         Me.Label78.Text = "2"
         '
@@ -1708,7 +1671,7 @@ Partial Class evaluation
         Me.Label79.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label79.Location = New System.Drawing.Point(709, 9)
         Me.Label79.Name = "Label79"
-        Me.Label79.Size = New System.Drawing.Size(13, 14)
+        Me.Label79.Size = New System.Drawing.Size(16, 16)
         Me.Label79.TabIndex = 120
         Me.Label79.Text = "3"
         '
@@ -1719,7 +1682,7 @@ Partial Class evaluation
         Me.Label80.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label80.Location = New System.Drawing.Point(775, 9)
         Me.Label80.Name = "Label80"
-        Me.Label80.Size = New System.Drawing.Size(13, 14)
+        Me.Label80.Size = New System.Drawing.Size(16, 16)
         Me.Label80.TabIndex = 119
         Me.Label80.Text = "4"
         '
@@ -1746,11 +1709,11 @@ Partial Class evaluation
         Me.BunifuCards19.Controls.Add(Me.Label72)
         Me.BunifuCards19.Controls.Add(Me.Label73)
         Me.BunifuCards19.LeftSahddow = False
-        Me.BunifuCards19.Location = New System.Drawing.Point(0, 174)
+        Me.BunifuCards19.Location = New System.Drawing.Point(0, 216)
         Me.BunifuCards19.Name = "BunifuCards19"
         Me.BunifuCards19.RightSahddow = True
         Me.BunifuCards19.ShadowDepth = 50
-        Me.BunifuCards19.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards19.Size = New System.Drawing.Size(1089, 55)
         Me.BunifuCards19.TabIndex = 20
         '
         'Label114
@@ -1760,7 +1723,7 @@ Partial Class evaluation
         Me.Label114.ForeColor = System.Drawing.Color.DarkGray
         Me.Label114.Location = New System.Drawing.Point(2, 9)
         Me.Label114.Name = "Label114"
-        Me.Label114.Size = New System.Drawing.Size(112, 14)
+        Me.Label114.Size = New System.Drawing.Size(128, 18)
         Me.Label114.TabIndex = 124
         Me.Label114.Text = "koooooooooooooo"
         '
@@ -1861,7 +1824,7 @@ Partial Class evaluation
         Me.Label67.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label67.Location = New System.Drawing.Point(946, 9)
         Me.Label67.Name = "Label67"
-        Me.Label67.Size = New System.Drawing.Size(13, 14)
+        Me.Label67.Size = New System.Drawing.Size(16, 16)
         Me.Label67.TabIndex = 123
         Me.Label67.Text = "7"
         '
@@ -1887,7 +1850,7 @@ Partial Class evaluation
         Me.Label68.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label68.Location = New System.Drawing.Point(895, 9)
         Me.Label68.Name = "Label68"
-        Me.Label68.Size = New System.Drawing.Size(13, 14)
+        Me.Label68.Size = New System.Drawing.Size(16, 16)
         Me.Label68.TabIndex = 122
         Me.Label68.Text = "6"
         '
@@ -1898,7 +1861,7 @@ Partial Class evaluation
         Me.Label69.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label69.Location = New System.Drawing.Point(592, 9)
         Me.Label69.Name = "Label69"
-        Me.Label69.Size = New System.Drawing.Size(13, 14)
+        Me.Label69.Size = New System.Drawing.Size(16, 16)
         Me.Label69.TabIndex = 117
         Me.Label69.Text = "1"
         '
@@ -1909,7 +1872,7 @@ Partial Class evaluation
         Me.Label70.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label70.Location = New System.Drawing.Point(836, 9)
         Me.Label70.Name = "Label70"
-        Me.Label70.Size = New System.Drawing.Size(13, 14)
+        Me.Label70.Size = New System.Drawing.Size(16, 16)
         Me.Label70.TabIndex = 121
         Me.Label70.Text = "5"
         '
@@ -1920,7 +1883,7 @@ Partial Class evaluation
         Me.Label71.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label71.Location = New System.Drawing.Point(652, 9)
         Me.Label71.Name = "Label71"
-        Me.Label71.Size = New System.Drawing.Size(13, 14)
+        Me.Label71.Size = New System.Drawing.Size(16, 16)
         Me.Label71.TabIndex = 118
         Me.Label71.Text = "2"
         '
@@ -1931,7 +1894,7 @@ Partial Class evaluation
         Me.Label72.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label72.Location = New System.Drawing.Point(709, 9)
         Me.Label72.Name = "Label72"
-        Me.Label72.Size = New System.Drawing.Size(13, 14)
+        Me.Label72.Size = New System.Drawing.Size(16, 16)
         Me.Label72.TabIndex = 120
         Me.Label72.Text = "3"
         '
@@ -1942,7 +1905,7 @@ Partial Class evaluation
         Me.Label73.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label73.Location = New System.Drawing.Point(775, 9)
         Me.Label73.Name = "Label73"
-        Me.Label73.Size = New System.Drawing.Size(13, 14)
+        Me.Label73.Size = New System.Drawing.Size(16, 16)
         Me.Label73.TabIndex = 119
         Me.Label73.Text = "4"
         '
@@ -1969,11 +1932,11 @@ Partial Class evaluation
         Me.BunifuCards18.Controls.Add(Me.Label65)
         Me.BunifuCards18.Controls.Add(Me.Label66)
         Me.BunifuCards18.LeftSahddow = False
-        Me.BunifuCards18.Location = New System.Drawing.Point(0, 207)
+        Me.BunifuCards18.Location = New System.Drawing.Point(0, 266)
         Me.BunifuCards18.Name = "BunifuCards18"
         Me.BunifuCards18.RightSahddow = True
         Me.BunifuCards18.ShadowDepth = 50
-        Me.BunifuCards18.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards18.Size = New System.Drawing.Size(1089, 48)
         Me.BunifuCards18.TabIndex = 20
         '
         'Label115
@@ -1983,7 +1946,7 @@ Partial Class evaluation
         Me.Label115.ForeColor = System.Drawing.Color.DarkGray
         Me.Label115.Location = New System.Drawing.Point(2, 14)
         Me.Label115.Name = "Label115"
-        Me.Label115.Size = New System.Drawing.Size(112, 14)
+        Me.Label115.Size = New System.Drawing.Size(128, 18)
         Me.Label115.TabIndex = 124
         Me.Label115.Text = "koooooooooooooo"
         '
@@ -2084,7 +2047,7 @@ Partial Class evaluation
         Me.Label60.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label60.Location = New System.Drawing.Point(946, 9)
         Me.Label60.Name = "Label60"
-        Me.Label60.Size = New System.Drawing.Size(13, 14)
+        Me.Label60.Size = New System.Drawing.Size(16, 16)
         Me.Label60.TabIndex = 123
         Me.Label60.Text = "7"
         '
@@ -2110,7 +2073,7 @@ Partial Class evaluation
         Me.Label61.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label61.Location = New System.Drawing.Point(895, 9)
         Me.Label61.Name = "Label61"
-        Me.Label61.Size = New System.Drawing.Size(13, 14)
+        Me.Label61.Size = New System.Drawing.Size(16, 16)
         Me.Label61.TabIndex = 122
         Me.Label61.Text = "6"
         '
@@ -2121,7 +2084,7 @@ Partial Class evaluation
         Me.Label62.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label62.Location = New System.Drawing.Point(592, 9)
         Me.Label62.Name = "Label62"
-        Me.Label62.Size = New System.Drawing.Size(13, 14)
+        Me.Label62.Size = New System.Drawing.Size(16, 16)
         Me.Label62.TabIndex = 117
         Me.Label62.Text = "1"
         '
@@ -2132,7 +2095,7 @@ Partial Class evaluation
         Me.Label63.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label63.Location = New System.Drawing.Point(836, 9)
         Me.Label63.Name = "Label63"
-        Me.Label63.Size = New System.Drawing.Size(13, 14)
+        Me.Label63.Size = New System.Drawing.Size(16, 16)
         Me.Label63.TabIndex = 121
         Me.Label63.Text = "5"
         '
@@ -2143,7 +2106,7 @@ Partial Class evaluation
         Me.Label64.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label64.Location = New System.Drawing.Point(652, 9)
         Me.Label64.Name = "Label64"
-        Me.Label64.Size = New System.Drawing.Size(13, 14)
+        Me.Label64.Size = New System.Drawing.Size(16, 16)
         Me.Label64.TabIndex = 118
         Me.Label64.Text = "2"
         '
@@ -2154,7 +2117,7 @@ Partial Class evaluation
         Me.Label65.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label65.Location = New System.Drawing.Point(709, 9)
         Me.Label65.Name = "Label65"
-        Me.Label65.Size = New System.Drawing.Size(13, 14)
+        Me.Label65.Size = New System.Drawing.Size(16, 16)
         Me.Label65.TabIndex = 120
         Me.Label65.Text = "3"
         '
@@ -2165,7 +2128,7 @@ Partial Class evaluation
         Me.Label66.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label66.Location = New System.Drawing.Point(775, 9)
         Me.Label66.Name = "Label66"
-        Me.Label66.Size = New System.Drawing.Size(13, 14)
+        Me.Label66.Size = New System.Drawing.Size(16, 16)
         Me.Label66.TabIndex = 119
         Me.Label66.Text = "4"
         '
@@ -2192,11 +2155,11 @@ Partial Class evaluation
         Me.BunifuCards17.Controls.Add(Me.Label58)
         Me.BunifuCards17.Controls.Add(Me.Label59)
         Me.BunifuCards17.LeftSahddow = False
-        Me.BunifuCards17.Location = New System.Drawing.Point(0, 240)
+        Me.BunifuCards17.Location = New System.Drawing.Point(0, 308)
         Me.BunifuCards17.Name = "BunifuCards17"
         Me.BunifuCards17.RightSahddow = True
         Me.BunifuCards17.ShadowDepth = 50
-        Me.BunifuCards17.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards17.Size = New System.Drawing.Size(1089, 48)
         Me.BunifuCards17.TabIndex = 20
         '
         'Label116
@@ -2206,7 +2169,7 @@ Partial Class evaluation
         Me.Label116.ForeColor = System.Drawing.Color.DarkGray
         Me.Label116.Location = New System.Drawing.Point(2, 14)
         Me.Label116.Name = "Label116"
-        Me.Label116.Size = New System.Drawing.Size(112, 14)
+        Me.Label116.Size = New System.Drawing.Size(128, 18)
         Me.Label116.TabIndex = 124
         Me.Label116.Text = "koooooooooooooo"
         '
@@ -2307,7 +2270,7 @@ Partial Class evaluation
         Me.Label53.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label53.Location = New System.Drawing.Point(946, 9)
         Me.Label53.Name = "Label53"
-        Me.Label53.Size = New System.Drawing.Size(13, 14)
+        Me.Label53.Size = New System.Drawing.Size(16, 16)
         Me.Label53.TabIndex = 123
         Me.Label53.Text = "7"
         '
@@ -2333,7 +2296,7 @@ Partial Class evaluation
         Me.Label54.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label54.Location = New System.Drawing.Point(895, 9)
         Me.Label54.Name = "Label54"
-        Me.Label54.Size = New System.Drawing.Size(13, 14)
+        Me.Label54.Size = New System.Drawing.Size(16, 16)
         Me.Label54.TabIndex = 122
         Me.Label54.Text = "6"
         '
@@ -2344,7 +2307,7 @@ Partial Class evaluation
         Me.Label55.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label55.Location = New System.Drawing.Point(592, 9)
         Me.Label55.Name = "Label55"
-        Me.Label55.Size = New System.Drawing.Size(13, 14)
+        Me.Label55.Size = New System.Drawing.Size(16, 16)
         Me.Label55.TabIndex = 117
         Me.Label55.Text = "1"
         '
@@ -2355,7 +2318,7 @@ Partial Class evaluation
         Me.Label56.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label56.Location = New System.Drawing.Point(836, 9)
         Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(13, 14)
+        Me.Label56.Size = New System.Drawing.Size(16, 16)
         Me.Label56.TabIndex = 121
         Me.Label56.Text = "5"
         '
@@ -2366,7 +2329,7 @@ Partial Class evaluation
         Me.Label57.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label57.Location = New System.Drawing.Point(652, 9)
         Me.Label57.Name = "Label57"
-        Me.Label57.Size = New System.Drawing.Size(13, 14)
+        Me.Label57.Size = New System.Drawing.Size(16, 16)
         Me.Label57.TabIndex = 118
         Me.Label57.Text = "2"
         '
@@ -2377,7 +2340,7 @@ Partial Class evaluation
         Me.Label58.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label58.Location = New System.Drawing.Point(709, 9)
         Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(13, 14)
+        Me.Label58.Size = New System.Drawing.Size(16, 16)
         Me.Label58.TabIndex = 120
         Me.Label58.Text = "3"
         '
@@ -2388,7 +2351,7 @@ Partial Class evaluation
         Me.Label59.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label59.Location = New System.Drawing.Point(775, 9)
         Me.Label59.Name = "Label59"
-        Me.Label59.Size = New System.Drawing.Size(13, 14)
+        Me.Label59.Size = New System.Drawing.Size(16, 16)
         Me.Label59.TabIndex = 119
         Me.Label59.Text = "4"
         '
@@ -2415,11 +2378,11 @@ Partial Class evaluation
         Me.BunifuCards16.Controls.Add(Me.Label51)
         Me.BunifuCards16.Controls.Add(Me.Label52)
         Me.BunifuCards16.LeftSahddow = False
-        Me.BunifuCards16.Location = New System.Drawing.Point(0, 273)
+        Me.BunifuCards16.Location = New System.Drawing.Point(0, 350)
         Me.BunifuCards16.Name = "BunifuCards16"
         Me.BunifuCards16.RightSahddow = True
         Me.BunifuCards16.ShadowDepth = 50
-        Me.BunifuCards16.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards16.Size = New System.Drawing.Size(1089, 48)
         Me.BunifuCards16.TabIndex = 20
         '
         'Label117
@@ -2429,7 +2392,7 @@ Partial Class evaluation
         Me.Label117.ForeColor = System.Drawing.Color.DarkGray
         Me.Label117.Location = New System.Drawing.Point(2, 14)
         Me.Label117.Name = "Label117"
-        Me.Label117.Size = New System.Drawing.Size(112, 14)
+        Me.Label117.Size = New System.Drawing.Size(128, 18)
         Me.Label117.TabIndex = 124
         Me.Label117.Text = "koooooooooooooo"
         '
@@ -2530,7 +2493,7 @@ Partial Class evaluation
         Me.Label46.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label46.Location = New System.Drawing.Point(946, 9)
         Me.Label46.Name = "Label46"
-        Me.Label46.Size = New System.Drawing.Size(13, 14)
+        Me.Label46.Size = New System.Drawing.Size(16, 16)
         Me.Label46.TabIndex = 123
         Me.Label46.Text = "7"
         '
@@ -2556,7 +2519,7 @@ Partial Class evaluation
         Me.Label47.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label47.Location = New System.Drawing.Point(895, 9)
         Me.Label47.Name = "Label47"
-        Me.Label47.Size = New System.Drawing.Size(13, 14)
+        Me.Label47.Size = New System.Drawing.Size(16, 16)
         Me.Label47.TabIndex = 122
         Me.Label47.Text = "6"
         '
@@ -2567,7 +2530,7 @@ Partial Class evaluation
         Me.Label48.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label48.Location = New System.Drawing.Point(592, 9)
         Me.Label48.Name = "Label48"
-        Me.Label48.Size = New System.Drawing.Size(13, 14)
+        Me.Label48.Size = New System.Drawing.Size(16, 16)
         Me.Label48.TabIndex = 117
         Me.Label48.Text = "1"
         '
@@ -2578,7 +2541,7 @@ Partial Class evaluation
         Me.Label49.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label49.Location = New System.Drawing.Point(836, 9)
         Me.Label49.Name = "Label49"
-        Me.Label49.Size = New System.Drawing.Size(13, 14)
+        Me.Label49.Size = New System.Drawing.Size(16, 16)
         Me.Label49.TabIndex = 121
         Me.Label49.Text = "5"
         '
@@ -2589,7 +2552,7 @@ Partial Class evaluation
         Me.Label50.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label50.Location = New System.Drawing.Point(652, 9)
         Me.Label50.Name = "Label50"
-        Me.Label50.Size = New System.Drawing.Size(13, 14)
+        Me.Label50.Size = New System.Drawing.Size(16, 16)
         Me.Label50.TabIndex = 118
         Me.Label50.Text = "2"
         '
@@ -2600,7 +2563,7 @@ Partial Class evaluation
         Me.Label51.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label51.Location = New System.Drawing.Point(709, 9)
         Me.Label51.Name = "Label51"
-        Me.Label51.Size = New System.Drawing.Size(13, 14)
+        Me.Label51.Size = New System.Drawing.Size(16, 16)
         Me.Label51.TabIndex = 120
         Me.Label51.Text = "3"
         '
@@ -2611,7 +2574,7 @@ Partial Class evaluation
         Me.Label52.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label52.Location = New System.Drawing.Point(775, 9)
         Me.Label52.Name = "Label52"
-        Me.Label52.Size = New System.Drawing.Size(13, 14)
+        Me.Label52.Size = New System.Drawing.Size(16, 16)
         Me.Label52.TabIndex = 119
         Me.Label52.Text = "4"
         '
@@ -2638,11 +2601,11 @@ Partial Class evaluation
         Me.BunifuCards15.Controls.Add(Me.Label44)
         Me.BunifuCards15.Controls.Add(Me.Label45)
         Me.BunifuCards15.LeftSahddow = False
-        Me.BunifuCards15.Location = New System.Drawing.Point(0, 306)
+        Me.BunifuCards15.Location = New System.Drawing.Point(0, 392)
         Me.BunifuCards15.Name = "BunifuCards15"
         Me.BunifuCards15.RightSahddow = True
         Me.BunifuCards15.ShadowDepth = 50
-        Me.BunifuCards15.Size = New System.Drawing.Size(1089, 44)
+        Me.BunifuCards15.Size = New System.Drawing.Size(1089, 48)
         Me.BunifuCards15.TabIndex = 20
         '
         'Label118
@@ -2652,7 +2615,7 @@ Partial Class evaluation
         Me.Label118.ForeColor = System.Drawing.Color.DarkGray
         Me.Label118.Location = New System.Drawing.Point(2, 14)
         Me.Label118.Name = "Label118"
-        Me.Label118.Size = New System.Drawing.Size(112, 14)
+        Me.Label118.Size = New System.Drawing.Size(128, 18)
         Me.Label118.TabIndex = 124
         Me.Label118.Text = "koooooooooooooo"
         '
@@ -2753,7 +2716,7 @@ Partial Class evaluation
         Me.Label39.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label39.Location = New System.Drawing.Point(946, 9)
         Me.Label39.Name = "Label39"
-        Me.Label39.Size = New System.Drawing.Size(13, 14)
+        Me.Label39.Size = New System.Drawing.Size(16, 16)
         Me.Label39.TabIndex = 123
         Me.Label39.Text = "7"
         '
@@ -2779,7 +2742,7 @@ Partial Class evaluation
         Me.Label40.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label40.Location = New System.Drawing.Point(895, 9)
         Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(13, 14)
+        Me.Label40.Size = New System.Drawing.Size(16, 16)
         Me.Label40.TabIndex = 122
         Me.Label40.Text = "6"
         '
@@ -2790,7 +2753,7 @@ Partial Class evaluation
         Me.Label41.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label41.Location = New System.Drawing.Point(592, 9)
         Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(13, 14)
+        Me.Label41.Size = New System.Drawing.Size(16, 16)
         Me.Label41.TabIndex = 117
         Me.Label41.Text = "1"
         '
@@ -2801,7 +2764,7 @@ Partial Class evaluation
         Me.Label42.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label42.Location = New System.Drawing.Point(836, 9)
         Me.Label42.Name = "Label42"
-        Me.Label42.Size = New System.Drawing.Size(13, 14)
+        Me.Label42.Size = New System.Drawing.Size(16, 16)
         Me.Label42.TabIndex = 121
         Me.Label42.Text = "5"
         '
@@ -2812,7 +2775,7 @@ Partial Class evaluation
         Me.Label43.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label43.Location = New System.Drawing.Point(652, 9)
         Me.Label43.Name = "Label43"
-        Me.Label43.Size = New System.Drawing.Size(13, 14)
+        Me.Label43.Size = New System.Drawing.Size(16, 16)
         Me.Label43.TabIndex = 118
         Me.Label43.Text = "2"
         '
@@ -2823,7 +2786,7 @@ Partial Class evaluation
         Me.Label44.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label44.Location = New System.Drawing.Point(709, 9)
         Me.Label44.Name = "Label44"
-        Me.Label44.Size = New System.Drawing.Size(13, 14)
+        Me.Label44.Size = New System.Drawing.Size(16, 16)
         Me.Label44.TabIndex = 120
         Me.Label44.Text = "3"
         '
@@ -2834,455 +2797,9 @@ Partial Class evaluation
         Me.Label45.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label45.Location = New System.Drawing.Point(775, 9)
         Me.Label45.Name = "Label45"
-        Me.Label45.Size = New System.Drawing.Size(13, 14)
+        Me.Label45.Size = New System.Drawing.Size(16, 16)
         Me.Label45.TabIndex = 119
         Me.Label45.Text = "4"
-        '
-        'BunifuCards14
-        '
-        Me.BunifuCards14.BackColor = System.Drawing.Color.White
-        Me.BunifuCards14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuCards14.BorderRadius = 5
-        Me.BunifuCards14.BottomSahddow = True
-        Me.BunifuCards14.color = System.Drawing.Color.White
-        Me.BunifuCards14.Controls.Add(Me.Label119)
-        Me.BunifuCards14.Controls.Add(Me.v7)
-        Me.BunifuCards14.Controls.Add(Me.v1)
-        Me.BunifuCards14.Controls.Add(Me.v2)
-        Me.BunifuCards14.Controls.Add(Me.v3)
-        Me.BunifuCards14.Controls.Add(Me.v4)
-        Me.BunifuCards14.Controls.Add(Me.v5)
-        Me.BunifuCards14.Controls.Add(Me.Label32)
-        Me.BunifuCards14.Controls.Add(Me.v6)
-        Me.BunifuCards14.Controls.Add(Me.Label33)
-        Me.BunifuCards14.Controls.Add(Me.Label34)
-        Me.BunifuCards14.Controls.Add(Me.Label35)
-        Me.BunifuCards14.Controls.Add(Me.Label36)
-        Me.BunifuCards14.Controls.Add(Me.Label37)
-        Me.BunifuCards14.Controls.Add(Me.Label38)
-        Me.BunifuCards14.LeftSahddow = False
-        Me.BunifuCards14.Location = New System.Drawing.Point(0, 339)
-        Me.BunifuCards14.Name = "BunifuCards14"
-        Me.BunifuCards14.RightSahddow = True
-        Me.BunifuCards14.ShadowDepth = 50
-        Me.BunifuCards14.Size = New System.Drawing.Size(1089, 44)
-        Me.BunifuCards14.TabIndex = 20
-        '
-        'Label119
-        '
-        Me.Label119.AutoSize = True
-        Me.Label119.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label119.ForeColor = System.Drawing.Color.DarkGray
-        Me.Label119.Location = New System.Drawing.Point(2, 14)
-        Me.Label119.Name = "Label119"
-        Me.Label119.Size = New System.Drawing.Size(112, 14)
-        Me.Label119.TabIndex = 124
-        Me.Label119.Text = "koooooooooooooo"
-        '
-        'v7
-        '
-        Me.v7.BackColor = System.Drawing.Color.Transparent
-        Me.v7.BackgroundImage = CType(resources.GetObject("v7.BackgroundImage"), System.Drawing.Image)
-        Me.v7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.v7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.v7.Location = New System.Drawing.Point(939, 20)
-        Me.v7.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.v7.Name = "v7"
-        Me.v7.OffColor = System.Drawing.Color.Gainsboro
-        Me.v7.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.v7.Size = New System.Drawing.Size(35, 20)
-        Me.v7.TabIndex = 115
-        Me.v7.Value = False
-        '
-        'v1
-        '
-        Me.v1.BackColor = System.Drawing.Color.Transparent
-        Me.v1.BackgroundImage = CType(resources.GetObject("v1.BackgroundImage"), System.Drawing.Image)
-        Me.v1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.v1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.v1.Location = New System.Drawing.Point(579, 20)
-        Me.v1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.v1.Name = "v1"
-        Me.v1.OffColor = System.Drawing.Color.Gainsboro
-        Me.v1.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.v1.Size = New System.Drawing.Size(35, 20)
-        Me.v1.TabIndex = 114
-        Me.v1.Value = False
-        '
-        'v2
-        '
-        Me.v2.BackColor = System.Drawing.Color.Transparent
-        Me.v2.BackgroundImage = CType(resources.GetObject("v2.BackgroundImage"), System.Drawing.Image)
-        Me.v2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.v2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.v2.Location = New System.Drawing.Point(637, 20)
-        Me.v2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.v2.Name = "v2"
-        Me.v2.OffColor = System.Drawing.Color.Gainsboro
-        Me.v2.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.v2.Size = New System.Drawing.Size(35, 20)
-        Me.v2.TabIndex = 113
-        Me.v2.Value = False
-        '
-        'v3
-        '
-        Me.v3.BackColor = System.Drawing.Color.Transparent
-        Me.v3.BackgroundImage = CType(resources.GetObject("v3.BackgroundImage"), System.Drawing.Image)
-        Me.v3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.v3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.v3.Location = New System.Drawing.Point(696, 20)
-        Me.v3.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.v3.Name = "v3"
-        Me.v3.OffColor = System.Drawing.Color.Gainsboro
-        Me.v3.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.v3.Size = New System.Drawing.Size(35, 20)
-        Me.v3.TabIndex = 112
-        Me.v3.Value = False
-        '
-        'v4
-        '
-        Me.v4.BackColor = System.Drawing.Color.Transparent
-        Me.v4.BackgroundImage = CType(resources.GetObject("v4.BackgroundImage"), System.Drawing.Image)
-        Me.v4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.v4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.v4.Location = New System.Drawing.Point(764, 20)
-        Me.v4.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.v4.Name = "v4"
-        Me.v4.OffColor = System.Drawing.Color.Gainsboro
-        Me.v4.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.v4.Size = New System.Drawing.Size(35, 20)
-        Me.v4.TabIndex = 111
-        Me.v4.Value = False
-        '
-        'v5
-        '
-        Me.v5.BackColor = System.Drawing.Color.Transparent
-        Me.v5.BackgroundImage = CType(resources.GetObject("v5.BackgroundImage"), System.Drawing.Image)
-        Me.v5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.v5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.v5.Location = New System.Drawing.Point(825, 20)
-        Me.v5.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.v5.Name = "v5"
-        Me.v5.OffColor = System.Drawing.Color.Gainsboro
-        Me.v5.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.v5.Size = New System.Drawing.Size(35, 20)
-        Me.v5.TabIndex = 110
-        Me.v5.Value = False
-        '
-        'Label32
-        '
-        Me.Label32.AutoSize = True
-        Me.Label32.BackColor = System.Drawing.Color.Transparent
-        Me.Label32.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label32.Location = New System.Drawing.Point(946, 9)
-        Me.Label32.Name = "Label32"
-        Me.Label32.Size = New System.Drawing.Size(13, 14)
-        Me.Label32.TabIndex = 123
-        Me.Label32.Text = "7"
-        '
-        'v6
-        '
-        Me.v6.BackColor = System.Drawing.Color.Transparent
-        Me.v6.BackgroundImage = CType(resources.GetObject("v6.BackgroundImage"), System.Drawing.Image)
-        Me.v6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.v6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.v6.Location = New System.Drawing.Point(883, 20)
-        Me.v6.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.v6.Name = "v6"
-        Me.v6.OffColor = System.Drawing.Color.Gainsboro
-        Me.v6.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.v6.Size = New System.Drawing.Size(35, 20)
-        Me.v6.TabIndex = 116
-        Me.v6.Value = False
-        '
-        'Label33
-        '
-        Me.Label33.AutoSize = True
-        Me.Label33.BackColor = System.Drawing.Color.Transparent
-        Me.Label33.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label33.Location = New System.Drawing.Point(895, 9)
-        Me.Label33.Name = "Label33"
-        Me.Label33.Size = New System.Drawing.Size(13, 14)
-        Me.Label33.TabIndex = 122
-        Me.Label33.Text = "6"
-        '
-        'Label34
-        '
-        Me.Label34.AutoSize = True
-        Me.Label34.BackColor = System.Drawing.Color.Transparent
-        Me.Label34.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(592, 9)
-        Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(13, 14)
-        Me.Label34.TabIndex = 117
-        Me.Label34.Text = "1"
-        '
-        'Label35
-        '
-        Me.Label35.AutoSize = True
-        Me.Label35.BackColor = System.Drawing.Color.Transparent
-        Me.Label35.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(836, 9)
-        Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(13, 14)
-        Me.Label35.TabIndex = 121
-        Me.Label35.Text = "5"
-        '
-        'Label36
-        '
-        Me.Label36.AutoSize = True
-        Me.Label36.BackColor = System.Drawing.Color.Transparent
-        Me.Label36.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label36.Location = New System.Drawing.Point(652, 9)
-        Me.Label36.Name = "Label36"
-        Me.Label36.Size = New System.Drawing.Size(13, 14)
-        Me.Label36.TabIndex = 118
-        Me.Label36.Text = "2"
-        '
-        'Label37
-        '
-        Me.Label37.AutoSize = True
-        Me.Label37.BackColor = System.Drawing.Color.Transparent
-        Me.Label37.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(709, 9)
-        Me.Label37.Name = "Label37"
-        Me.Label37.Size = New System.Drawing.Size(13, 14)
-        Me.Label37.TabIndex = 120
-        Me.Label37.Text = "3"
-        '
-        'Label38
-        '
-        Me.Label38.AutoSize = True
-        Me.Label38.BackColor = System.Drawing.Color.Transparent
-        Me.Label38.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label38.Location = New System.Drawing.Point(775, 9)
-        Me.Label38.Name = "Label38"
-        Me.Label38.Size = New System.Drawing.Size(13, 14)
-        Me.Label38.TabIndex = 119
-        Me.Label38.Text = "4"
-        '
-        'BunifuCards13
-        '
-        Me.BunifuCards13.BackColor = System.Drawing.Color.White
-        Me.BunifuCards13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BunifuCards13.BorderRadius = 5
-        Me.BunifuCards13.BottomSahddow = True
-        Me.BunifuCards13.color = System.Drawing.Color.White
-        Me.BunifuCards13.Controls.Add(Me.Label120)
-        Me.BunifuCards13.Controls.Add(Me.e7)
-        Me.BunifuCards13.Controls.Add(Me.e1)
-        Me.BunifuCards13.Controls.Add(Me.e2)
-        Me.BunifuCards13.Controls.Add(Me.e3)
-        Me.BunifuCards13.Controls.Add(Me.e4)
-        Me.BunifuCards13.Controls.Add(Me.e5)
-        Me.BunifuCards13.Controls.Add(Me.Label31)
-        Me.BunifuCards13.Controls.Add(Me.e6)
-        Me.BunifuCards13.Controls.Add(Me.Label30)
-        Me.BunifuCards13.Controls.Add(Me.Label25)
-        Me.BunifuCards13.Controls.Add(Me.Label29)
-        Me.BunifuCards13.Controls.Add(Me.Label26)
-        Me.BunifuCards13.Controls.Add(Me.Label27)
-        Me.BunifuCards13.Controls.Add(Me.Label28)
-        Me.BunifuCards13.LeftSahddow = False
-        Me.BunifuCards13.Location = New System.Drawing.Point(0, 372)
-        Me.BunifuCards13.Name = "BunifuCards13"
-        Me.BunifuCards13.RightSahddow = True
-        Me.BunifuCards13.ShadowDepth = 50
-        Me.BunifuCards13.Size = New System.Drawing.Size(1089, 44)
-        Me.BunifuCards13.TabIndex = 20
-        '
-        'Label120
-        '
-        Me.Label120.AutoSize = True
-        Me.Label120.Font = New System.Drawing.Font("Consolas", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label120.ForeColor = System.Drawing.Color.DarkGray
-        Me.Label120.Location = New System.Drawing.Point(2, 12)
-        Me.Label120.Name = "Label120"
-        Me.Label120.Size = New System.Drawing.Size(112, 14)
-        Me.Label120.TabIndex = 124
-        Me.Label120.Text = "koooooooooooooo"
-        '
-        'e7
-        '
-        Me.e7.BackColor = System.Drawing.Color.Transparent
-        Me.e7.BackgroundImage = CType(resources.GetObject("e7.BackgroundImage"), System.Drawing.Image)
-        Me.e7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.e7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.e7.Location = New System.Drawing.Point(939, 20)
-        Me.e7.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.e7.Name = "e7"
-        Me.e7.OffColor = System.Drawing.Color.Gainsboro
-        Me.e7.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.e7.Size = New System.Drawing.Size(35, 20)
-        Me.e7.TabIndex = 115
-        Me.e7.Value = False
-        '
-        'e1
-        '
-        Me.e1.BackColor = System.Drawing.Color.Transparent
-        Me.e1.BackgroundImage = CType(resources.GetObject("e1.BackgroundImage"), System.Drawing.Image)
-        Me.e1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.e1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.e1.Location = New System.Drawing.Point(579, 20)
-        Me.e1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.e1.Name = "e1"
-        Me.e1.OffColor = System.Drawing.Color.Gainsboro
-        Me.e1.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.e1.Size = New System.Drawing.Size(35, 20)
-        Me.e1.TabIndex = 114
-        Me.e1.Value = False
-        '
-        'e2
-        '
-        Me.e2.BackColor = System.Drawing.Color.Transparent
-        Me.e2.BackgroundImage = CType(resources.GetObject("e2.BackgroundImage"), System.Drawing.Image)
-        Me.e2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.e2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.e2.Location = New System.Drawing.Point(637, 20)
-        Me.e2.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.e2.Name = "e2"
-        Me.e2.OffColor = System.Drawing.Color.Gainsboro
-        Me.e2.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.e2.Size = New System.Drawing.Size(35, 20)
-        Me.e2.TabIndex = 113
-        Me.e2.Value = False
-        '
-        'e3
-        '
-        Me.e3.BackColor = System.Drawing.Color.Transparent
-        Me.e3.BackgroundImage = CType(resources.GetObject("e3.BackgroundImage"), System.Drawing.Image)
-        Me.e3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.e3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.e3.Location = New System.Drawing.Point(696, 20)
-        Me.e3.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.e3.Name = "e3"
-        Me.e3.OffColor = System.Drawing.Color.Gainsboro
-        Me.e3.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.e3.Size = New System.Drawing.Size(35, 20)
-        Me.e3.TabIndex = 112
-        Me.e3.Value = False
-        '
-        'e4
-        '
-        Me.e4.BackColor = System.Drawing.Color.Transparent
-        Me.e4.BackgroundImage = CType(resources.GetObject("e4.BackgroundImage"), System.Drawing.Image)
-        Me.e4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.e4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.e4.Location = New System.Drawing.Point(764, 20)
-        Me.e4.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.e4.Name = "e4"
-        Me.e4.OffColor = System.Drawing.Color.Gainsboro
-        Me.e4.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.e4.Size = New System.Drawing.Size(35, 20)
-        Me.e4.TabIndex = 111
-        Me.e4.Value = False
-        '
-        'e5
-        '
-        Me.e5.BackColor = System.Drawing.Color.Transparent
-        Me.e5.BackgroundImage = CType(resources.GetObject("e5.BackgroundImage"), System.Drawing.Image)
-        Me.e5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.e5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.e5.Location = New System.Drawing.Point(825, 20)
-        Me.e5.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.e5.Name = "e5"
-        Me.e5.OffColor = System.Drawing.Color.Gainsboro
-        Me.e5.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.e5.Size = New System.Drawing.Size(35, 20)
-        Me.e5.TabIndex = 110
-        Me.e5.Value = False
-        '
-        'Label31
-        '
-        Me.Label31.AutoSize = True
-        Me.Label31.BackColor = System.Drawing.Color.Transparent
-        Me.Label31.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(951, 9)
-        Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(13, 14)
-        Me.Label31.TabIndex = 123
-        Me.Label31.Text = "7"
-        '
-        'e6
-        '
-        Me.e6.BackColor = System.Drawing.Color.Transparent
-        Me.e6.BackgroundImage = CType(resources.GetObject("e6.BackgroundImage"), System.Drawing.Image)
-        Me.e6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.e6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.e6.Location = New System.Drawing.Point(883, 20)
-        Me.e6.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.e6.Name = "e6"
-        Me.e6.OffColor = System.Drawing.Color.Gainsboro
-        Me.e6.OnColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(202, Byte), Integer), CType(CType(94, Byte), Integer))
-        Me.e6.Size = New System.Drawing.Size(35, 20)
-        Me.e6.TabIndex = 116
-        Me.e6.Value = False
-        '
-        'Label30
-        '
-        Me.Label30.AutoSize = True
-        Me.Label30.BackColor = System.Drawing.Color.Transparent
-        Me.Label30.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(895, 9)
-        Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(13, 14)
-        Me.Label30.TabIndex = 122
-        Me.Label30.Text = "6"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.BackColor = System.Drawing.Color.Transparent
-        Me.Label25.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(592, 9)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(13, 14)
-        Me.Label25.TabIndex = 117
-        Me.Label25.Text = "1"
-        '
-        'Label29
-        '
-        Me.Label29.AutoSize = True
-        Me.Label29.BackColor = System.Drawing.Color.Transparent
-        Me.Label29.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(836, 9)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(13, 14)
-        Me.Label29.TabIndex = 121
-        Me.Label29.Text = "5"
-        '
-        'Label26
-        '
-        Me.Label26.AutoSize = True
-        Me.Label26.BackColor = System.Drawing.Color.Transparent
-        Me.Label26.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(652, 9)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(13, 14)
-        Me.Label26.TabIndex = 118
-        Me.Label26.Text = "2"
-        '
-        'Label27
-        '
-        Me.Label27.AutoSize = True
-        Me.Label27.BackColor = System.Drawing.Color.Transparent
-        Me.Label27.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(709, 9)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(13, 14)
-        Me.Label27.TabIndex = 120
-        Me.Label27.Text = "3"
-        '
-        'Label28
-        '
-        Me.Label28.AutoSize = True
-        Me.Label28.BackColor = System.Drawing.Color.Transparent
-        Me.Label28.Font = New System.Drawing.Font("Arial", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(775, 9)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(13, 14)
-        Me.Label28.TabIndex = 119
-        Me.Label28.Text = "4"
         '
         'BunifuCards10
         '
@@ -3296,7 +2813,7 @@ Partial Class evaluation
         Me.BunifuCards10.Controls.Add(Me.Button4)
         Me.BunifuCards10.Controls.Add(Me.Button3)
         Me.BunifuCards10.LeftSahddow = True
-        Me.BunifuCards10.Location = New System.Drawing.Point(269, 429)
+        Me.BunifuCards10.Location = New System.Drawing.Point(269, 446)
         Me.BunifuCards10.Name = "BunifuCards10"
         Me.BunifuCards10.RightSahddow = True
         Me.BunifuCards10.ShadowDepth = 50
@@ -3373,7 +2890,7 @@ Partial Class evaluation
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(3, 434)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(0, 15)
+        Me.Label10.Size = New System.Drawing.Size(0, 20)
         Me.Label10.TabIndex = 105
         Me.Label10.Visible = False
         '
@@ -3402,7 +2919,7 @@ Partial Class evaluation
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(1, 6)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(205, 30)
+        Me.ComboBox1.Size = New System.Drawing.Size(205, 36)
         Me.ComboBox1.TabIndex = 20
         '
         'BunifuCards3
@@ -3430,7 +2947,7 @@ Partial Class evaluation
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(1, 5)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(161, 30)
+        Me.ComboBox2.Size = New System.Drawing.Size(161, 36)
         Me.ComboBox2.TabIndex = 21
         '
         'TextBox1
@@ -3494,7 +3011,7 @@ Partial Class evaluation
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(0, 3)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(222, 30)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(222, 35)
         Me.DateTimePicker1.TabIndex = 20
         '
         'BunifuCards6
@@ -3592,7 +3109,7 @@ Partial Class evaluation
         Me.ComboBox3.Items.AddRange(New Object() {"BCA", "BCom", "BBA", "BA", "PUC"})
         Me.ComboBox3.Location = New System.Drawing.Point(3, 7)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(95, 30)
+        Me.ComboBox3.Size = New System.Drawing.Size(95, 36)
         Me.ComboBox3.TabIndex = 20
         '
         'BunifuCards9
@@ -3620,7 +3137,7 @@ Partial Class evaluation
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Location = New System.Drawing.Point(0, 7)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(125, 30)
+        Me.ComboBox4.Size = New System.Drawing.Size(125, 36)
         Me.ComboBox4.TabIndex = 20
         '
         'BunifuCards11
@@ -3689,7 +3206,7 @@ Partial Class evaluation
         Me.Label121.ForeColor = System.Drawing.Color.DimGray
         Me.Label121.Location = New System.Drawing.Point(707, 56)
         Me.Label121.Name = "Label121"
-        Me.Label121.Size = New System.Drawing.Size(51, 18)
+        Me.Label121.Size = New System.Drawing.Size(70, 22)
         Me.Label121.TabIndex = 1
         Me.Label121.Text = "Section"
         '
@@ -3730,7 +3247,7 @@ Partial Class evaluation
         '
         'evaluation
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
@@ -3787,10 +3304,6 @@ Partial Class evaluation
         Me.BunifuCards16.PerformLayout()
         Me.BunifuCards15.ResumeLayout(False)
         Me.BunifuCards15.PerformLayout()
-        Me.BunifuCards14.ResumeLayout(False)
-        Me.BunifuCards14.PerformLayout()
-        Me.BunifuCards13.ResumeLayout(False)
-        Me.BunifuCards13.PerformLayout()
         Me.BunifuCards10.ResumeLayout(False)
         CType(Me.Button5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Button6, System.ComponentModel.ISupportInitialize).EndInit()
@@ -3867,21 +3380,6 @@ Partial Class evaluation
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents BunifuCards13 As Bunifu.Framework.UI.BunifuCards
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label29 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label30 As Label
-    Friend WithEvents e6 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents Label31 As Label
-    Friend WithEvents e5 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents e4 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents e3 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents e2 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents e1 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents e7 As Bunifu.Framework.UI.BunifuiOSSwitch
     Friend WithEvents BunifuCards21 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents s7 As Bunifu.Framework.UI.BunifuiOSSwitch
     Friend WithEvents s1 As Bunifu.Framework.UI.BunifuiOSSwitch
@@ -3938,14 +3436,6 @@ Partial Class evaluation
     Friend WithEvents o4 As Bunifu.Framework.UI.BunifuiOSSwitch
     Friend WithEvents o5 As Bunifu.Framework.UI.BunifuiOSSwitch
     Friend WithEvents o6 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents BunifuCards14 As Bunifu.Framework.UI.BunifuCards
-    Friend WithEvents v7 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents v1 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents v2 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents v3 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents v4 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents v5 As Bunifu.Framework.UI.BunifuiOSSwitch
-    Friend WithEvents v6 As Bunifu.Framework.UI.BunifuiOSSwitch
     Friend WithEvents BunifuCards22 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents r7 As Bunifu.Framework.UI.BunifuiOSSwitch
     Friend WithEvents r1 As Bunifu.Framework.UI.BunifuiOSSwitch
@@ -3961,13 +3451,6 @@ Partial Class evaluation
     Friend WithEvents Label90 As Label
     Friend WithEvents Label89 As Label
     Friend WithEvents Label88 As Label
-    Friend WithEvents Label38 As Label
-    Friend WithEvents Label37 As Label
-    Friend WithEvents Label36 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label34 As Label
-    Friend WithEvents Label33 As Label
-    Friend WithEvents Label32 As Label
     Friend WithEvents Label45 As Label
     Friend WithEvents Label44 As Label
     Friend WithEvents Label43 As Label
@@ -4057,8 +3540,6 @@ Partial Class evaluation
     Friend WithEvents Label116 As Label
     Friend WithEvents Label117 As Label
     Friend WithEvents Label118 As Label
-    Friend WithEvents Label119 As Label
-    Friend WithEvents Label120 As Label
     Friend WithEvents Label121 As Label
     Friend WithEvents BunifuCards25 As Bunifu.Framework.UI.BunifuCards
     Friend WithEvents sectxt As Bunifu.Framework.UI.BunifuMaterialTextbox
