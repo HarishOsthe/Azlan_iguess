@@ -327,7 +327,7 @@ Public Class evaluation
             Label114.Text = "6) Does the assignments / worked-out problems / case" + vbNewLine + "studies / presentation provided in each of the concepts" + vbNewLine + "help students to develop practical knowledge?"
             Label115.Text = "7) Does the faculty able to control the class well and deals" + vbNewLine + "with the students maturely and professionally?"
             Label116.Text = "8) Does the faculty effectively uses the black board / charts /" + vbNewLine + "OHP / PPT / Demo and notes for better communication?"
-            Label117.Text = "9) Does the faculty help the students from the examination" + vbNewLine + "popint of view (Question paper, relevant material etc.)"
+            Label117.Text = "9) Does the faculty help the students from the examination" + vbNewLine + "point of view (Question paper, relevant material etc.)"
             Label118.Text = "10) The overall rating of the faculty is"
 
             DateTimePicker1.Format = DateTimePickerFormat.Custom
@@ -470,59 +470,64 @@ Public Class evaluation
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Try
-            If ComboBox1.Text <> "" And ComboBox2.Text <> "" And TextBox1.Text <> "" And TextBox2.Text <> "" And ComboBox3.Text <> "" And ComboBox4.Text <> "" And TextBox3.Text <> "" And Label8.Text <> "" And Label10.Text <> "" And Label11.Text <> "" And Label12.Text <> "" And Label13.Text <> "" And Label14.Text <> "" And Label15.Text <> "" And Label16.Text <> "" And Label17.Text <> "" And Label18.Text <> "" And Label19.Text <> "" Then ''And Label20.Text <> "" And Label21.Text <> "" Then
-                If sectxt.Text = "" Then
-                    sectxt.Text = "-"
-                End If
+            If CInt(Label22.Text) <= CInt(TextBox3.Text) Then
+                If ComboBox1.Text <> "" And ComboBox2.Text <> "" And TextBox1.Text <> "" And TextBox2.Text <> "" And ComboBox3.Text <> "" And ComboBox4.Text <> "" And TextBox3.Text <> "" And Label8.Text <> "" And Label10.Text <> "" And Label11.Text <> "" And Label12.Text <> "" And Label13.Text <> "" And Label14.Text <> "" And Label15.Text <> "" And Label16.Text <> "" And Label17.Text <> "" And Label18.Text <> "" And Label19.Text <> "" Then ''And Label20.Text <> "" And Label21.Text <> "" Then
+                    If sectxt.Text = "" Then
+                        sectxt.Text = "-"
+                    End If
 
-                Try
+                    Try
+                        If conn.State = ConnectionState.Open Then conn.Close()
+                        conn.Open()
+                        Dim cmd1 As New OleDbCommand("Delete from Record Where Std_no=" & Val(Label22.Text) & "", conn)
+                        cmd1.ExecuteNonQuery()
+                    Catch ex As Exception
+                        MsgBox(ex.Message)
+                    End Try
+
                     If conn.State = ConnectionState.Open Then conn.Close()
                     conn.Open()
-                    Dim cmd1 As New OleDbCommand("Delete from Record Where Std_no=" & Val(Label22.Text) & "", conn)
-                    cmd1.ExecuteNonQuery()
-                Catch ex As Exception
-                    MsgBox(ex.Message)
-                End Try
-
-                If conn.State = ConnectionState.Open Then conn.Close()
-                conn.Open()
-                Dim cmd As New OleDbCommand("insert into Record(Std_no,Fac_Code,Fac_Name,sub,Eval_date,Course,Stream,Dept_Name,total_strength,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,Sec) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", conn)
-                cmd.Parameters.Clear()
-                cmd.Parameters.AddWithValue("Std_no", Label22.Text)
-                cmd.Parameters.AddWithValue("Fac_Code", TextBox1.Text)
-                cmd.Parameters.AddWithValue("Fac_Name", ComboBox2.Text)
-                cmd.Parameters.AddWithValue("sub", TextBox2.Text)
-                cmd.Parameters.AddWithValue("Eval_Date", Label8.Text)
-                cmd.Parameters.AddWithValue("Course", ComboBox3.Text)
-                cmd.Parameters.AddWithValue("Stream", ComboBox4.Text)
-                cmd.Parameters.AddWithValue("Dept_Name", ComboBox1.Text)
-                cmd.Parameters.AddWithValue("total_strength", TextBox3.Text)
-                cmd.Parameters.AddWithValue("q1", Label10.Text)
-                cmd.Parameters.AddWithValue("q2", Label11.Text)
-                cmd.Parameters.AddWithValue("q3", Label12.Text)
-                cmd.Parameters.AddWithValue("q4", Label13.Text)
-                cmd.Parameters.AddWithValue("q5", Label14.Text)
-                cmd.Parameters.AddWithValue("q6", Label15.Text)
-                cmd.Parameters.AddWithValue("q7", Label16.Text)
-                cmd.Parameters.AddWithValue("q8", Label17.Text)
-                cmd.Parameters.AddWithValue("q9", Label18.Text)
-                cmd.Parameters.AddWithValue("q10", Label19.Text)
-                ''cmd.Parameters.AddWithValue("q11", Label20.Text)
-                ''cmd.Parameters.AddWithValue("q12", Label21.Text)
-                cmd.Parameters.AddWithValue("Sec", sectxt.Text)
-                Try
-                    cmd.ExecuteNonQuery()
-                    clear_data2(False)
-                    facsub()
-                    Label22.Text = (DS1.Tables(0).Rows(DG1.RowCount - 2)("Std_no").ToString) + 1 ''Val(Label22.Text) + 1
-                    cmd.Dispose()
-                    conn.Close()
-                Catch ex As Exception
-                    MsgBox(ex.Message)
-                End Try
+                    Dim cmd As New OleDbCommand("insert into Record(Std_no,Fac_Code,Fac_Name,sub,Eval_date,Course,Stream,Dept_Name,total_strength,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,Sec) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", conn)
+                    cmd.Parameters.Clear()
+                    cmd.Parameters.AddWithValue("Std_no", Label22.Text)
+                    cmd.Parameters.AddWithValue("Fac_Code", TextBox1.Text)
+                    cmd.Parameters.AddWithValue("Fac_Name", ComboBox2.Text)
+                    cmd.Parameters.AddWithValue("sub", TextBox2.Text)
+                    cmd.Parameters.AddWithValue("Eval_Date", Label8.Text)
+                    cmd.Parameters.AddWithValue("Course", ComboBox3.Text)
+                    cmd.Parameters.AddWithValue("Stream", ComboBox4.Text)
+                    cmd.Parameters.AddWithValue("Dept_Name", ComboBox1.Text)
+                    cmd.Parameters.AddWithValue("total_strength", TextBox3.Text)
+                    cmd.Parameters.AddWithValue("q1", Label10.Text)
+                    cmd.Parameters.AddWithValue("q2", Label11.Text)
+                    cmd.Parameters.AddWithValue("q3", Label12.Text)
+                    cmd.Parameters.AddWithValue("q4", Label13.Text)
+                    cmd.Parameters.AddWithValue("q5", Label14.Text)
+                    cmd.Parameters.AddWithValue("q6", Label15.Text)
+                    cmd.Parameters.AddWithValue("q7", Label16.Text)
+                    cmd.Parameters.AddWithValue("q8", Label17.Text)
+                    cmd.Parameters.AddWithValue("q9", Label18.Text)
+                    cmd.Parameters.AddWithValue("q10", Label19.Text)
+                    ''cmd.Parameters.AddWithValue("q11", Label20.Text)
+                    ''cmd.Parameters.AddWithValue("q12", Label21.Text)
+                    cmd.Parameters.AddWithValue("Sec", sectxt.Text)
+                    Try
+                        cmd.ExecuteNonQuery()
+                        clear_data2(False)
+                        facsub()
+                        Label22.Text = (DS1.Tables(0).Rows(DG1.RowCount - 2)("Std_no").ToString) + 1 ''Val(Label22.Text) + 1
+                        cmd.Dispose()
+                        conn.Close()
+                    Catch ex As Exception
+                        MsgBox(ex.Message)
+                    End Try
+                Else
+                    MsgBox("Make sure you have filled* all Data", MsgBoxStyle.Critical)
+                End If
             Else
-                MsgBox("Make sure you have filled* all Data", MsgBoxStyle.Critical)
+                clear_data2(False)
             End If
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

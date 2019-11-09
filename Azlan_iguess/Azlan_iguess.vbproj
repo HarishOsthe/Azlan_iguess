@@ -129,9 +129,7 @@
     <Compile Include="Controls\lets.Designer.vb">
       <DependentUpon>lets.vb</DependentUpon>
     </Compile>
-    <Compile Include="Controls\lets.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Controls\lets.vb" />
     <Compile Include="Controls\PrintAll.Designer.vb">
       <DependentUpon>PrintAll.vb</DependentUpon>
     </Compile>

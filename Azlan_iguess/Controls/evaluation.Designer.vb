@@ -520,6 +520,7 @@ Partial Class evaluation
         Me.DG1.Name = "DG1"
         Me.DG1.Size = New System.Drawing.Size(190, 101)
         Me.DG1.TabIndex = 8
+        Me.DG1.Visible = False
         '
         'BunifuCards1
         '
