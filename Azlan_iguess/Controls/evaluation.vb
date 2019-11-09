@@ -5,7 +5,7 @@ Public Class evaluation
 
     Dim DS1 As New DataSet
     Dim hr As Integer = -1
-    Dim har, har1, har2, har3, har4, har5, har6, har7, har8, har9, har10, har11, har12 As String
+    Dim har, har12 As String
     Dim ttp As New ToolTip
 
     Sub fac_names_load()
@@ -138,8 +138,6 @@ Public Class evaluation
         Label17.Text = ""
         Label18.Text = ""
         Label19.Text = ""
-        ''Label20.Text = ""
-        ''Label21.Text = ""
         Button1.Enabled = s
         Button2.Enabled = s
 
@@ -156,8 +154,6 @@ Public Class evaluation
         Label17.Text = ""
         Label18.Text = ""
         Label19.Text = ""
-        ''Label20.Text = ""
-        ''Label21.Text = ""
         Label22.Text = 1
         TextBox1.Enabled = False
         If Label23.Text = "Add Faculty" Then
@@ -272,22 +268,16 @@ Public Class evaluation
                     Case 1
                         h1 += 1
                     Case 2
-                        ''MsgBox("hey 2")
                         h2 += 1
                     Case 3
-                        ''MsgBox("hey 3")
                         h3 += 1
                     Case 4
-                        ''MsgBox("hey 4")
                         h4 += 1
                     Case 5
-                        ''MsgBox("hey 5")
                         h5 += 1
                     Case 6
-                        ''MsgBox("hey 6")
                         h6 += 1
                     Case 7
-                        ''MsgBox("hey 7")
                         h7 += 1
                 End Select
             End While
@@ -390,7 +380,7 @@ Public Class evaluation
 
                 Try
                     cmd.ExecuteNonQuery()
-                    MsgBox("New* Faculty " + ComboBox2.Text + "'s details added successfully!", MsgBoxStyle.Information)
+                    MsgBox("New faculty ☼" + ComboBox2.Text + "'s details added successfully!", MsgBoxStyle.Information)
                     cmd.Dispose()
                     conn.Close()
                     ComboBox2.Text = ""
@@ -439,7 +429,7 @@ Public Class evaluation
                 Try
                     Dim cmd As New OleDbCommand("delete from FacultyDB where Fac_Code='" & TextBox1.Text & "'", conn)
                     cmd.ExecuteNonQuery()
-                    mg = MsgBox("Are you sure! you wanna DELETE FeedBacks & Details of " + ComboBox2.Text + " ?", MsgBoxStyle.Exclamation + MsgBoxStyle.OkCancel)
+                    mg = MsgBox("Are you sure‼ you wanna permanently DELETE all 'FeedBacks & Details' of " + ComboBox2.Text + " ?", MsgBoxStyle.Exclamation + MsgBoxStyle.OkCancel)
 
 
                 Catch ex As Exception
@@ -455,7 +445,7 @@ Public Class evaluation
                         ComboBox1.Text = ""
                         ComboBox2.Text = ""
                         TextBox1.Text = ""
-                        MsgBox("Feedbacks & Details of " + ComboBox2.Text + " are been Removed* successfully! from the DataBase", MsgBoxStyle.Information)
+                        MsgBox("Feedbacks & Details of " + ComboBox2.Text + " has been removed successfully! from the DataBase", MsgBoxStyle.Information)
 
                     End If
                 Catch ex As Exception
@@ -508,8 +498,6 @@ Public Class evaluation
                     cmd.Parameters.AddWithValue("q8", Label17.Text)
                     cmd.Parameters.AddWithValue("q9", Label18.Text)
                     cmd.Parameters.AddWithValue("q10", Label19.Text)
-                    ''cmd.Parameters.AddWithValue("q11", Label20.Text)
-                    ''cmd.Parameters.AddWithValue("q12", Label21.Text)
                     cmd.Parameters.AddWithValue("Sec", sectxt.Text)
                     Try
                         cmd.ExecuteNonQuery()
@@ -522,7 +510,7 @@ Public Class evaluation
                         MsgBox(ex.Message)
                     End Try
                 Else
-                    MsgBox("Make sure you have filled* all Data", MsgBoxStyle.Critical)
+                    MsgBox("Make sure all the information was entered", MsgBoxStyle.Critical)
                 End If
             Else
                 clear_data2(False)
@@ -610,10 +598,8 @@ Public Class evaluation
                 q8 = Math.Round(calculate("q8"))
                 q9 = Math.Round(calculate("q9"))
                 q10 = Math.Round(calculate("q10"))
-                ''q11 = Math.Round(calculate("q11"))
-                ''q12 = Math.Round(calculate("q12"))
                 har = har12 ''har1 & har2 & har3 & har4 & har5 & har6 & har7 & har8 & har9 & har10 & har11 &
-                MsgBox(har)
+
 
                 If conn.State = ConnectionState.Open Then conn.Close()
                 conn.Open()
@@ -640,12 +626,10 @@ Public Class evaluation
                 cmd.Parameters.AddWithValue("q8", q8)
                 cmd.Parameters.AddWithValue("q9", q9)
                 cmd.Parameters.AddWithValue("q10", q10)
-                ''cmd.Parameters.AddWithValue("q11", q11)
-                ''cmd.Parameters.AddWithValue("q12", q12)
                 cmd.Parameters.AddWithValue("Sec", sectxt.Text)
                 Try
                     cmd.ExecuteNonQuery()
-                    MsgBox(stdno.ToString + " Feedbacks of " + DG1.Rows(0).Cells(2).Value.ToString + " is stored* successfully!", MsgBoxStyle.Information)
+                    MsgBox(stdno.ToString + " Feedbacks of " + DG1.Rows(0).Cells(2).Value.ToString + " has been saved successfully ☻", MsgBoxStyle.Information)
                     cmd.Dispose()
                     conn.Close()
 
@@ -665,7 +649,7 @@ Public Class evaluation
                     MsgBox(ex.Message)
                 End Try
             Else
-                MsgBox("Make sure you have filled* all Data", MsgBoxStyle.Critical)
+                MsgBox("Make sure all the information was entered", MsgBoxStyle.Critical)
             End If
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -988,12 +972,6 @@ Public Class evaluation
 
                     Label19.Text = DS1.Tables(0).Rows(hr)("q10").ToString()
                     light_val("o", Val(Label19.Text))
-
-                    ''Label20.Text = DS1.Tables(0).Rows(hr)("q11").ToString()
-                    ''light_val("v", Val(Label20.Text))
-
-                    ''Label21.Text = DS1.Tables(0).Rows(hr)("q12").ToString()
-                    ''light_val("e", Val(Label21.Text))
                 End If
             End If
         Catch ex As System.IndexOutOfRangeException
@@ -1008,8 +986,6 @@ Public Class evaluation
             Label17.Text = ""
             Label18.Text = ""
             Label19.Text = ""
-            ''Label20.Text = ""
-            ''Label21.Text = ""
             but(False)
         End Try
     End Sub
@@ -1080,12 +1056,6 @@ Public Class evaluation
 
                     Label19.Text = DS1.Tables(0).Rows(hr)("q10").ToString()
                     light_val("o", Val(Label19.Text))
-
-                    ''Label20.Text = DS1.Tables(0).Rows(hr)("q11").ToString()
-                    ''light_val("v", Val(Label20.Text))
-
-                    ''Label21.Text = DS1.Tables(0).Rows(hr)("q12").ToString()
-                    ''light_val("e", Val(Label21.Text))
                 End If
             End If
             ''S  End If
@@ -1101,8 +1071,6 @@ Public Class evaluation
             Label17.Text = ""
             Label18.Text = ""
             Label19.Text = ""
-            'Label20.Text = ""
-            'Label21.Text = ""
             but(False)
         End Try
     End Sub

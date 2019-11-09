@@ -101,7 +101,6 @@ Public Class Report
 
             dr.Read()
             Dim av As Double = (((Val(dr("q1").ToString) + Val(dr("q2").ToString) + Val(dr("q3").ToString) + Val(dr("q4").ToString) + Val(dr("q5").ToString) + Val(dr("q6").ToString) + Val(dr("q7").ToString) + Val(dr("q8").ToString) + Val(dr("q9").ToString) + Val(dr("q10").ToString)) * 10) / 84)
-            ''MsgBox(av)
             Progressbar1.ResetText()
             Progressbar1.MaxValue = 10
             Progressbar1.animated = True
@@ -135,8 +134,6 @@ Public Class Report
                 .Points.Add(dr("q8").ToString).Label = dr("q8").ToString
                 .Points.Add(dr("q9").ToString).Label = dr("q9").ToString
                 .Points.Add(dr("q10").ToString).Label = dr("q10").ToString
-                ''.Points.Add(dr("q11").ToString).Label = dr("q11").ToString
-                ''.Points.Add(dr("q12").ToString).Label = dr("q12").ToString
 
                 .Points(0).AxisLabel = "Q1"
                 .Points(1).AxisLabel = "Q2"
@@ -148,8 +145,6 @@ Public Class Report
                 .Points(7).AxisLabel = "Q8"
                 .Points(8).AxisLabel = "Q9"
                 .Points(9).AxisLabel = "Q10"
-                ''.Points(10).AxisLabel = "Q11"
-                ''.Points(11).AxisLabel = "Q12"
 
                 .Points(0).Color = Color.Violet
                 .Points(1).Color = Color.MediumSlateBlue
@@ -161,8 +156,6 @@ Public Class Report
                 .Points(7).Color = Color.MediumSlateBlue
                 .Points(8).Color = Color.Violet
                 .Points(9).Color = Color.MediumSlateBlue
-                ''.Points(10).Color = Color.Violet
-                ''.Points(11).Color = Color.MediumSlateBlue
             End With
             dr.Close()
             cmd.Dispose()
@@ -178,11 +171,8 @@ Public Class Report
     End Sub
     Private Sub Report_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         eval_dates()
-        ''PictureBox3.SizeMode = PictureBoxSizeMode.Normal
     End Sub ''1st
-    ''Chart1.ResetAutoValues()
     Private Sub DG1_CellMouseClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles DG1.CellMouseClick
-        ''Chart1.ResetAutoValues()
         Dim charval As String
         Dim charsub As String
         Dim charevaldate As String
@@ -206,7 +196,7 @@ Public Class Report
                 chartot = DG1.CurrentRow.Cells(7).Value
                 If charval <> "" Then
                     chart_design(charval, charsub, charevaldate, charcourse, charsem, chardept, charnum)
-                    Label4.Text = "Overall Ratings by " + charnum.ToString + " outof " + chartot.ToString + " Students"
+                    Label4.Text = "Overall ratings by " + charnum.ToString + " outof " + chartot.ToString + " students."
                 End If
             End If
         Catch ex As Exception
@@ -233,7 +223,6 @@ Public Class Report
             Dim d() As String
             d = Split(str, ",")
 
-            ''BunifuProgressBar1.Maximum_Value = BunifuProgressBar2.Maximum_Value = BunifuProgressBar3.Maximum_Value = BunifuProgressBar4.Maximum_Value = BunifuProgressBar5.Maximum_Value = BunifuProgressBar6.Maximum_Value = BunifuProgressBar7.Maximum_Value = DG1.CurrentRow.Cells(8).Value
             BunifuProgressBar1.Maximum_Value = DG1.CurrentRow.Cells(8).Value
             BunifuProgressBar2.Maximum_Value = DG1.CurrentRow.Cells(8).Value
             BunifuProgressBar3.Maximum_Value = DG1.CurrentRow.Cells(8).Value
@@ -312,9 +301,6 @@ Public Class Report
                 str = "'" & DG1.CurrentRow.Cells(21).Value.ToString & "'"
             End If
             e.Graphics.DrawString(": " + DG1.CurrentRow.Cells(4).Value + " " + DG1.CurrentRow.Cells(5).Value + " " + str, font3, Brushes.Black, 145, 530) ''class
-            ''x,y,xt,yt
-            '' e.Graphics.DrawRectangle(Pens.Black, 30, 600, 735, 80)
-
 
             Dim xs As Integer = 30
             For i = 1 To 10
@@ -336,7 +322,7 @@ Public Class Report
             e.Graphics.DrawString("Total Class", font3, Brushes.Black, pk, 600)
             e.Graphics.DrawString("Strength", font3, Brushes.Black, pk + 5, 615)
 
-            e.Graphics.DrawString("No.Of students", font3, Brushes.Black, pk + 120, 600)
+            e.Graphics.DrawString("No. of students", font3, Brushes.Black, pk + 120, 600)
             e.Graphics.DrawString("present", font3, Brushes.Black, pk + 140, 615)
 
             Dim va As Integer = 38
@@ -384,10 +370,8 @@ Public Class Report
             e.Graphics.DrawString("Q10) The overall rating of the faculty is", font5, Brushes.Black, 410, 1010)
 
             e.Graphics.DrawString("Q5) Does the faculty address subject related queries / doubts" + vbNewLine + "       and provide convincing solutions?", font5, Brushes.Black, 10, 1015)
-            ''e.Graphics.DrawString("11)Faculty is very punctual and maintains class decorum.", font5, Brushes.Black, 422, 1045)
 
             e.Graphics.DrawString("Q6) Does the assignments / worked-out problems / case studies /" + vbNewLine + "       presentation provided in each of the concepts help students to develop" + vbNewLine + "       practical knowledge?", font5, Brushes.Black, 10, 1050)
-            ''e.Graphics.DrawString("12)The overall rating of the faculty.", font5, Brushes.Black, 422, 1065)
 
             Dim p111 As New Point(190, 1100)
             Dim p222 As New Point(580, 1100)
@@ -417,7 +401,6 @@ Public Class Report
             Dim cmd1 As New OleDbCommand("update FacultyReport set Pri_Remarks='" & TextBox1.Text & "' where Fac_Code='" & DG1.CurrentRow.Cells(0).Value & "' and sub='" & DG1.CurrentRow.Cells(2).Value & "' and Eval_date='" & DG1.CurrentRow.Cells(3).Value & "' and Course='" & DG1.CurrentRow.Cells(4).Value & "' and Stream='" & DG1.CurrentRow.Cells(5).Value & "'", conn)
             Try
                 cmd1.ExecuteNonQuery()
-                ''  MsgBox("remarks saved")
                 cmd1.Dispose()
             Catch ex As Exception
                 MsgBox(ex.Message)
@@ -444,8 +427,6 @@ Public Class Report
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        ''PP1.ShowDialog()
-        ''PrintDialog1.ShowDialog()
     End Sub
 
     Private Sub DG1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DG1.CellContentClick

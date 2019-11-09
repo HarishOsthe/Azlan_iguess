@@ -42,7 +42,6 @@ Public Class PrintAll
             If conn.State = ConnectionState.Open Then conn.Close()
             conn.Open()
 
-            ''If ComboBox2.Text <> "" Then
             ComboBox1.Items.Clear()
             Dim cmd As New OleDbCommand("Select distinct Dept_Name From FacultyReport", conn)
 
@@ -54,7 +53,6 @@ Public Class PrintAll
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
-        ''End If
     End Sub
     Sub list()
         Try
@@ -80,7 +78,6 @@ Public Class PrintAll
     End Sub
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
         list()
-        '' MsgBox(DG1.RowCount)
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
         Try
@@ -134,7 +131,7 @@ Public Class PrintAll
                 Clipboard.SetImage(bm)
                 PictureBox2.Image = bm
                 e.Graphics.DrawImage(PictureBox2.Image, 60, 155)
-                '' e.Graphics.DrawImage()
+
                 bm.Dispose()
 
                 Chart1.ChartAreas(0).AxisY.Title = "Ratings"
@@ -144,8 +141,8 @@ Public Class PrintAll
                 Dim font3 As New Font("Arial", 12, FontStyle.Bold)
                 e.Graphics.DrawString("Faculty Name :", font3, Brushes.Black, 30, 500)
                 e.Graphics.DrawString(DG1.Rows(hari).Cells(1).Value, font3, Brushes.Black, 150, 500) ''Name
-                e.Graphics.DrawString("Faculty Code :", font3, Brushes.Black, 520, 500)
-                e.Graphics.DrawString(DG1.Rows(hari).Cells(0).Value, font3, Brushes.Black, 640, 500) ''Code
+                e.Graphics.DrawString("Faculty Code :", font3, Brushes.Black, 490, 500)
+                e.Graphics.DrawString(DG1.Rows(hari).Cells(0).Value, font3, Brushes.Black, 610, 500) ''Code
                 e.Graphics.DrawString("Subject      ", font3, Brushes.Black, 30, 560)
                 e.Graphics.DrawString(": " + DG1.Rows(hari).Cells(2).Value, font3, Brushes.Black, 145, 560) ''subject
                 e.Graphics.DrawString("Evaluation Period", font3, Brushes.Black, 450, 530)
@@ -158,22 +155,21 @@ Public Class PrintAll
                 End If
                 e.Graphics.DrawString("Class      ", font3, Brushes.Black, 30, 530)
                 e.Graphics.DrawString(": " + DG1.Rows(hari).Cells(4).Value + " " + DG1.Rows(hari).Cells(5).Value + " " + str, font3, Brushes.Black, 145, 530) ''class
-                ''x,y,xt,yt
-                ''e.Graphics.DrawRectangle(Pens.Black, 40, 600, 750, 80)
+
 
 
                 Dim xs As Integer = 30
-                For i = 1 To 12
+                For i = 1 To 10
                     e.Graphics.DrawRectangle(cute, 30, 600, xs, 35)
                     e.Graphics.DrawRectangle(cute, 30, 600, xs, 80)
                     xs += 40
                 Next
-                e.Graphics.DrawRectangle(cute, 500, 600, 255, 35)
-                e.Graphics.DrawRectangle(cute, 500, 600, 100, 80)
-                e.Graphics.DrawRectangle(cute, 500, 600, 255, 80)
+                e.Graphics.DrawRectangle(cute, 420, 600, 255, 35)
+                e.Graphics.DrawRectangle(cute, 420, 600, 100, 80)
+                e.Graphics.DrawRectangle(cute, 420, 600, 255, 80)
                 Dim c As String = "Q1"
                 Dim pk As Integer = 32
-                For i = 1 To 12
+                For i = 1 To 10
                     e.Graphics.DrawString(c, font3, Brushes.Black, pk, 610)
                     c = c.Substring(1) + 1
                     c = "Q" & c
@@ -182,11 +178,11 @@ Public Class PrintAll
                 e.Graphics.DrawString("Total Class", font3, Brushes.Black, pk, 600)
                 e.Graphics.DrawString("Strength", font3, Brushes.Black, pk + 5, 615)
 
-                e.Graphics.DrawString("No. Of students", font3, Brushes.Black, pk + 120, 600)
+                e.Graphics.DrawString("No. of students", font3, Brushes.Black, pk + 120, 600)
                 e.Graphics.DrawString("present", font3, Brushes.Black, pk + 140, 615)
 
                 Dim va As Integer = 38
-                For i = 1 To 12
+                For i = 1 To 10
                     e.Graphics.DrawString(DG1.Rows(0).Cells(10 + i).Value, font3, Brushes.Black, va, 650)
                     va += 39
                 Next
@@ -216,30 +212,29 @@ Public Class PrintAll
                 Dim p22 As New Point(780, 865)
                 e.Graphics.DrawLine(Pens.Black, p11, p22)
                 Dim font5 As New Font("Microsoft Sans Serif", 9.5)
-                e.Graphics.DrawString("1)Faculty explains the concepts very clearly and speaks fluently on" + vbNewLine + "    the subject.", font5, Brushes.Black, 10, 875)
-                e.Graphics.DrawString("7)The assignments and workout problems provided in each" + vbNewLine + "     of the concepts help a student to do their studies on" + vbNewLine + "     day-to-day basis.", font5, Brushes.Black, 422, 875)
+                e.Graphics.DrawString("Q1) Does the faculty explain the concepts very clearly and" + vbNewLine + "       covers all the topics as per the syllabus?", font5, Brushes.Black, 10, 875)
+                e.Graphics.DrawString("Q7) Does the faculty able to control the class well and deals" + vbNewLine + "        with the students maturely and professionally?", font5, Brushes.Black, 410, 875)
 
-                e.Graphics.DrawString("2)Faculty uses of instructional aids like charts, presentation visuals," + vbNewLine + "    etc, are exceptionally good and creative.", font5, Brushes.Black, 10, 910)
-                e.Graphics.DrawString("8)Teaching the concepts of study and the objective of the" + vbNewLine + "    course are well turned to the needs of the student.", font5, Brushes.Black, 422, 925)
+                e.Graphics.DrawString("Q2) Does the faculty able to relate the concepts to both theory" + vbNewLine + "       and practical aspects?", font5, Brushes.Black, 10, 910)
+                e.Graphics.DrawString("Q8) Does the faculty effectively uses the black board / charts /" + vbNewLine + "       OHP / PPT / Demo and notes for better communication?", font5, Brushes.Black, 410, 925)
 
-                e.Graphics.DrawString("3)The faculty has updated knowledge on the subject and hence" + vbNewLine + "    could co-relate the concepts with current trends in the field.", font5, Brushes.Black, 10, 945)
-                e.Graphics.DrawString("9)Faculty's listening skills enables every student to approach" + vbNewLine + "    and ensure the student confidence level in understanding" + vbNewLine + "    the concepts.", font5, Brushes.Black, 422, 960)
+                e.Graphics.DrawString("Q3) Does the faculty encourage students participation in the" + vbNewLine + "       class and build interest in the subject?", font5, Brushes.Black, 10, 945)
+                e.Graphics.DrawString("Q9) Does the faculty help the students from the examination" + vbNewLine + "       point of view (Question paper, relevant material etc.)", font5, Brushes.Black, 410, 960)
 
-                e.Graphics.DrawString("4)Faculty has eagerness to learn updating knowledge enables them" + vbNewLine + "    to impart better understanding level on the subject to every student.", font5, Brushes.Black, 10, 980)
-                e.Graphics.DrawString("10)Faculty is able to control the class well and deals with" + vbNewLine + "      the student maturity and professionally.", font5, Brushes.Black, 422, 1010)
+                e.Graphics.DrawString("Q4) Does the faculty maintain punctuality and engage the" + vbNewLine + "       entire hour productively?", font5, Brushes.Black, 10, 980)
+                e.Graphics.DrawString("Q10) The overall rating of the faculty is", font5, Brushes.Black, 410, 1010)
 
-                e.Graphics.DrawString("5)Every minute details of the concepts are being discussed" + vbNewLine + "    which enables the students to practice for consecutive classes.", font5, Brushes.Black, 10, 1015)
-                e.Graphics.DrawString("11)Faculty is very punctual and maintains class decorum.", font5, Brushes.Black, 422, 1045)
+                e.Graphics.DrawString("Q5) Does the faculty address subject related queries / doubts" + vbNewLine + "       and provide convincing solutions?", font5, Brushes.Black, 10, 1015)
 
-                e.Graphics.DrawString("6)Query from students are well received, appreciated and" + vbNewLine + "    convinving solutions are provided within the class hour without fail.", font5, Brushes.Black, 10, 1050)
-                e.Graphics.DrawString("12)The overall rating of the faculty.", font5, Brushes.Black, 422, 1065)
+                e.Graphics.DrawString("Q6) Does the assignments / worked-out problems / case studies /" + vbNewLine + "       presentation provided in each of the concepts help students to develop" + vbNewLine + "       practical knowledge?", font5, Brushes.Black, 10, 1050)
 
                 Dim p111 As New Point(190, 1100)
                 Dim p222 As New Point(580, 1100)
                 e.Graphics.DrawLine(Pens.Black, p111, p222)
                 Dim font6 As New Font("Microsoft Sans Serif", 10, FontStyle.Bold)
+                Dim font7 As New Font("Microsoft Sans Serif", 8, FontStyle.Bold)
                 e.Graphics.DrawString("Software Solutions by Azlan Soft Works", font6, Brushes.Black, 260, 1110)
-                e.Graphics.DrawString("♥iguess", font6, Brushes.Black, 10, 1110)
+                e.Graphics.DrawString("Report generated using ♥iguess", font7, Brushes.Black, 10, 1110)
                 e.Graphics.DrawImage(PictureBox3.Image, 650, 1068)
                 Dim bpen As Pen = New Pen(Color.FromArgb(255, 0, 0, 0), 5) ''border
                 e.Graphics.DrawRectangle(bpen, 5, 5, 775, 1126) ''border
@@ -268,7 +263,7 @@ Public Class PrintAll
 
 
                 .AxisX.Interval = 1
-                .AxisX.Maximum = 13
+                .AxisX.Maximum = 11
                 .AxisX.Minimum = 0
                 .AxisX.MajorGrid.LineColor = Color.Transparent
                 .AxisX.Title = "Questions"
@@ -285,11 +280,10 @@ Public Class PrintAll
         Try
             If conn.State = ConnectionState.Open Then conn.Close()
             conn.Open()
-            Dim cmd As New OleDbCommand("select Fac_Name,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12 from FacultyReport where Fac_Code='" & charval & "' and sub='" & charsub & "' and Eval_date='" & charevaldate & "' and Course='" & charcourse & "' and Stream='" & charsem & "' and Dept_Name='" & chardept & "' and no_of_present=" & charnum & "", conn)
+            Dim cmd As New OleDbCommand("select Fac_Name,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10 from FacultyReport where Fac_Code='" & charval & "' and sub='" & charsub & "' and Eval_date='" & charevaldate & "' and Course='" & charcourse & "' and Stream='" & charsem & "' and Dept_Name='" & chardept & "' and no_of_present=" & charnum & "", conn)
             Dim dr As OleDbDataReader = cmd.ExecuteReader()
 
             dr.Read()
-            '' Dim av As Double = (((Val(dr("q1").ToString) + Val(dr("q2").ToString) + Val(dr("q3").ToString) + Val(dr("q4").ToString) + Val(dr("q5").ToString) + Val(dr("q6").ToString) + Val(dr("q7").ToString) + Val(dr("q8").ToString) + Val(dr("q9").ToString) + Val(dr("q10").ToString) + Val(dr("q11").ToString) + Val(dr("q12").ToString)) * 12) / 84)
 
             Chart1.Titles.Clear()
             Chart1.Titles.Add(dr("Fac_Name").ToString)
@@ -306,8 +300,7 @@ Public Class PrintAll
                 .Points.Add(dr("q8").ToString).Label = dr("q8").ToString
                 .Points.Add(dr("q9").ToString).Label = dr("q9").ToString
                 .Points.Add(dr("q10").ToString).Label = dr("q10").ToString
-                .Points.Add(dr("q11").ToString).Label = dr("q11").ToString
-                .Points.Add(dr("q12").ToString).Label = dr("q12").ToString
+
 
                 .Points(0).AxisLabel = "Q1"
                 .Points(1).AxisLabel = "Q2"
@@ -319,8 +312,6 @@ Public Class PrintAll
                 .Points(7).AxisLabel = "Q8"
                 .Points(8).AxisLabel = "Q9"
                 .Points(9).AxisLabel = "Q10"
-                .Points(10).AxisLabel = "Q11"
-                .Points(11).AxisLabel = "Q12"
 
                 .Points(0).Color = Color.Violet
                 .Points(1).Color = Color.MediumSlateBlue
@@ -332,8 +323,7 @@ Public Class PrintAll
                 .Points(7).Color = Color.MediumSlateBlue
                 .Points(8).Color = Color.Violet
                 .Points(9).Color = Color.MediumSlateBlue
-                .Points(10).Color = Color.Violet
-                .Points(11).Color = Color.MediumSlateBlue
+
             End With
             dr.Close()
             cmd.Dispose()
@@ -393,10 +383,7 @@ Public Class PrintAll
             conn.Open()
             Dim cmd1 As New OleDbCommand("update FacultyReport set Pri_Remarks='" & TextBox1.Text & "' where Fac_Code='" & DG1.CurrentRow.Cells(0).Value & "' and sub='" & DG1.CurrentRow.Cells(2).Value & "' and Eval_date='" & DG1.CurrentRow.Cells(3).Value & "' and Course='" & DG1.CurrentRow.Cells(4).Value & "' and Stream='" & DG1.CurrentRow.Cells(5).Value & "'", conn)
             cmd1.ExecuteNonQuery()
-            ''MsgBox("remarks Updated")
             list()
-
-            ''cmd1.Dispose()
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -406,9 +393,9 @@ Public Class PrintAll
         Try
             Select Case sender.Name.ToString
                 Case "BunifuImageButton1"
-                    ttp.Show("Save the principal's Comment", BunifuImageButton1)
+                    ttp.Show("Save the principal's comment", BunifuImageButton1)
                 Case "Button1"
-                    ttp.Show("Print All", Button1)
+                    ttp.Show("Print all", Button1)
             End Select
         Catch ex As Exception
             MsgBox(ex.Message)
