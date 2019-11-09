@@ -44,7 +44,7 @@ For enrolling a faculty requires 3 data `Department Name`, `Faculty Name`, `Facu
 2) Select `Department Name` from the drop-down menu.
 3) Enter the `faculty name`.
 4) Enter the unique `Faculty Code`.
-5) Click **ADD Faculty**, Thats it!...<br>
+5) Click **ADD Faculty**,<img src="/Azlan_iguess/Resources/fac_new.png"> Thats it!...<br>
 7) or If you wanna continue with existing faculty click `Clear`.
 6) **For Video guide** <a href="https://drive.google.com/open?id=1GljDPZ7Sd4g916WC6jryDjEyVLgUlMOc">Click This Link</a>
 
@@ -58,11 +58,13 @@ Before entering feedbacks make sure you have filled all the following fields:
 - `Total Strength`
 - `Month/Year`
 - `Subject Name`
-- `Section` this is optional<br></br>
+- `Section` this one is optional<br></br>
 **Steps to enter the feedback**
 1) Make sure the above fields are filled.
-2) Enter the feedbacks of a students by clicking based on the rank.
+2) Enter the feedbacks of a students by clicking relevant rating.
 3) Click **Add** to enter the next student feedback.
+4) Use the **Next** and **Previous** buttons to edit the student feedbacks. After editing the feedback please click the **Add** to update the changes.
+5) If you want to clear all feedback and do it again from the first just click **Clear**
 4) If you are done with entering the feedback click **Save** to store in the DataBase and to evaluate the feedbacks.<br>
 5) **For Video guide** <a href="https://drive.google.com/open?id=1gOyxj26MMQOd4HdYtxvSds4fETFtsQsL">Click This Link</a>
 
