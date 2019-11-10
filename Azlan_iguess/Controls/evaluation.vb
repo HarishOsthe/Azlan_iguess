@@ -292,6 +292,7 @@ Public Class evaluation
             Return avg
         Catch ex As Exception
             MsgBox(ex.Message)
+            Return 0
         End Try
     End Function
 
