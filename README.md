@@ -7,7 +7,7 @@ Azlan's **iguess** is a windows application developed using **VB.Net in Visual s
 This application is specially designed for ***Jain College RR nagar*** based on their requirements. The main function of **iguess** application is to store & evaluate **faculties feedbacks given by the students** at the end of each semester.
 
 ## TABLE OF CONTENTS
-- [How to install iguess](#iguess-Installation)
+- [How to download and install iguess](#iguess-Installation)
 - [Adding Faculties to the DataBase](#Enrolling-faculty)
 - [Adding the feedbacks](#Adding-feedbacks)
 - [Editing the feedbacks](#Editing-feedbacks)
