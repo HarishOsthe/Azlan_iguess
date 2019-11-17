@@ -58,6 +58,5 @@ E:\Github\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.application
 E:\Github\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.exe
 E:\Github\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.pdb
 E:\Github\Azlan_iguess\Azlan_iguess\bin\Debug\Azlan_iguess.xml
-E:\Github\Azlan_iguess\Azlan_iguess\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
 E:\Github\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.exe.manifest
 E:\Github\Azlan_iguess\Azlan_iguess\obj\Debug\Azlan_iguess.application

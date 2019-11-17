@@ -98,6 +98,8 @@ Public Class Form1
         Panel2.Width = 1002
         Panel2.Height = 47
 
+        for each proc as pro
+
     End Sub
 
     Private Sub butabout_Click(sender As Object, e As EventArgs) Handles butabout.Click
