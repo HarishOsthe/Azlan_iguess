@@ -244,29 +244,26 @@ Public Class Report
 
     End Sub
     Private Sub PrintDocument1_PrintPage(sender As Object, e As Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
         Try
-            Dim x, y As Long
-            Dim p1 As New Point(5, 100)
-            Dim p2 As New Point(780, 100)
+            Dim p1 As New Point(e.MarginBounds.X, 110)
+            Dim p2 As New Point(e.PageBounds.Width - e.MarginBounds.X, 110)
             Dim cute As Pen = New Pen(Color.FromArgb(255, 0, 0, 0), 2)
             e.Graphics.DrawLine(cute, p1, p2)
+            'Line from the top / below the jain logo
+            '_____________________________________________________________________________________________________________
 
-            y = 15
-            x = 315
-            Dim font As New Font("Arial", 30, FontStyle.Bold)
-            e.Graphics.DrawString("Jain College", font, Brushes.Black, x, y)
+            Dim font As New Font("Cambria", 30, FontStyle.Bold)
+            e.Graphics.DrawString("Jain College", font, Brushes.Black, 340, 28)
+            e.Graphics.DrawImage(PictureBox1.Image, 260, 28)
+            'Jain logo and Text
+            '______________________________________________________________________________________________________________
 
-            e.Graphics.DrawImage(PictureBox1.Image, 235, 10)
-
-            y = 65
-            x = 315
-            Dim font1 As New Font("Arial", 9, FontStyle.Bold)
-            e.Graphics.DrawString("#463/465, 18th Main, SS Royal, 80 Feet Road, ", font1, Brushes.Black, x, y)
-            e.Graphics.DrawString(" Rajarajeshwari Nagar, Bangalore - 560 098", font1, Brushes.Black, 325, 80)
-
-            Dim font2 As New Font("Arial", 20, FontStyle.Bold)
-            e.Graphics.DrawString("Chart Showing Faculty Evaluation", font2, Brushes.Black, 180, 120)
-
+            Dim font1 As New Font("Times New Roman", 8, FontStyle.Bold)
+            e.Graphics.DrawString("#463/465, 18th Main, SS Royal, 80 Feet Road, ", font1, Brushes.Black, 345, 78)
+            e.Graphics.DrawString(" Rajarajeshwari Nagar, Bangalore - 560 098", font1, Brushes.Black, 345, 93)
+            'Address of jain
+            '______________________________________________________________________________________________________________
 
             Chart1.ChartAreas(0).AxisY.Title = ""
             Chart1.ChartAreas(0).AxisX.Title = ""
@@ -277,64 +274,76 @@ Public Class Report
             Chart1.DrawToBitmap(bm, rec)
             Clipboard.SetImage(bm)
             PictureBox2.Image = bm
-            e.Graphics.DrawImage(PictureBox2.Image, 60, 155)
+            e.Graphics.DrawImage(PictureBox2.Image, 100, 133)
             bm.Dispose()
 
             Chart1.ChartAreas(0).AxisY.Title = "Ratings"
             Chart1.ChartAreas(0).AxisX.Title = "Questions"
             Chart1.Titles.Add(babe)
+            'chart
+            '_______________________________________________________________________________________________________________
+            Dim font2 As New Font("Georgia", 20, FontStyle.Bold)
+            e.Graphics.DrawString("Chart Showing Faculty Evaluation", font2, Brushes.Black, 180, 115)
+            'Text above the chart
+            '______________________________________________________________________________________________________________
 
-            Dim font3 As New Font("Arial", 12, FontStyle.Bold)
-            e.Graphics.DrawString("Faculty Name : ", font3, Brushes.Black, 30, 500)
-            e.Graphics.DrawString(DG1.CurrentRow.Cells(1).Value, font3, Brushes.Black, 150, 500) ''Name
-            e.Graphics.DrawString("Faculty Code :", font3, Brushes.Black, 490, 500)
-            e.Graphics.DrawString(DG1.CurrentRow.Cells(0).Value, font3, Brushes.Black, 610, 500) ''Code
-            e.Graphics.DrawString("Subject      ", font3, Brushes.Black, 30, 560)
-            e.Graphics.DrawString(": " + DG1.CurrentRow.Cells(2).Value, font3, Brushes.Black, 145, 560) ''subject
-            e.Graphics.DrawString("Evaluation Period", font3, Brushes.Black, 450, 530)
-            e.Graphics.DrawString(": " + DG1.CurrentRow.Cells(3).Value, font3, Brushes.Black, 600, 530) ''eval period
-            e.Graphics.DrawString("Class      ", font3, Brushes.Black, 30, 530)
+
+            Dim font4 As New Font("Cambria", 12, FontStyle.Bold)
+            e.Graphics.DrawString("Faculty Name :", font4, Brushes.Black, 60, 480)
+            e.Graphics.DrawString(DG1.CurrentRow.Cells(1).Value, font4, Brushes.Black, 175, 480) ''Name
+            e.Graphics.DrawString("Faculty Code :", font4, Brushes.Black, 490, 480)
+            e.Graphics.DrawString(DG1.CurrentRow.Cells(0).Value, font4, Brushes.Black, 600, 480) ''Code
+
+            e.Graphics.DrawString("Subject      ", font4, Brushes.Black, 60, 520)
+            e.Graphics.DrawString(": " + DG1.CurrentRow.Cells(2).Value, font4, Brushes.Black, 165, 520) ''subject
+            e.Graphics.DrawString("Evaluation Period", font4, Brushes.Black, 450, 500)
+            e.Graphics.DrawString(": " + DG1.CurrentRow.Cells(3).Value, font4, Brushes.Black, 592, 500) ''eval period
+            e.Graphics.DrawString("Class      ", font4, Brushes.Black, 60, 500)
             Dim str As String = ""
             If DG1.CurrentRow.Cells(21).Value.ToString = "-" Then
                 str = ""
             Else
                 str = "'" & DG1.CurrentRow.Cells(21).Value.ToString & "'"
             End If
-            e.Graphics.DrawString(": " + DG1.CurrentRow.Cells(4).Value + " " + DG1.CurrentRow.Cells(5).Value + " " + str, font3, Brushes.Black, 145, 530) ''class
+            e.Graphics.DrawString(": " + DG1.CurrentRow.Cells(4).Value + " " + DG1.CurrentRow.Cells(5).Value + " " + str, font4, Brushes.Black, 165, 500) ''class
 
-            Dim xs As Integer = 30
+            'details of faculty
+            '________________________________________________________________________________________________________________
+
+            Dim xs As Integer = 40
             For i = 1 To 10
-                e.Graphics.DrawRectangle(cute, 30, 600, xs, 35)
-                e.Graphics.DrawRectangle(cute, 30, 600, xs, 80)
+                e.Graphics.DrawRectangle(cute, 60, 545, xs, 35)
+                e.Graphics.DrawRectangle(cute, 60, 545, xs, 80)
                 xs += 40
             Next
-            e.Graphics.DrawRectangle(cute, 420, 600, 255, 35)
-            e.Graphics.DrawRectangle(cute, 420, 600, 100, 80) ''box next to total
-            e.Graphics.DrawRectangle(cute, 420, 600, 255, 80)
+            e.Graphics.DrawRectangle(cute, 460, 545, 255, 35)
+            e.Graphics.DrawRectangle(cute, 460, 545, 100, 80) ''box next to total
+            e.Graphics.DrawRectangle(cute, 460, 545, 255, 80)
             Dim c As String = "Q1"
-            Dim pk As Integer = 32
+            Dim pk As Integer = 68
             For i = 1 To 10
-                e.Graphics.DrawString(c, font3, Brushes.Black, pk, 610)
+                e.Graphics.DrawString(c, font4, Brushes.Black, pk, 555)
                 c = c.Substring(1) + 1
                 c = "Q" & c
                 pk += 39
             Next
-            e.Graphics.DrawString("Total Class", font3, Brushes.Black, pk, 600)
-            e.Graphics.DrawString("Strength", font3, Brushes.Black, pk + 5, 615)
+            e.Graphics.DrawString("Total Class", font4, Brushes.Black, pk + 10, 545)
+            e.Graphics.DrawString("Strength", font4, Brushes.Black, pk + 20, 560)
 
-            e.Graphics.DrawString("No. of students", font3, Brushes.Black, pk + 120, 600)
-            e.Graphics.DrawString("present", font3, Brushes.Black, pk + 140, 615)
+            e.Graphics.DrawString("No. of students", font4, Brushes.Black, pk + 120, 545)
+            e.Graphics.DrawString("present", font4, Brushes.Black, pk + 140, 560)
 
-            Dim va As Integer = 38
+            Dim va As Integer = 75
             For i = 1 To 10
-                e.Graphics.DrawString(DG1.CurrentRow.Cells(10 + i).Value, font3, Brushes.Black, va, 650)
+                e.Graphics.DrawString(DG1.CurrentRow.Cells(10 + i).Value, font4, Brushes.Black, va, 595)
                 va += 39
             Next
 
-            e.Graphics.DrawString(DG1.CurrentRow.Cells(7).Value, font3, Brushes.Black, va + 20, 650)
-            e.Graphics.DrawString(DG1.CurrentRow.Cells(8).Value, font3, Brushes.Black, va + 150, 650)
+            e.Graphics.DrawString(DG1.CurrentRow.Cells(7).Value, font4, Brushes.Black, va + 20, 595)
+            e.Graphics.DrawString(DG1.CurrentRow.Cells(8).Value, font4, Brushes.Black, va + 150, 595)
 
-
+            'Table feedback
+            '___________________________________________________________________________________________________________________
             Dim numChars As Integer
             Dim numLines As Integer
             Dim stringForPage As String
@@ -343,46 +352,54 @@ Public Class Report
             PrintFont = TextBox1.Font
 
 
-            e.Graphics.DrawString("REMARKS      :", font3, Brushes.Black, 30, 700)
-            Dim rectDraw As New RectangleF(45, 730, e.MarginBounds.Width, e.MarginBounds.Height)
-            Dim sizeMeasure As New SizeF(e.MarginBounds.Width, e.MarginBounds.Height - PrintFont.GetHeight(e.Graphics))
+            e.Graphics.DrawString("Remarks      :", font4, Brushes.Black, 60, 630)
+            Dim rectDraw As New RectangleF(75, 650, 680, e.MarginBounds.Height)
+            Dim sizeMeasure As New SizeF(680, e.MarginBounds.Height - PrintFont.GetHeight(e.Graphics))
             strFormat.Trimming = StringTrimming.Word
             e.Graphics.MeasureString(StringToPrint, PrintFont, sizeMeasure, strFormat, numChars, numLines)
             stringForPage = StringToPrint.Substring(0, numChars)
-            Dim font4 As New Font("Microsoft Sans Serif", 12, FontStyle.Italic)
-            e.Graphics.DrawString("'" + stringForPage + "'", font4, Brushes.Black, rectDraw, strFormat)
-
-
-            Dim p11 As New Point(5, 865)
-            Dim p22 As New Point(780, 865)
+            Dim font5 As New Font("Calibri (Body)", 10, FontStyle.Bold Or FontStyle.Italic)
+            e.Graphics.DrawString("'" + stringForPage + "'", font5, Brushes.Black, rectDraw, strFormat)
+            'remarks
+            '____________________________________________________________________________________________________________________
+            Dim p11 As New Point(e.MarginBounds.X, 800)
+            Dim p22 As New Point(e.PageBounds.Width - e.MarginBounds.X, 800)
             e.Graphics.DrawLine(cute, p11, p22)
-            Dim font5 As New Font("Microsoft Sans Serif", 9.5)
-            e.Graphics.DrawString("Q1) Does the faculty explain the concepts very clearly and" + vbNewLine + "       covers all the topics as per the syllabus?", font5, Brushes.Black, 10, 875)
-            e.Graphics.DrawString("Q7) Does the faculty able to control the class well and deals" + vbNewLine + "        with the students maturely and professionally?", font5, Brushes.Black, 410, 875)
+            'line
+            '____________________________________________________________________________________________________________________
+            Dim font6 As New Font("Cambria Math", 9, FontStyle.Bold)
+            e.Graphics.DrawString("Q1) Does the faculty explain the concepts very clearly and" + vbNewLine + "       covers all the topics as per the syllabus?", font6, Brushes.Black, e.MarginBounds.X + 5, 805)
+            e.Graphics.DrawString("Q7) Does the faculty able to control the class well and deals" + vbNewLine + "        with the students maturely and professionally?", font6, Brushes.Black, 410, 805)
 
-            e.Graphics.DrawString("Q2) Does the faculty able to relate the concepts to both theory" + vbNewLine + "       and practical aspects?", font5, Brushes.Black, 10, 910)
-            e.Graphics.DrawString("Q8) Does the faculty effectively uses the black board / charts /" + vbNewLine + "       OHP / PPT / Demo and notes for better communication?", font5, Brushes.Black, 410, 925)
+            e.Graphics.DrawString("Q2) Does the faculty able to relate the concepts to both theory" + vbNewLine + "       and practical aspects?", font6, Brushes.Black, e.MarginBounds.X + 5, 835)
+            e.Graphics.DrawString("Q8) Does the faculty effectively uses the black board / charts /" + vbNewLine + "       OHP / PPT / Demo and notes for better communication?", font6, Brushes.Black, 410, 835)
 
-            e.Graphics.DrawString("Q3) Does the faculty encourage students participation in the" + vbNewLine + "       class and build interest in the subject?", font5, Brushes.Black, 10, 945)
-            e.Graphics.DrawString("Q9) Does the faculty help the students from the examination" + vbNewLine + "       point of view (Question paper, relevant material etc.)", font5, Brushes.Black, 410, 960)
+            e.Graphics.DrawString("Q3) Does the faculty encourage students participation in the" + vbNewLine + "       class and build interest in the subject?", font6, Brushes.Black, e.MarginBounds.X + 5, 865)
+            e.Graphics.DrawString("Q9) Does the faculty help the students from the examination" + vbNewLine + "       point of view (Question paper, relevant material etc.)", font6, Brushes.Black, 410, 865)
 
-            e.Graphics.DrawString("Q4) Does the faculty maintain punctuality and engage the" + vbNewLine + "       entire hour productively?", font5, Brushes.Black, 10, 980)
-            e.Graphics.DrawString("Q10) The overall rating of the faculty is", font5, Brushes.Black, 410, 1010)
+            e.Graphics.DrawString("Q4) Does the faculty maintain punctuality and engage the" + vbNewLine + "       entire hour productively?", font6, Brushes.Black, e.MarginBounds.X + 5, 895)
+            e.Graphics.DrawString("Q10) The overall rating of the faculty is", font6, Brushes.Black, 410, 900)
 
-            e.Graphics.DrawString("Q5) Does the faculty address subject related queries / doubts" + vbNewLine + "       and provide convincing solutions?", font5, Brushes.Black, 10, 1015)
+            e.Graphics.DrawString("Q5) Does the faculty address subject related queries / doubts" + vbNewLine + "       and provide convincing solutions?", font6, Brushes.Black, e.MarginBounds.X + 5, 925)
+            e.Graphics.DrawString("Q6) Does the assignments / worked-out problems / case studies /" + vbNewLine + "       presentation provided in each of the concepts help students to develop" + vbNewLine + "       practical knowledge?", font6, Brushes.Black, e.MarginBounds.X + 5, 955)
 
-            e.Graphics.DrawString("Q6) Does the assignments / worked-out problems / case studies /" + vbNewLine + "       presentation provided in each of the concepts help students to develop" + vbNewLine + "       practical knowledge?", font5, Brushes.Black, 10, 1050)
-
-            Dim p111 As New Point(190, 1100)
-            Dim p222 As New Point(580, 1100)
+            Dim p111 As New Point(220, 1010)
+            Dim p222 As New Point(580, 1010)
             e.Graphics.DrawLine(Pens.Black, p111, p222)
-            Dim font6 As New Font("Microsoft Sans Serif", 10, FontStyle.Bold)
-            Dim font7 As New Font("Microsoft Sans Serif", 8, FontStyle.Bold)
-            e.Graphics.DrawString("Software Solutions by Azlan Soft Works", font6, Brushes.Black, 260, 1110)
-            e.Graphics.DrawImage(PictureBox3.Image, 650, 1068)
-            e.Graphics.DrawString("Report generated using ♥iguess", font7, Brushes.Black, 10, 1110)
+            Dim font7 As New Font("Microsoft Sans Serif", 10, FontStyle.Bold)
+            Dim font8 As New Font("Microsoft Sans Serif", 8, FontStyle.Bold)
+            Dim font9 As New Font("Rage Italic", 11)
+            e.Graphics.DrawString("Software Solutions by Azlan Soft Works", font7, Brushes.Black, 270, 1020)
+            e.Graphics.DrawImage(PictureBox3.Image, 650, 980)
+            e.Graphics.DrawString("Report generated using ♥iguess", font8, Brushes.Black, e.MarginBounds.X + 5, 1020)
+            e.Graphics.DrawString("Love What You Do..", font9, Brushes.Black, 340, 1050)
+
+
+            '___________________________________________________________________________________________________________________________________
             Dim bpen As Pen = New Pen(Color.FromArgb(255, 0, 0, 0), 5) ''border
-            e.Graphics.DrawRectangle(bpen, 5, 5, 775, 1126) ''border
+            e.Graphics.DrawRectangle(bpen, e.MarginBounds) '5, 5, 775, 1126) ''border
+            'Border
+            '___________________________________________________________________________________________________________________________________
 
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -406,26 +423,26 @@ Public Class Report
                 MsgBox(ex.Message)
             End Try
 
-
             If PrintDialog1.ShowDialog = DialogResult.OK Then
                 PrintDialog1.PrinterSettings = PrintDocument1.PrinterSettings
-                Dim new_paper As New PaperSize("", 500, 500)
-                new_paper.PaperName = PaperKind.Custom
-
-                Dim new_margin As New Printing.Margins
-                new_margin.Left = 0
-                new_margin.Top = 50
+                'Dim new_paper As New PaperSize("", 595.44, 841.68)
+                'new_paper.PaperName = PaperKind.Custom
 
                 With PrintDocument1
-                    .DefaultPageSettings.PaperSize = new_paper
-                    .DefaultPageSettings.Margins = new_margin
+                    Dim new_margin As New Printing.Margins
+                    new_margin.Left = 24
+                    new_margin.Top = 24
+                    new_margin.Right = 24
+                    new_margin.Left = 24
+                    .DefaultPageSettings.PaperSize = (From s As PaperSize In PrintDocument1.PrinterSettings.PaperSizes.Cast(Of PaperSize) Where s.RawKind = PaperKind.A4).FirstOrDefault
                     .PrinterSettings.DefaultPageSettings.Landscape = False
+                    .DefaultPageSettings.Margins = new_margin
                     .Print()
                 End With
             End If
 
         Catch ex As Exception
-            MsgBox(ex.Message)
+        MsgBox(ex.Message)
         End Try
     End Sub
 
@@ -440,4 +457,13 @@ Public Class Report
     Private Sub BunifuImageButton1_MouseLeave(sender As Object, e As EventArgs) Handles BunifuImageButton1.MouseLeave
         ttp.Hide(BunifuImageButton1)
     End Sub
+
+    ''Private Sub PrintDocument1_QueryPageSettings(sender As Object, e As QueryPageSettingsEventArgs) Handles PrintDocument1.QueryPageSettings
+    ''    For Each SupportedPaperSize As System.Drawing.Printing.PaperSize In PrintDocument1.PrinterSettings.PaperSizes
+    ''        If SupportedPaperSize.Kind = System.Drawing.Printing.PaperKind.Legal Then
+    ''            e.PageSettings.PaperSize = SupportedPaperSize
+    ''            Exit For
+    ''        End If
+    ''    Next
+    ''End Sub
 End Class

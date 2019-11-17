@@ -57,6 +57,7 @@ Partial Class Report
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.BunifuImageButton1 = New Bunifu.Framework.UI.BunifuImageButton()
         Me.Progressbar1 = New Bunifu.Framework.UI.BunifuCircleProgressbar()
+        Me.PageSetupDialog1 = New System.Windows.Forms.PageSetupDialog()
         Me.BunifuCards1.SuspendLayout()
         Me.BunifuCards2.SuspendLayout()
         CType(Me.DG1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -248,6 +249,7 @@ Partial Class Report
         'Rating1
         '
         Me.Rating1.BackColor = System.Drawing.Color.Transparent
+        Me.Rating1.Enabled = False
         Me.Rating1.ForeColor = System.Drawing.Color.Magenta
         Me.Rating1.Location = New System.Drawing.Point(861, 433)
         Me.Rating1.Margin = New System.Windows.Forms.Padding(5)
@@ -524,4 +526,5 @@ Partial Class Report
     Friend WithEvents Label4 As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents PageSetupDialog1 As PageSetupDialog
 End Class

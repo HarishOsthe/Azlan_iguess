@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Azlan_iguess.exe" size="3372016">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Azlan_iguess.exe" size="3373552">
       <assemblyIdentity name="Azlan_iguess" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tikGiEhLihstQi9yHrDrv2mIBfP8qsFII72HGfIS+KY=</dsig:DigestValue>
+        <dsig:DigestValue>++PTM5n96nLY6Fl6ee7x56SXBsg2YuFNUxN7RJIquQQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
